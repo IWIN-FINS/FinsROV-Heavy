@@ -1,0 +1,22 @@
+<p align="right"><a href="README.md" lang="en">English</a> · <strong>简体中文</strong></p>
+
+![FinsROV-Heavy 左前方视图。相机位于两块黄色浮力块之间，推进器装在开放式机架内。](media/finsrov-heavy-hero.png)
+
+# FinsROV-Heavy
+
+FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控水下机器人（ROV），搭载 4 台水平推进器和 4 台垂直推进器。RoboMaster A 型主控板采集 IMU 数据、4 只压力传感器的深度读数和推进器实测转速，加上时间戳后发送给舱内的 Jetson Orin NX。
+
+## 硬件资料
+
+| 装配 | CAD 模型 | 物料清单 |
+| --- | --- | --- |
+| **机器人本体** · 机架、密封舱、推进器、浮力块、相机、照明及外装传感器 | [下载 STEP · 9.7 MiB](hardware/cad/主体装配.step?raw=true) | [预览 CSV](hardware/bom/BOM.csv) · [下载 Excel](hardware/bom/BOM.xlsx?raw=true) |
+| **舱内装配** · 主控板、机载计算机、配电板、电调、接插件及安装件 | [下载 STEP 压缩包 · 26.2 MiB](hardware/cad/舱内装配.step.zip?raw=true) | [预览 CSV](hardware/bom/BOM-electronics.csv) · [下载 Excel](hardware/bom/BOM-electronics.xlsx?raw=true) |
+
+本体 BOM 的数量按一台机器人计，舱内 BOM 的数量按一个电子舱计。
+
+## 复现顺序
+
+1. **对照装配。** 打开主体 STEP，查看外装件的位置和安装孔位。从压缩包解出 `舱内装配.step`，查看板卡层叠顺序和接插件位置。两份 BOM 都保留了 CAD 名称，方便在模型中定位。
+2. **按工艺备料。** 在 Excel 中筛选「准备方式」。四种铝合金舱盖各 CNC 加工 1 件，两块侧板和一块顶板做钣金，相机支架及灯、水压计固定块用 FDM 打印，两块浮力块按图定制。采购和加工入口见对应物料行。
+3. **合并采购数量。** 舱内表的 `REF-01` 至 `REF-04` 已计入本体表。4 套法兰合计随附 4 个端面密封圈和 8 个径向密封圈。遇到「待核」项，先查看该行缺少的尺寸、材料或料号，再向供应商询价。
