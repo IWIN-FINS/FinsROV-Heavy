@@ -15,6 +15,12 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 
 本体 BOM 的数量按一台机器人计，舱内 BOM 的数量按一个电子舱计。
 
+### 电源缓启动与过流保护板（EC-07）
+
+查看或修改 LM5069 电源板设计请使用立创开源工程。制板 ZIP 包含 Gerber 和钻孔文件，可用于裸板下单。若需贴片装联，请从对应版本的工程导出元件 BOM 和贴片坐标。
+
+[查看立创开源工程](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [下载 PCB 制板文件](hardware/pcb/PowerBoard.zip?raw=true)
+
 ## 复现顺序
 
 1. **对照装配。** 打开主体 STEP，查看外装件的位置和安装孔位。从压缩包解出 `舱内装配.step`，查看板卡层叠顺序和接插件位置。两份 BOM 都保留了 CAD 名称，方便在模型中定位。
