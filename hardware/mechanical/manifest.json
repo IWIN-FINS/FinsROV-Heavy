@@ -12,9 +12,11 @@
   ],
   "files": [
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "bom_ids": [
+        "MTI-09"
+      ],
+      "status": "optional",
+      "note": "选装，主要遮护电路、防止电路外露。模型含两片壳体，选装 1 套；按舱内件 FDM 归类，适配型号和耗材待补。",
       "source_relative_path": "IMU外壳 v5.step",
       "published_path": "source/IMU外壳 v5.step",
       "bytes": 89438,
@@ -140,7 +142,7 @@
         "FR-02"
       ],
       "status": "drawing-reference",
-      "note": "2025-09-13 螺纹标注图；缺完整尺寸、材料与公差，不能代替当前两侧板的制造图。",
+      "note": "旧版螺纹标注图。作者确认两侧同件、铝合金钣金及黑色阳极氧化；与侧板 V2 适配、完整尺寸和公差待核。",
       "source_relative_path": "框架/侧板图纸.pdf",
       "published_path": "source/框架/侧板图纸.pdf",
       "bytes": 115347,
@@ -224,7 +226,7 @@
         "FR-07"
       ],
       "status": "geometry-difference",
-      "note": "两目录中的文件相同，但与主体装配横梁顶点坐标存在差异；下单版本、材质及工艺待核。",
+      "note": "作者确认铝合金钣金、黑色阳极氧化，共 2 件。两目录文件相同；单件与总装的版本差异仍需核清。",
       "source_relative_path": "框架/横梁.step",
       "published_path": "source/框架/横梁.step",
       "bytes": 54160,
@@ -236,7 +238,7 @@
         "FR-07"
       ],
       "status": "drawing-reference",
-      "note": "两份 PDF 完全相同；标注 18 个 M4-6H 通孔螺纹。材料、完整尺寸及当前版本待核。",
+      "note": "两份 PDF 相同，标注 18 个 M4-6H 通孔螺纹。作者确认铝合金钣金及黑色阳极氧化；尺寸、公差与版本适配待核。",
       "source_relative_path": "框架/横梁图纸.pdf",
       "published_path": "source/框架/横梁图纸.pdf",
       "bytes": 114649,
@@ -407,10 +409,11 @@
     },
     {
       "bom_ids": [
-        "FR-01"
+        "FR-01",
+        "FR-02"
       ],
-      "status": "geometry-match",
-      "note": "对应侧板 A；侧板 B 的几何不同，不能直接按同件采购 2 件。",
+      "status": "owner-confirmed",
+      "note": "作者确认两块侧板相同，共 2 件，统一采用此文件。铝合金钣金、黑色阳极氧化；原总装两个定义的差异仅保留追溯。",
       "source_relative_path": "框架V2/侧板V2.step",
       "published_path": "source/框架V2/侧板V2.step",
       "bytes": 233833,
@@ -431,7 +434,7 @@
         "FR-07"
       ],
       "status": "geometry-difference",
-      "note": "两目录中的文件相同，但与主体装配横梁顶点坐标存在差异；下单版本、材质及工艺待核。",
+      "note": "作者确认铝合金钣金、黑色阳极氧化，共 2 件。两目录文件相同；单件与总装的版本差异仍需核清。",
       "source_relative_path": "框架V2/横梁.step",
       "published_path": "source/框架V2/横梁.step",
       "bytes": 54160,
@@ -443,7 +446,7 @@
         "FR-07"
       ],
       "status": "drawing-reference",
-      "note": "两份 PDF 完全相同；标注 18 个 M4-6H 通孔螺纹。材料、完整尺寸及当前版本待核。",
+      "note": "两份 PDF 相同，标注 18 个 M4-6H 通孔螺纹。作者确认铝合金钣金及黑色阳极氧化；尺寸、公差与版本适配待核。",
       "source_relative_path": "框架V2/横梁图纸.pdf",
       "published_path": "source/框架V2/横梁图纸.pdf",
       "bytes": 114649,
@@ -454,7 +457,7 @@
         "BU-01"
       ],
       "status": "geometry-match",
-      "note": "对应当前总装浮力块。密度、净浮力、工作深度待补。",
+      "note": "PVC 发泡，密度 0.25 g/cm³，材料耐压深度 250 m，共 2 件；净浮力及封装要求待补。该深度非整机额定深度。",
       "source_relative_path": "框架V2/浮力块V2.step",
       "published_path": "source/框架V2/浮力块V2.step",
       "bytes": 147875,
@@ -496,7 +499,7 @@
         "FR-03"
       ],
       "status": "geometry-match",
-      "note": "对应当前总装顶板。另附的旧版 PDF 尚未确认适用。",
+      "note": "铝合金钣金、黑色阳极氧化；对应当前顶板。铝材牌号、折弯及旧 PDF 适配待核。",
       "source_relative_path": "框架V2/顶板V2.step",
       "published_path": "source/框架V2/顶板V2.step",
       "bytes": 419390,
@@ -524,9 +527,11 @@
       "sha256": "a5e2686d4d32eef3406a17c4e91ea8d17a8414dafd0fd214cda38f79d5a9fa38"
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "电池舱附件；当前两份总装未建立数量对应，是否使用、单机数量与制法待核。",
+      "bom_ids": [
+        "MT-08"
+      ],
+      "status": "function-confirmed",
+      "note": "电池支撑采用 3D 打印，防止电池晃动和旋转；按舱内件 FDM 归类。数量、安装位置及耗材参数待补。",
       "source_relative_path": "电池舱/电池固定环.step",
       "published_path": "source/电池舱/电池固定环.step",
       "bytes": 10928,
@@ -534,9 +539,11 @@
       "step_export_timestamp": "2025-09-24T11:50:22+08:00"
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "电池舱附件；当前两份总装未建立数量对应，是否使用、单机数量与制法待核。",
+      "bom_ids": [
+        "MT-09"
+      ],
+      "status": "function-confirmed",
+      "note": "电池支撑采用 3D 打印，防止电池晃动和旋转；按舱内件 FDM 归类。数量、安装位置及耗材参数待补。",
       "source_relative_path": "电池舱/电池定位片.step",
       "published_path": "source/电池舱/电池定位片.step",
       "bytes": 12653,
@@ -586,9 +593,11 @@
       ]
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "电池舱附件；当前两份总装未建立数量对应，是否使用、单机数量与制法待核。",
+      "bom_ids": [
+        "MT-10"
+      ],
+      "status": "function-confirmed",
+      "note": "按作者确认的舱内件 FDM 归类；与电池支撑的装配关系、实装数量及打印参数待核。",
       "source_relative_path": "电池舱/电池舱法兰填充.step",
       "published_path": "source/电池舱/电池舱法兰填充.step",
       "bytes": 59416,
@@ -696,9 +705,11 @@
       ]
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "bom_ids": [
+        "CB-10"
+      ],
+      "status": "function-confirmed",
+      "note": "用于限制线缆夹沿光轴平移。实装数量、材料、制法和轴向配合待补。",
       "source_relative_path": "线缆夹/光轴短套管.step",
       "published_path": "source/线缆夹/光轴短套管.step",
       "bytes": 7369,
@@ -706,9 +717,11 @@
       "step_export_timestamp": "2025-09-25T12:46:05+08:00"
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "bom_ids": [
+        "CB-11"
+      ],
+      "status": "function-confirmed",
+      "note": "用于限制线缆夹沿光轴平移。实装数量、材料、制法和轴向配合待补。",
       "source_relative_path": "线缆夹/光轴长套管.step",
       "published_path": "source/线缆夹/光轴长套管.step",
       "bytes": 7772,
@@ -775,7 +788,7 @@
         "MTI-06"
       ],
       "status": "mesh-reference",
-      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。3MF 单位 mm，不含切片配置；与 STEP 尚未逐面核验。",
       "source_relative_path": "设备舱/舱内/3mf格式/ORIN NX固定板.3mf",
       "published_path": "source/设备舱/舱内/3mf格式/ORIN NX固定板.3mf",
       "bytes": 152658,
@@ -786,7 +799,7 @@
         "MTI-05"
       ],
       "status": "mesh-reference",
-      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。3MF 单位 mm，不含切片配置；与 STEP 尚未逐面核验。",
       "source_relative_path": "设备舱/舱内/3mf格式/上板.3mf",
       "published_path": "source/设备舱/舱内/3mf格式/上板.3mf",
       "bytes": 55829,
@@ -797,7 +810,7 @@
         "MTI-03"
       ],
       "status": "mesh-reference",
-      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。3MF 单位 mm，不含切片配置；与 STEP 尚未逐面核验。",
       "source_relative_path": "设备舱/舱内/3mf格式/主控固定板.3mf",
       "published_path": "source/设备舱/舱内/3mf格式/主控固定板.3mf",
       "bytes": 108063,
@@ -808,7 +821,7 @@
         "MTI-07"
       ],
       "status": "mesh-reference",
-      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。3MF 单位 mm，不含切片配置；与 STEP 尚未逐面核验。",
       "source_relative_path": "设备舱/舱内/3mf格式/电源底板.3mf",
       "published_path": "source/设备舱/舱内/3mf格式/电源底板.3mf",
       "bytes": 93627,
@@ -819,7 +832,7 @@
         "MTI-04"
       ],
       "status": "mesh-reference",
-      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。3MF 单位 mm，不含切片配置；与 STEP 尚未逐面核验。",
       "source_relative_path": "设备舱/舱内/3mf格式/电调固定板.3mf",
       "published_path": "source/设备舱/舱内/3mf格式/电调固定板.3mf",
       "bytes": 101672,
@@ -830,7 +843,7 @@
         "MTI-06"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/ORIN NX固定板.step",
       "published_path": "source/设备舱/舱内/ORIN NX固定板.step",
       "bytes": 61274,
@@ -851,7 +864,7 @@
         "MTI-05"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/上板.step",
       "published_path": "source/设备舱/舱内/上板.step",
       "bytes": 79011,
@@ -872,7 +885,7 @@
         "MTI-03"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/主控固定板.step",
       "published_path": "source/设备舱/舱内/主控固定板.step",
       "bytes": 164231,
@@ -893,7 +906,7 @@
         "MTI-02"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/对插板固定件.step",
       "published_path": "source/设备舱/舱内/对插板固定件.step",
       "bytes": 120961,
@@ -914,7 +927,7 @@
         "MTI-01"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/法兰仓内固定环 v3.step",
       "published_path": "source/设备舱/舱内/法兰仓内固定环 v3.step",
       "bytes": 160739,
@@ -935,7 +948,7 @@
         "MTI-07"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/电源底板.step",
       "published_path": "source/设备舱/舱内/电源底板.step",
       "bytes": 81931,
@@ -956,7 +969,7 @@
         "MTI-04"
       ],
       "status": "geometry-match",
-      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "note": "作者确认舱内安装件为 FDM，每舱 1 件。耗材及打印参数待补。单件与当前舱内装配几何对应。",
       "source_relative_path": "设备舱/舱内/电调固定板.step",
       "published_path": "source/设备舱/舱内/电调固定板.step",
       "bytes": 163247,
@@ -1015,23 +1028,28 @@
       ]
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "bom_ids": [
+        "BU-03"
+      ],
+      "status": "function-confirmed",
+      "note": "缩减铅块孔径，以便用 M4 螺钉安装到框架上配平。数量随铅块孔数及装配方案确定；材质、制法与配合待核。",
       "source_relative_path": "铅块垫片.f3d",
       "published_path": "source/铅块垫片.f3d",
       "bytes": 43011,
       "sha256": "04ee753fd36bdc72715785d09dd2784dc68175f151892df436c1718c3ae9f3d3"
     },
     {
-      "bom_ids": [],
-      "status": "unassigned",
-      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "bom_ids": [
+        "BU-03"
+      ],
+      "status": "function-confirmed",
+      "note": "缩减铅块孔径，以便用 M4 螺钉安装到框架上配平。数量随铅块孔数及装配方案确定；材质、制法与配合待核。",
       "source_relative_path": "铅块垫片.step",
       "published_path": "source/铅块垫片.step",
       "bytes": 7259,
       "sha256": "773bb583ec95cf44661ef4501c4b6db62a4d907d4c7defc908e828b8618780a5",
       "step_export_timestamp": "2025-11-25T13:52:23+08:00"
     }
-  ]
+  ],
+  "owner_confirmation": "2026-11-11: identical side plates; black-anodized aluminum sheet-metal frame and crossbeams; FDM internal mounts; PVC buoyancy foam 0.25 g/cm³, material depth rating 250 m; optional IMU cover; battery supports, cable-clamp sleeves and ballast spacer functions; optional 200 g ballast blocks, typically 4–5."
 }
