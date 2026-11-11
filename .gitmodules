@@ -1,0 +1,12 @@
+[submodule "firmware/SUB/ThirdParty/CMSIS-DSP"]
+	path = firmware/SUB/ThirdParty/CMSIS-DSP
+	url = https://github.com/ARM-software/CMSIS-DSP
+[submodule "firmware/SUB/ThirdParty/etl"]
+	path = firmware/SUB/ThirdParty/etl
+	url = https://github.com/ETLCPP/etl.git
+[submodule "firmware/inertial-odometry/ThirdParty/CMSIS-DSP"]
+	path = firmware/inertial-odometry/ThirdParty/CMSIS-DSP
+	url = https://github.com/ARM-software/CMSIS-DSP
+[submodule "firmware/inertial-odometry/ThirdParty/etl"]
+	path = firmware/inertial-odometry/ThirdParty/etl
+	url = https://github.com/ETLCPP/etl.git

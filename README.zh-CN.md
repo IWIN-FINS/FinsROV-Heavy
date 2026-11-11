@@ -21,6 +21,17 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 
 [查看立创开源工程](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [下载 PCB 制板文件](hardware/pcb/PowerBoard.zip?raw=true)
 
+## 嵌入式固件
+
+| 版本 | 用途 |
+| --- | --- |
+| [SUB](firmware/SUB/) | 正常机器人操控 |
+| [惯性里程计实验](firmware/inertial-odometry/) | 惯性里程计实验及扩展的传感器、执行器遥测 |
+
+两套代码记录了各自的 FineSUB 源提交，并固定依赖版本。选择固件时请对照编译方法和上位机通信配置。[固件使用说明](firmware/README.zh-CN.md)
+
+FineSUB 固件适用各源码目录中的 MPL-2.0 许可证，第三方组件适用其各自许可证。[固件许可说明](firmware/README.zh-CN.md#许可证)
+
 ## 复现顺序
 
 1. **对照装配。** 打开主体 STEP，查看外装件的位置和安装孔位。从压缩包解出 `舱内装配.step`，查看板卡层叠顺序和接插件位置。两份 BOM 都保留了 CAD 名称，方便在模型中定位。

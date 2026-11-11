@@ -1,0 +1,34 @@
+# Binary directory
+*build*
+
+# VSCode
+.vscode/
+
+# CLion
+.idea/*
+!.idea/copyright/
+!.idea/runConfigurations/
+
+# MDK-ARM
+.MDK-ARM
+*DebugConfig*
+RTE_Components.h
+*uvguix*
+
+*.o
+*.d
+*.hex
+*.bin
+*.elf
+*.axf
+*.crf
+*.map
+*.htm
+*.lnp
+*.dep
+*.lst
+*.scvd
+*.iex
+*.bat
+*.Bak
+*.__i

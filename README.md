@@ -21,6 +21,17 @@ The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA
 
 [Open the EasyEDA project](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [Download PCB fabrication files](hardware/pcb/PowerBoard.zip?raw=true)
 
+## Embedded firmware
+
+| Version | Use |
+| --- | --- |
+| [SUB](firmware/SUB/) | Normal vehicle operation |
+| [Inertial odometry](firmware/inertial-odometry/) | Inertial odometry experiments and expanded sensor/actuator telemetry |
+
+Each version records its FineSUB source commit and pins its dependencies. See the build instructions and host protocol settings before selecting a version. [Firmware guide](firmware/README.md)
+
+FineSUB firmware uses the MPL-2.0 licenses included in the two source directories. Third-party components carry their own license notices. [Firmware licensing](firmware/README.md#license)
+
 ## Preparing a build
 
 1. **Inspect the assemblies.** Open the vehicle STEP to locate external parts and their mounting points. Extract `舱内装配.step` from the ZIP to inspect the board stack and connector layout. The CAD names in the BOMs identify the corresponding parts.
