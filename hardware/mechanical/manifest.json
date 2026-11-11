@@ -1,0 +1,1037 @@
+{
+  "format_version": 1,
+  "date": "2026-11-11",
+  "source_file_count": 65,
+  "comparison_method": "Centered STEP vertex sets under axis permutations/reflections, rounded to 0.0001 mm, plus entity-type counts. This is a correspondence check, not a full B-rep equivalence or manufacturing-tolerance validation.",
+  "archives": [
+    {
+      "path": "reference/外壳FINAL-v27.zip",
+      "bytes": 24486222,
+      "sha256": "09d8df512df2ad98c7832a1b225fecc780f9690cddbbd27463f3e7f4b0a48135"
+    }
+  ],
+  "files": [
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "IMU外壳 v5.step",
+      "published_path": "source/IMU外壳 v5.step",
+      "bytes": 89438,
+      "sha256": "74620048d668c4b3b4ae1db9a1b4b462d3f83c8960900391d63d7b7876c234a0",
+      "step_export_timestamp": "2025-10-30T10:31:09+08:00"
+    },
+    {
+      "bom_ids": [
+        "MT-06"
+      ],
+      "status": "geometry-match",
+      "note": "已确认 FDM；耗材牌号、打印方向、壁厚及填充参数待补。",
+      "source_relative_path": "固定相机底座.step",
+      "published_path": "source/固定相机底座.step",
+      "bytes": 85860,
+      "sha256": "a5c651d0d4df706f6bd9b2ac56e7dbf64c602ff68c21de706bb053baceb04e93",
+      "step_export_timestamp": "2026-05-06T13:01:51+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1784",
+          "assembly": "主体装配",
+          "definition": "159771",
+          "name": "零部件25",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "reference-archive",
+      "note": "保留原始装配/渲染参考；SLDASM 是否可独立打开尚未验证，目录内未发现 SLDPRT。",
+      "source_relative_path": "外壳FINAL v27.mtl",
+      "published_path": "reference/外壳FINAL-v27.zip",
+      "bytes": 614,
+      "sha256": "da16ac0287bb26f4bb38120c1fcec2310048e7875876e001f86d2b81aa235c4c",
+      "archive_member": "外壳FINAL v27.mtl"
+    },
+    {
+      "bom_ids": [],
+      "status": "reference-archive",
+      "note": "保留原始装配/渲染参考；SLDASM 是否可独立打开尚未验证，目录内未发现 SLDPRT。",
+      "source_relative_path": "外壳FINAL v27.obj",
+      "published_path": "reference/外壳FINAL-v27.zip",
+      "bytes": 77374522,
+      "sha256": "b9e33cd057fb7f268a05e19c2d7136ee3c5ea30415054e82457e2677a79e4c4c",
+      "archive_member": "外壳FINAL v27.obj"
+    },
+    {
+      "bom_ids": [],
+      "status": "reference-archive",
+      "note": "保留原始装配/渲染参考；SLDASM 是否可独立打开尚未验证，目录内未发现 SLDPRT。",
+      "source_relative_path": "外壳FINAL v27.SLDASM",
+      "published_path": "reference/外壳FINAL-v27.zip",
+      "bytes": 12348663,
+      "sha256": "fb4db53e531d05b1cce8be4093e226ce1ee3124cad22e57be0b59974ef9e8a02",
+      "archive_member": "外壳FINAL v27.SLDASM"
+    },
+    {
+      "bom_ids": [
+        "MT-04"
+      ],
+      "status": "geometry-match",
+      "note": "已确认 FDM；耗材牌号、打印方向、壁厚及填充参数待补。",
+      "source_relative_path": "框架/二合一固定块L.step",
+      "published_path": "source/框架/二合一固定块L.step",
+      "bytes": 96053,
+      "sha256": "a81b401a76675f9655007f381d920d1fc3422223cbd5c88576cdb6f7da216b0d",
+      "step_export_timestamp": "2025-09-23T17:44:42+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1852",
+          "assembly": "主体装配",
+          "definition": "159737",
+          "name": "二合一固定块(镜像)",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MT-03"
+      ],
+      "status": "geometry-match",
+      "note": "已确认 FDM；耗材牌号、打印方向、壁厚及填充参数待补。",
+      "source_relative_path": "框架/二合一固定块R.step",
+      "published_path": "source/框架/二合一固定块R.step",
+      "bytes": 95893,
+      "sha256": "b220ca529937af9de16a7e8b0c372b4c123bd7135d3ff9e8e191f1e3362ac515",
+      "step_export_timestamp": "2025-09-23T17:44:51+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1852",
+          "assembly": "主体装配",
+          "definition": "159736",
+          "name": "二合一固定块",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "未与当前相机安装件建立一致对应，可能为其他版本，需确认是否仍使用。",
+      "source_relative_path": "框架/云台支架.step",
+      "published_path": "source/框架/云台支架.step",
+      "bytes": 86212,
+      "sha256": "a6d1c5fbc8498082add3a587e422f8d17d82ac45ec487b6e07945aaef431a1eb",
+      "step_export_timestamp": "2025-09-13T11:07:00+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "legacy",
+      "note": "与当前总装对应件有几何差异，保留为旧版参考。",
+      "source_relative_path": "框架/侧板.step",
+      "published_path": "source/框架/侧板.step",
+      "bytes": 203573,
+      "sha256": "ea39df92a26d24d8d33e6a6c3808e91c88e3ea96bd4f2c79acb534565ad8b8b4",
+      "step_export_timestamp": "2025-09-13T11:03:17+08:00"
+    },
+    {
+      "bom_ids": [
+        "FR-01",
+        "FR-02"
+      ],
+      "status": "drawing-reference",
+      "note": "2025-09-13 螺纹标注图；缺完整尺寸、材料与公差，不能代替当前两侧板的制造图。",
+      "source_relative_path": "框架/侧板图纸.pdf",
+      "published_path": "source/框架/侧板图纸.pdf",
+      "bytes": 115347,
+      "sha256": "42ee5f000d26c99a6f098d786e61dadc12def00093d9dde6967ae5d8cd481b84"
+    },
+    {
+      "bom_ids": [
+        "FR-05"
+      ],
+      "status": "kit-component-reference",
+      "note": "对应光轴夹套件内实体 #159717。套件已按 6 套计数，不自动增加独立加工数量。",
+      "source_relative_path": "框架/光轴夹垫片.step",
+      "published_path": "source/框架/光轴夹垫片.step",
+      "bytes": 10976,
+      "sha256": "bfa5f6f1c7527e9cc56c7d8f3a21478c3ea63278d9319a74699d139765e58b2e",
+      "step_export_timestamp": "2025-09-23T15:42:37+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "233",
+          "assembly": "主体装配",
+          "definition": "159717",
+          "name": "零部件1_1",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MT-02"
+      ],
+      "status": "geometry-match",
+      "note": "已确认 FDM；耗材牌号、打印方向、壁厚及填充参数待补。",
+      "source_relative_path": "框架/固定块L.step",
+      "published_path": "source/框架/固定块L.step",
+      "bytes": 69779,
+      "sha256": "fa26e062bd4d7967383b3ffcc9996292df0db95761b9a564010b20b6b187f72b",
+      "step_export_timestamp": "2025-09-23T17:46:43+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1305",
+          "assembly": "主体装配",
+          "definition": "159734",
+          "name": "二合一固定块(镜像) (1)(镜像)",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MT-01"
+      ],
+      "status": "geometry-match",
+      "note": "已确认 FDM；耗材牌号、打印方向、壁厚及填充参数待补。",
+      "source_relative_path": "框架/固定块R.step",
+      "published_path": "source/框架/固定块R.step",
+      "bytes": 69915,
+      "sha256": "4da59f10cacd53621766064662c06b930c2abcc67d3822b69da13627e548e19b",
+      "step_export_timestamp": "2025-09-23T17:46:31+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1305",
+          "assembly": "主体装配",
+          "definition": "159733",
+          "name": "二合一固定块(镜像) (1)",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "legacy-assembly",
+      "note": "2025-09-17 旧版整机参考，不能替代 hardware/cad/主体装配.step。",
+      "source_relative_path": "框架/外壳FINAL v27.step",
+      "published_path": "source/框架/外壳FINAL v27.step",
+      "bytes": 12973745,
+      "sha256": "852110773defe22611fafa9db114e8c42b45bc50f3854ebd6bdac8475941d12a",
+      "step_export_timestamp": "2025-09-17T16:15:40+08:00"
+    },
+    {
+      "bom_ids": [
+        "FR-07"
+      ],
+      "status": "geometry-difference",
+      "note": "两目录中的文件相同，但与主体装配横梁顶点坐标存在差异；下单版本、材质及工艺待核。",
+      "source_relative_path": "框架/横梁.step",
+      "published_path": "source/框架/横梁.step",
+      "bytes": 54160,
+      "sha256": "c90d362356ace2c7d9f755a8d9f893538dee08293730cce6b32eda2013bbc296",
+      "step_export_timestamp": "2025-09-13T11:05:31+08:00"
+    },
+    {
+      "bom_ids": [
+        "FR-07"
+      ],
+      "status": "drawing-reference",
+      "note": "两份 PDF 完全相同；标注 18 个 M4-6H 通孔螺纹。材料、完整尺寸及当前版本待核。",
+      "source_relative_path": "框架/横梁图纸.pdf",
+      "published_path": "source/框架/横梁图纸.pdf",
+      "bytes": 114649,
+      "sha256": "d0024900d18547114ac1bcb634d3631199716e3fd9c6b8dce5100c72ca56186f"
+    },
+    {
+      "bom_ids": [],
+      "status": "legacy",
+      "note": "与当前总装对应件有几何差异，保留为旧版参考。",
+      "source_relative_path": "框架/浮力块 v1.step",
+      "published_path": "source/框架/浮力块 v1.step",
+      "bytes": 118703,
+      "sha256": "f031f69f40145732d8d5d213e9d5579451e949c0d7647a5c3fb8fd1884d7c7d4",
+      "step_export_timestamp": "2025-10-20T12:02:08+08:00"
+    },
+    {
+      "bom_ids": [
+        "CB-04"
+      ],
+      "status": "geometry-difference",
+      "note": "与主体装配夹体顶点坐标存在差异。下单版本及实机工艺待核。",
+      "source_relative_path": "框架/电机线夹2pin.step",
+      "published_path": "source/框架/电机线夹2pin.step",
+      "bytes": 81035,
+      "sha256": "6ede6cdf7259aaa9608a0cc73214e28692279670fcd40446434a09ba36cdb3c4",
+      "step_export_timestamp": "2025-09-23T15:43:20+08:00"
+    },
+    {
+      "bom_ids": [
+        "CB-03"
+      ],
+      "status": "geometry-difference",
+      "note": "与主体装配夹体顶点坐标存在差异。下单版本及实机工艺待核。",
+      "source_relative_path": "框架/电机线夹4pin.step",
+      "published_path": "source/框架/电机线夹4pin.step",
+      "bytes": 77165,
+      "sha256": "a956b6d7b56d52a407438b9214a8600ef157d1331f07c5c3524b47c2cf320a48",
+      "step_export_timestamp": "2025-09-23T15:43:34+08:00"
+    },
+    {
+      "bom_ids": [
+        "CB-01",
+        "CB-02",
+        "CB-07",
+        "CB-09"
+      ],
+      "status": "geometry-match",
+      "note": "四行压片的顶点几何与拓扑计数均对应。总量 6 件，按 BOM 分配；材料及制法暂缺。",
+      "source_relative_path": "框架/电机线夹片.step",
+      "published_path": "source/框架/电机线夹片.step",
+      "bytes": 13369,
+      "sha256": "7ecb0e4458106ddb1b30004a6520abb98ef995a6334936464692f36167d2dd04",
+      "step_export_timestamp": "2025-09-23T15:43:59+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159742",
+          "name": "零部件4",
+          "topology_counts_equal": true
+        },
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159745",
+          "name": "零部件4(镜像)",
+          "topology_counts_equal": true
+        },
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159757",
+          "name": "零部件3_1",
+          "topology_counts_equal": true
+        },
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159762",
+          "name": "零部件4_1",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MT-05"
+      ],
+      "status": "geometry-match",
+      "note": "已确认 FDM；耗材牌号、打印方向、壁厚及填充参数待补。",
+      "source_relative_path": "框架/相机支架 v21.step",
+      "published_path": "source/框架/相机支架 v21.step",
+      "bytes": 151350,
+      "sha256": "5507537e54d562069d4569697cf338700fc3ef841a95231d61630e7b48bf5938",
+      "step_export_timestamp": "2025-09-23T13:23:57+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "2918",
+          "assembly": "主体装配",
+          "definition": "159770",
+          "name": "零部件16",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "CB-05"
+      ],
+      "status": "geometry-match",
+      "note": "数量见 BOM；实机材料及制法暂缺。",
+      "source_relative_path": "框架/线夹 v1.step",
+      "published_path": "source/框架/线夹 v1.step",
+      "bytes": 22380,
+      "sha256": "fee88d65635b525a87aa97ff12ca5f2af76a57ae368b7ed7433ad8e6fabdb27d",
+      "step_export_timestamp": "2025-09-23T13:24:16+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "493",
+          "assembly": "主体装配",
+          "definition": "159752",
+          "name": "零部件1_4",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "EN-04"
+      ],
+      "status": "purchased-part-reference",
+      "note": "对应成品安装座的 CAD 参考。是否改件待核，保持 BOM 成套采购数量。",
+      "source_relative_path": "框架/阿卡插座.step",
+      "published_path": "source/框架/阿卡插座.step",
+      "bytes": 64198,
+      "sha256": "1de76fd6c8089bf8b98503c0647e7af185a9c18ae30973259e08b7fc0dc3e570",
+      "step_export_timestamp": "2026-01-18T20:03:50+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1328",
+          "assembly": "主体装配",
+          "definition": "159719",
+          "name": "14010601-0046",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "legacy",
+      "note": "与当前总装对应件有几何差异，保留为旧版参考。",
+      "source_relative_path": "框架/顶板.step",
+      "published_path": "source/框架/顶板.step",
+      "bytes": 419077,
+      "sha256": "83a022801a0f333a9c441ba6bec310158b57575159358ecac289295b3e279346",
+      "step_export_timestamp": "2025-09-13T11:05:17+08:00"
+    },
+    {
+      "bom_ids": [
+        "FR-03"
+      ],
+      "status": "drawing-reference",
+      "note": "两份 PDF 完全相同，日期 2025-09-13；与 V2 STEP 的适配关系待核。",
+      "source_relative_path": "框架/顶板图纸.pdf",
+      "published_path": "source/框架/顶板图纸.pdf",
+      "bytes": 135719,
+      "sha256": "a5e2686d4d32eef3406a17c4e91ea8d17a8414dafd0fd214cda38f79d5a9fa38"
+    },
+    {
+      "bom_ids": [
+        "FR-01"
+      ],
+      "status": "geometry-match",
+      "note": "对应侧板 A；侧板 B 的几何不同，不能直接按同件采购 2 件。",
+      "source_relative_path": "框架V2/侧板V2.step",
+      "published_path": "source/框架V2/侧板V2.step",
+      "bytes": 233833,
+      "sha256": "9166a8ceed9a335fe6f0febd07f981311b56d24db5cd76d2cbd55736a22ce24b",
+      "step_export_timestamp": "2026-01-19T12:12:10+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "5229",
+          "assembly": "主体装配",
+          "definition": "159702",
+          "name": "侧板-铝合金钣金",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "FR-07"
+      ],
+      "status": "geometry-difference",
+      "note": "两目录中的文件相同，但与主体装配横梁顶点坐标存在差异；下单版本、材质及工艺待核。",
+      "source_relative_path": "框架V2/横梁.step",
+      "published_path": "source/框架V2/横梁.step",
+      "bytes": 54160,
+      "sha256": "c90d362356ace2c7d9f755a8d9f893538dee08293730cce6b32eda2013bbc296",
+      "step_export_timestamp": "2025-09-13T11:05:31+08:00"
+    },
+    {
+      "bom_ids": [
+        "FR-07"
+      ],
+      "status": "drawing-reference",
+      "note": "两份 PDF 完全相同；标注 18 个 M4-6H 通孔螺纹。材料、完整尺寸及当前版本待核。",
+      "source_relative_path": "框架V2/横梁图纸.pdf",
+      "published_path": "source/框架V2/横梁图纸.pdf",
+      "bytes": 114649,
+      "sha256": "d0024900d18547114ac1bcb634d3631199716e3fd9c6b8dce5100c72ca56186f"
+    },
+    {
+      "bom_ids": [
+        "BU-01"
+      ],
+      "status": "geometry-match",
+      "note": "对应当前总装浮力块。密度、净浮力、工作深度待补。",
+      "source_relative_path": "框架V2/浮力块V2.step",
+      "published_path": "source/框架V2/浮力块V2.step",
+      "bytes": 147875,
+      "sha256": "782e60ec5ed3f7f052570af4ee28251237b6787f90697abe88a51788c9ab756a",
+      "step_export_timestamp": "2026-01-19T12:27:06+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "3126",
+          "assembly": "主体装配",
+          "definition": "159763",
+          "name": "浮力块",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "EN-04"
+      ],
+      "status": "purchased-part-reference",
+      "note": "对应成品安装座的 CAD 参考。是否改件待核，保持 BOM 成套采购数量。",
+      "source_relative_path": "框架V2/阿卡插座V2.step",
+      "published_path": "source/框架V2/阿卡插座V2.step",
+      "bytes": 64198,
+      "sha256": "c4ee7ceb1f72c19ae5f6b76e6b6766bcf6d1b67e11ec529bf0f2c58dff15386f",
+      "step_export_timestamp": "2026-01-19T12:14:44+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1328",
+          "assembly": "主体装配",
+          "definition": "159719",
+          "name": "14010601-0046",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "FR-03"
+      ],
+      "status": "geometry-match",
+      "note": "对应当前总装顶板。另附的旧版 PDF 尚未确认适用。",
+      "source_relative_path": "框架V2/顶板V2.step",
+      "published_path": "source/框架V2/顶板V2.step",
+      "bytes": 419390,
+      "sha256": "52cef082c11ab56eff064cbefc9744c758c7fdc6bbfdcb78a29dc75ec659a364",
+      "step_export_timestamp": "2026-01-19T12:22:41+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "8546",
+          "assembly": "主体装配",
+          "definition": "159703",
+          "name": "顶板-铝合金钣金",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "FR-03"
+      ],
+      "status": "drawing-reference",
+      "note": "两份 PDF 完全相同，日期 2025-09-13；与 V2 STEP 的适配关系待核。",
+      "source_relative_path": "框架V2/顶板图纸.pdf",
+      "published_path": "source/框架V2/顶板图纸.pdf",
+      "bytes": 135719,
+      "sha256": "a5e2686d4d32eef3406a17c4e91ea8d17a8414dafd0fd214cda38f79d5a9fa38"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "电池舱附件；当前两份总装未建立数量对应，是否使用、单机数量与制法待核。",
+      "source_relative_path": "电池舱/电池固定环.step",
+      "published_path": "source/电池舱/电池固定环.step",
+      "bytes": 10928,
+      "sha256": "6ed012c6226efbdf4f9e5db994c0ff03c4bf6a000445e374a1ab79e8b990b63e",
+      "step_export_timestamp": "2025-09-24T11:50:22+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "电池舱附件；当前两份总装未建立数量对应，是否使用、单机数量与制法待核。",
+      "source_relative_path": "电池舱/电池定位片.step",
+      "published_path": "source/电池舱/电池定位片.step",
+      "bytes": 12653,
+      "sha256": "1db1ed76161b2e92c6e47f65b5aedee9a9bc879d99eba5a86208e88cddb6dabe",
+      "step_export_timestamp": "2025-09-24T11:50:10+08:00"
+    },
+    {
+      "bom_ids": [
+        "EN-06"
+      ],
+      "status": "geometry-match",
+      "note": "已确认铝合金 CNC；铝材牌号、密封面及孔公差、表面处理待补。",
+      "source_relative_path": "电池舱/电池舱前盖.step",
+      "published_path": "source/电池舱/电池舱前盖.step",
+      "bytes": 54852,
+      "sha256": "0520962a98f6f3d839d2d20b0a2189e132902ba992b1acf24c1f3154e973a221",
+      "step_export_timestamp": "2026-03-13T23:00:27+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1080",
+          "assembly": "主体装配",
+          "definition": "159730",
+          "name": "电池舱前盖",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "EN-05"
+      ],
+      "status": "geometry-match",
+      "note": "已确认铝合金 CNC；铝材牌号、密封面及孔公差、表面处理待补。",
+      "source_relative_path": "电池舱/电池舱后盖.step",
+      "published_path": "source/电池舱/电池舱后盖.step",
+      "bytes": 22121,
+      "sha256": "8f8daa84cbbef52cf1bf252eab33c60602c4a5a437a37ae5a5fdb8d4804ed6e7",
+      "step_export_timestamp": "2025-09-16T15:01:23+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "407",
+          "assembly": "主体装配",
+          "definition": "159722",
+          "name": "电池舱后盖",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "电池舱附件；当前两份总装未建立数量对应，是否使用、单机数量与制法待核。",
+      "source_relative_path": "电池舱/电池舱法兰填充.step",
+      "published_path": "source/电池舱/电池舱法兰填充.step",
+      "bytes": 59416,
+      "sha256": "2e39c3d0ef0b96d2e16d71d204351535ca093f5f843b0d8c170a3a354cecb0c6",
+      "step_export_timestamp": "2025-09-24T11:54:31+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "盒子.step",
+      "published_path": "source/盒子.step",
+      "bytes": 99058,
+      "sha256": "757f77ba877c43e9c640ff8b1d1d771490cdeb0d503d2b88833986e0ba393abc",
+      "step_export_timestamp": "2025-10-31T20:24:51+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "盖子.step",
+      "published_path": "source/盖子.step",
+      "bytes": 38548,
+      "sha256": "4afa16e2d951c00ced486f6c478722781491e79905af0ef5fa5a725e55268530",
+      "step_export_timestamp": "2025-10-31T20:20:32+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "3MF 单位 mm，无切片参数；用途、对应 STEP、数量与材料待核。内部 Title 均为“线缆对接灌胶管 v5”。",
+      "source_relative_path": "线缆夹/3pin.3mf",
+      "published_path": "source/线缆夹/3pin.3mf",
+      "bytes": 137545,
+      "sha256": "1b0aa194c73d77c88fc1ac0ed8d2031b7aa2df8990884170abc1b569f0429e69"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "线缆夹/3pin细线缆管.step",
+      "published_path": "source/线缆夹/3pin细线缆管.step",
+      "bytes": 15670,
+      "sha256": "bac1cb9c66010123ac412b54f3a9365c7faae0b74dcf185c8e26041d9f99824b",
+      "step_export_timestamp": "2025-09-28T17:39:17+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "3MF 单位 mm，无切片参数；用途、对应 STEP、数量与材料待核。内部 Title 均为“线缆对接灌胶管 v5”。",
+      "source_relative_path": "线缆夹/4pin.3mf",
+      "published_path": "source/线缆夹/4pin.3mf",
+      "bytes": 142527,
+      "sha256": "57e56420fe07eaf2c146fb935141ae85eca9a1aabefb1b36df030f6fb749fd6b"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "线缆夹/4pin细线缆管.step",
+      "published_path": "source/线缆夹/4pin细线缆管.step",
+      "bytes": 15557,
+      "sha256": "cc22127d1add05fd25da29255b8ea1fb74d27e0a73ab818d02c2e88c81cb5e31",
+      "step_export_timestamp": "2025-09-28T17:39:10+08:00"
+    },
+    {
+      "bom_ids": [
+        "CB-06"
+      ],
+      "status": "geometry-match",
+      "note": "数量见 BOM；实机材料及制法暂缺。",
+      "source_relative_path": "线缆夹/云台线缆夹1号.step",
+      "published_path": "source/线缆夹/云台线缆夹1号.step",
+      "bytes": 80891,
+      "sha256": "35727ecd127cab83cf29a474f955a2d619ff5c5872199d845ba2ee78cd6e608d",
+      "step_export_timestamp": "2025-09-24T19:13:54+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1687",
+          "assembly": "主体装配",
+          "definition": "159756",
+          "name": "零部件2_2",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "CB-08"
+      ],
+      "status": "geometry-match",
+      "note": "数量见 BOM；实机材料及制法暂缺。",
+      "source_relative_path": "线缆夹/云台线缆夹2号.step",
+      "published_path": "source/线缆夹/云台线缆夹2号.step",
+      "bytes": 83732,
+      "sha256": "d0802a7090574f732ddc226984a13ff0b1c4aa999fa617fad8b9258001d20574",
+      "step_export_timestamp": "2025-09-24T19:14:37+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1755",
+          "assembly": "主体装配",
+          "definition": "159761",
+          "name": "零部件3_2",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "线缆夹/光轴短套管.step",
+      "published_path": "source/线缆夹/光轴短套管.step",
+      "bytes": 7369,
+      "sha256": "7d3fbd6ad2887d6817276769b3a8061c2a0a913dfc6a5c21a130b0eee15f9366",
+      "step_export_timestamp": "2025-09-25T12:46:05+08:00"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "线缆夹/光轴长套管.step",
+      "published_path": "source/线缆夹/光轴长套管.step",
+      "bytes": 7772,
+      "sha256": "b43966ed7d6d630b0207865654db373c477b44881a6a17477ad0f7f84c5df711",
+      "step_export_timestamp": "2025-09-25T12:46:13+08:00"
+    },
+    {
+      "bom_ids": [
+        "CB-01",
+        "CB-02",
+        "CB-07",
+        "CB-09"
+      ],
+      "status": "geometry-match",
+      "note": "四行压片的顶点几何与拓扑计数均对应。总量 6 件，按 BOM 分配；材料及制法暂缺。",
+      "source_relative_path": "线缆夹/夹片.step",
+      "published_path": "source/线缆夹/夹片.step",
+      "bytes": 13369,
+      "sha256": "bc387085429a8f7c116c0aa4fe6444c1f82f6c48b123c798360540fa27bae8d7",
+      "step_export_timestamp": "2025-09-24T19:11:50+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159742",
+          "name": "零部件4",
+          "topology_counts_equal": true
+        },
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159745",
+          "name": "零部件4(镜像)",
+          "topology_counts_equal": true
+        },
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159757",
+          "name": "零部件3_1",
+          "topology_counts_equal": true
+        },
+        {
+          "local_definition": "270",
+          "assembly": "主体装配",
+          "definition": "159762",
+          "name": "零部件4_1",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "线缆夹/线缆对接灌胶管.step",
+      "published_path": "source/线缆夹/线缆对接灌胶管.step",
+      "bytes": 11675,
+      "sha256": "80ac57c281ec2799c511f5c3884fa725cc39bf5cbad5e89222492e80cea5d1a5",
+      "step_export_timestamp": "2025-09-24T23:45:41+08:00"
+    },
+    {
+      "bom_ids": [
+        "MTI-06"
+      ],
+      "status": "mesh-reference",
+      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "source_relative_path": "设备舱/舱内/3mf格式/ORIN NX固定板.3mf",
+      "published_path": "source/设备舱/舱内/3mf格式/ORIN NX固定板.3mf",
+      "bytes": 152658,
+      "sha256": "8def5c81dbdcbc5da0ab2d844f912f5c827fcb7b029555f3d338194e9c1e4818"
+    },
+    {
+      "bom_ids": [
+        "MTI-05"
+      ],
+      "status": "mesh-reference",
+      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "source_relative_path": "设备舱/舱内/3mf格式/上板.3mf",
+      "published_path": "source/设备舱/舱内/3mf格式/上板.3mf",
+      "bytes": 55829,
+      "sha256": "f43412de27bd33b22dd4640720c17fb0d19acbcaa03a9c66df9934b57965b69b"
+    },
+    {
+      "bom_ids": [
+        "MTI-03"
+      ],
+      "status": "mesh-reference",
+      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "source_relative_path": "设备舱/舱内/3mf格式/主控固定板.3mf",
+      "published_path": "source/设备舱/舱内/3mf格式/主控固定板.3mf",
+      "bytes": 108063,
+      "sha256": "4651e7ac97547e6e154b8eaae012625474075e3175a0a318146e80b040b4029b"
+    },
+    {
+      "bom_ids": [
+        "MTI-07"
+      ],
+      "status": "mesh-reference",
+      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "source_relative_path": "设备舱/舱内/3mf格式/电源底板.3mf",
+      "published_path": "source/设备舱/舱内/3mf格式/电源底板.3mf",
+      "bytes": 93627,
+      "sha256": "cf21faed39d65d7408b83a2eacd5cce0adcce14adee82d6a481b7268164a72bb"
+    },
+    {
+      "bom_ids": [
+        "MTI-04"
+      ],
+      "status": "mesh-reference",
+      "note": "同名零件的 3MF 网格，单位 mm，不含切片参数。与 STEP 的曲面及打印配合尚未逐面核验。",
+      "source_relative_path": "设备舱/舱内/3mf格式/电调固定板.3mf",
+      "published_path": "source/设备舱/舱内/3mf格式/电调固定板.3mf",
+      "bytes": 101672,
+      "sha256": "b3febc8a6dc9eb6ace01ac687cd22ddfd55fcdae5febf464f0e7ce9bbf8c412d"
+    },
+    {
+      "bom_ids": [
+        "MTI-06"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/ORIN NX固定板.step",
+      "published_path": "source/设备舱/舱内/ORIN NX固定板.step",
+      "bytes": 61274,
+      "sha256": "172e135307f9102fcc3186e802984532e39afba3cc018a235343ee8b082aca83",
+      "step_export_timestamp": "2026-03-14T22:26:35+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1364",
+          "assembly": "舱内装配",
+          "definition": "3178263",
+          "name": "ORIN NX固定板 v2",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MTI-05"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/上板.step",
+      "published_path": "source/设备舱/舱内/上板.step",
+      "bytes": 79011,
+      "sha256": "d6c2a7919e1b241f10b3bef565d003eb34d446c9f53dd4df2d2e24e0d4ecb604",
+      "step_export_timestamp": "2026-03-14T22:26:18+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1564",
+          "assembly": "舱内装配",
+          "definition": "3177179",
+          "name": "上板",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MTI-03"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/主控固定板.step",
+      "published_path": "source/设备舱/舱内/主控固定板.step",
+      "bytes": 164231,
+      "sha256": "1c9d1c9dc53fdb0330b53b2eacc1777e67fe174545a122d720e0b4514519d935",
+      "step_export_timestamp": "2026-03-14T22:26:03+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "3290",
+          "assembly": "舱内装配",
+          "definition": "3176909",
+          "name": "主控固定板",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MTI-02"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/对插板固定件.step",
+      "published_path": "source/设备舱/舱内/对插板固定件.step",
+      "bytes": 120961,
+      "sha256": "ff49943c7c02df3483c3900f9198f3638592db9c87816cc588445f8e357b1318",
+      "step_export_timestamp": "2026-03-14T22:22:36+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "2477",
+          "assembly": "舱内装配",
+          "definition": "3176901",
+          "name": "对插板固定件",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MTI-01"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/法兰仓内固定环 v3.step",
+      "published_path": "source/设备舱/舱内/法兰仓内固定环 v3.step",
+      "bytes": 160739,
+      "sha256": "20ca6a30cac59c6ed1ee73a5b8a09045c5d5922a75875d70319913278b0a74cc",
+      "step_export_timestamp": "2026-03-14T22:23:01+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "3136",
+          "assembly": "舱内装配",
+          "definition": "3176844",
+          "name": "法兰仓内固定环",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MTI-07"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/电源底板.step",
+      "published_path": "source/设备舱/舱内/电源底板.step",
+      "bytes": 81931,
+      "sha256": "94f96d73dfbb1de59c72b7cc296ae578fa607d756e37e3c9d5656a97859acf9a",
+      "step_export_timestamp": "2026-03-14T22:26:51+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "1502",
+          "assembly": "舱内装配",
+          "definition": "3178264",
+          "name": "电源底板",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "MTI-04"
+      ],
+      "status": "geometry-match",
+      "note": "对应舱内装配单件，每舱 1 件；材料、实机制法及配合参数待核。",
+      "source_relative_path": "设备舱/舱内/电调固定板.step",
+      "published_path": "source/设备舱/舱内/电调固定板.step",
+      "bytes": 163247,
+      "sha256": "f808592e5c2dbf71aad9b057aaf103255f98b510a310b8b09e5772483e34ca6d",
+      "step_export_timestamp": "2026-03-14T22:25:01+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "3340",
+          "assembly": "舱内装配",
+          "definition": "3176910",
+          "name": "电调固定板",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "EN-08"
+      ],
+      "status": "geometry-match",
+      "note": "已确认铝合金 CNC；铝材牌号、密封面及孔公差、表面处理待补。",
+      "source_relative_path": "设备舱/舱盖_信号端.step",
+      "published_path": "source/设备舱/舱盖_信号端.step",
+      "bytes": 161316,
+      "sha256": "14fb294c3404ae29ff8a90d91d00a62258aeae1c224f2a18e25e75be2f36064e",
+      "step_export_timestamp": "2026-03-13T22:56:10+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "3149",
+          "assembly": "主体装配",
+          "definition": "159774",
+          "name": "舱盖_信号端",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [
+        "EN-07"
+      ],
+      "status": "geometry-match",
+      "note": "已确认铝合金 CNC；铝材牌号、密封面及孔公差、表面处理待补。",
+      "source_relative_path": "设备舱/舱盖_电机端.step",
+      "published_path": "source/设备舱/舱盖_电机端.step",
+      "bytes": 127105,
+      "sha256": "4dd23d16c3061e576c1f43e8e69a25446346225e566180c3f69ae8c305a6e0f0",
+      "step_export_timestamp": "2025-09-16T15:00:48+08:00",
+      "geometry_matches": [
+        {
+          "local_definition": "2472",
+          "assembly": "主体装配",
+          "definition": "159773",
+          "name": "舱盖_电机端",
+          "topology_counts_equal": true
+        }
+      ]
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "铅块垫片.f3d",
+      "published_path": "source/铅块垫片.f3d",
+      "bytes": 43011,
+      "sha256": "04ee753fd36bdc72715785d09dd2784dc68175f151892df436c1718c3ae9f3d3"
+    },
+    {
+      "bom_ids": [],
+      "status": "unassigned",
+      "note": "保留附件原件。是否属于当前实机、安装位置、数量与制法待核，不额外增加 BOM 数量。",
+      "source_relative_path": "铅块垫片.step",
+      "published_path": "source/铅块垫片.step",
+      "bytes": 7259,
+      "sha256": "773bb583ec95cf44661ef4501c4b6db62a4d907d4c7defc908e828b8618780a5",
+      "step_export_timestamp": "2025-11-25T13:52:23+08:00"
+    }
+  ]
+}

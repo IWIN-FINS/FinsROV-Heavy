@@ -1,0 +1,4 @@
+# Preserve supplied CAD and drawing bytes, including their original line endings.
+# Review revisions through the file manifest instead of generated CAD text diffs.
+hardware/mechanical/source/** -text -diff
+hardware/mechanical/reference/*.zip -text -diff

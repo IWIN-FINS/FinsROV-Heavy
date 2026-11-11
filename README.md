@@ -15,6 +15,12 @@ FinsROV-Heavy is the open-frame remotely operated vehicle (ROV) used in our unde
 
 Both bills of materials (BOMs) are in Chinese. The body BOM lists quantities per vehicle, and the electronics BOM lists quantities per enclosure.
 
+### Fabrication drawings and part models
+
+[Mechanical fabrication guide](hardware/mechanical/README.md) · [All 65 source files](hardware/mechanical/FILES.md)
+
+Find CNC end caps, frame plates, buoyancy blocks, FDM mounts and internal mounting parts by BOM ID. The guide identifies matching models, older references and unresolved revision differences. Read it before requesting fabrication.
+
 ### Power protection board (EC-07)
 
 The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA project for the editable design and the ZIP for bare PCB fabrication. The ZIP contains Gerber and drill files. Export the component BOM and placement file for the matching board revision before ordering assembly.
@@ -35,5 +41,5 @@ FineSUB firmware uses the MPL-2.0 licenses included in the two source directorie
 ## Preparing a build
 
 1. **Inspect the assemblies.** Open the vehicle STEP to locate external parts and their mounting points. Extract `舱内装配.step` from the ZIP to inspect the board stack and connector layout. The CAD names in the BOMs identify the corresponding parts.
-2. **Group orders by process.** Filter the Excel column `准备方式` (preparation method). The four aluminum end caps are CNC-machined, the two side plates and the top plate are sheet metal, and the camera and light/pressure-sensor mounts are FDM-printed. The two buoyancy blocks are made to order. Each row lists the available supplier or fabrication link.
+2. **Group orders by process.** Select the matching files in the [fabrication guide](hardware/mechanical/README.md) and resolve revision differences. Filter the Excel column `准备方式` (preparation method). The four aluminum end caps are CNC-machined, the two side plates and the top plate are sheet metal, and the camera and light/pressure-sensor mounts are FDM-printed. The two buoyancy blocks are made to order. Each row lists the available supplier or fabrication link.
 3. **Reconcile quantities before ordering.** Electronics rows `REF-01` through `REF-04` refer to parts already counted in the body BOM. The four flange kits together include four face seals and eight radial seals. Check rows marked `待核` (to be confirmed) for missing dimensions, material choices or supplier part numbers before requesting a quote.
