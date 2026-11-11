@@ -65,6 +65,8 @@ The host frame begins with `0xAA` and ends with a two-byte CRC, low byte first. 
 
 In the experiment snapshot, `TaskTest()` forwards normalized host commands to the vehicle controller. Keep `enablePathTracking` at zero as documented in that source. The trajectory classes are present but are not invoked by the current task entry point. The experimental depth target is initialized to `-0.1f`, and the depth-target update body is commented out. Review the recorded pressure offsets and control parameters in `V5_SUB.hpp` for your vehicle.
 
+The [Jetson SUB control and video scripts](../software/jetson/README.md) are now included, with a [setup tutorial](../docs/build/06-jetson.zh-CN.md). They do not implement the inertial-odometry host protocol.
+
 ## Source entry points
 
 Paths below are relative to either variant.

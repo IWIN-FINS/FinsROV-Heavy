@@ -6,6 +6,12 @@
 
 FinsROV-Heavy is the open-frame remotely operated vehicle (ROV) used in our underwater inertial odometry experiments. Four horizontal and four vertical thrusters provide propulsion. A RoboMaster Type A controller sends time-stamped IMU readings, depth readings from four pressure sensors, and measured thruster speeds to an onboard Jetson Orin NX.
 
+## Build guide
+
+Start with the [illustrated build tutorials](docs/README.md): parts → frame → power board → thrusters and ESCs → pressure sensors → Jetson → bring-up. Detailed instructions are currently in Chinese, with original photographs and downloadable reference files.
+
+[Start building](docs/README.md) · [Jetson scripts](software/jetson/README.md) · [Remaining documentation gaps](docs/build/07-bring-up.zh-CN.md)
+
 ## Hardware files
 
 | Assembly | CAD model | Bill of materials |
@@ -23,9 +29,9 @@ Find CNC end caps, frame plates, buoyancy blocks, FDM mounts and internal mounti
 
 ### Power protection board (EC-07)
 
-The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA project for the editable design and the ZIP for bare PCB fabrication. The ZIP contains Gerber and drill files. Export the component BOM and placement file for the matching board revision before ordering assembly.
+The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA project for the editable design and the ZIP for bare PCB fabrication. The ZIP contains Gerber and drill files. An interactive assembly BOM is also available. Resolve the R12 revision discrepancy and export placement files from the matching design before ordering assembly.
 
-[Open the EasyEDA project](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [Download PCB fabrication files](hardware/pcb/PowerBoard.zip?raw=true)
+[Open the EasyEDA project](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [Download PCB fabrication files](hardware/pcb/PowerBoard.zip?raw=true) · [Assembly guide and interactive BOM](docs/build/03-power-board.zh-CN.md)
 
 ## Embedded firmware
 
@@ -37,6 +43,10 @@ The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA
 Each version records its FineSUB source commit and pins its dependencies. See the build instructions and host protocol settings before selecting a version. [Firmware guide](firmware/README.md)
 
 FineSUB firmware uses the MPL-2.0 licenses included in the two source directories. Third-party components carry their own license notices. [Firmware licensing](firmware/README.md#license)
+
+## Jetson software
+
+[Control bridge, video streaming and startup scripts](software/jetson/README.md) are included for the SUB firmware. Follow the [Jetson setup tutorial](docs/build/06-jetson.zh-CN.md) for Ethernet, UART, camera settings and systemd. The Windows joystick application and the host software for the inertial-odometry protocol are not included yet.
 
 ## Preparing a build
 

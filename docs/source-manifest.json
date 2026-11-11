@@ -1,0 +1,324 @@
+{
+  "export_date": "2026-11-11",
+  "source": "V5开源文档 local export supplied by the project author",
+  "files": [
+    {
+      "source": "主体框架搭建/images/image_01.jpg",
+      "published": "docs/assets/frame/image_01.jpg",
+      "source_sha256": "b54d4dc65a1934c58c241a2066f0a857c3f4f27d2738281e97d06b4d9770332b",
+      "published_sha256": "b54d4dc65a1934c58c241a2066f0a857c3f4f27d2738281e97d06b4d9770332b",
+      "bytes": 2021590,
+      "modified": false
+    },
+    {
+      "source": "主体框架搭建/images/image_02.jpg",
+      "published": "docs/assets/frame/image_02.jpg",
+      "source_sha256": "885b8a64fab945eebc5d45ef2964e6c95ebd0fef6b47c21cccdc96782d4c9fe7",
+      "published_sha256": "885b8a64fab945eebc5d45ef2964e6c95ebd0fef6b47c21cccdc96782d4c9fe7",
+      "bytes": 2698993,
+      "modified": false
+    },
+    {
+      "source": "主体框架搭建/images/image_03.jpg",
+      "published": "docs/assets/frame/image_03.jpg",
+      "source_sha256": "35d8e0b2c3321b272e00d1e653cd226dbf2fa73bd487058411f2c1dcca5f49c1",
+      "published_sha256": "35d8e0b2c3321b272e00d1e653cd226dbf2fa73bd487058411f2c1dcca5f49c1",
+      "bytes": 3224149,
+      "modified": false
+    },
+    {
+      "source": "主体框架搭建/images/image_04.jpg",
+      "published": "docs/assets/frame/image_04.jpg",
+      "source_sha256": "f3b58a595adb1881a4181b3001f29c0055db3830a2bf7696d5860856f308afd3",
+      "published_sha256": "f3b58a595adb1881a4181b3001f29c0055db3830a2bf7696d5860856f308afd3",
+      "bytes": 1410235,
+      "modified": false
+    },
+    {
+      "source": "主体框架搭建/images/image_05.png",
+      "published": "docs/assets/frame/image_05.png",
+      "source_sha256": "d5d28273aa68c6b6d5252ae30423e80f4783527013946295f8c100e1f738fa15",
+      "published_sha256": "d5d28273aa68c6b6d5252ae30423e80f4783527013946295f8c100e1f738fa15",
+      "bytes": 15092727,
+      "modified": false
+    },
+    {
+      "source": "主体框架搭建/images/image_06.jpg",
+      "published": "docs/assets/frame/image_06.jpg",
+      "source_sha256": "77cadaeb040f2d420aa4ec9dc6b77c0d7e960c3148cb1dfa1f94a717b8bea359",
+      "published_sha256": "77cadaeb040f2d420aa4ec9dc6b77c0d7e960c3148cb1dfa1f94a717b8bea359",
+      "bytes": 273216,
+      "modified": false
+    },
+    {
+      "source": "主体框架搭建/images/image_07.jpg",
+      "published": "docs/assets/frame/image_07.jpg",
+      "source_sha256": "6e94640b76858ca4e774757a8a4e1de951861edf75ca2bde9f5adb9126e4b37e",
+      "published_sha256": "6e94640b76858ca4e774757a8a4e1de951861edf75ca2bde9f5adb9126e4b37e",
+      "bytes": 971108,
+      "modified": false
+    },
+    {
+      "source": "电源管理板焊接/images/image_01.png",
+      "published": "docs/assets/power/image_01.png",
+      "source_sha256": "dd94a82fbab8c916e3ca97058a35b221ee527d17586a9a53e3bdb3d6cd6990fb",
+      "published_sha256": "dd94a82fbab8c916e3ca97058a35b221ee527d17586a9a53e3bdb3d6cd6990fb",
+      "bytes": 274578,
+      "modified": false
+    },
+    {
+      "source": "电源管理板焊接/files/InteractiveBOM_PCB2_1_2026-4-8 (1).html",
+      "published": "hardware/pcb/assembly/interactive-bom.html",
+      "source_sha256": "0e866992c04550114e52f97b74d452cfde0e22fbef2aca5d64aa3eba524c3cc8",
+      "published_sha256": "0e866992c04550114e52f97b74d452cfde0e22fbef2aca5d64aa3eba524c3cc8",
+      "bytes": 7084248,
+      "modified": false
+    },
+    {
+      "source": "电机电调文档/images/image_01.png",
+      "published": "docs/assets/thrusters/image_01.png",
+      "source_sha256": "5fef914985a15f7d554abd0733dc6e121a1beeae063202c1fe0cd549f62a70e1",
+      "published_sha256": "5fef914985a15f7d554abd0733dc6e121a1beeae063202c1fe0cd549f62a70e1",
+      "bytes": 3809227,
+      "modified": false
+    },
+    {
+      "source": "电机电调文档/images/image_02.jpg",
+      "published": "docs/assets/thrusters/image_02.jpg",
+      "source_sha256": "972bc50d683f59576102d688a4caceb3f458ef1426b731feb3a08941af366eab",
+      "published_sha256": "972bc50d683f59576102d688a4caceb3f458ef1426b731feb3a08941af366eab",
+      "bytes": 2279106,
+      "modified": false
+    },
+    {
+      "source": "电机电调文档/images/image_03.png",
+      "published": "docs/assets/thrusters/image_03.png",
+      "source_sha256": "53595a35ea4883cfe2bbb404e98984d5d726aef53ed9470fdf4ab7600fa44824",
+      "published_sha256": "53595a35ea4883cfe2bbb404e98984d5d726aef53ed9470fdf4ab7600fa44824",
+      "bytes": 18477518,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_01.png",
+      "published": "docs/assets/design/image_01.png",
+      "source_sha256": "52128ba6dfbe7ee9b307fa7123afb1a614b04c6795ce0e65e3b8a77771e4614d",
+      "published_sha256": "52128ba6dfbe7ee9b307fa7123afb1a614b04c6795ce0e65e3b8a77771e4614d",
+      "bytes": 519074,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_02.jpg",
+      "published": "docs/assets/design/image_02.jpg",
+      "source_sha256": "8e4ed12b48543fd6d0ba1e65f370c547d0050f12549ce3fece483e8135f3203b",
+      "published_sha256": "8e4ed12b48543fd6d0ba1e65f370c547d0050f12549ce3fece483e8135f3203b",
+      "bytes": 1535433,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_03.jpg",
+      "published": "docs/assets/design/image_03.jpg",
+      "source_sha256": "a86d32375dea5ac386549cef0247b96e93362ee2e240f7a19070ff950e00fc6d",
+      "published_sha256": "a86d32375dea5ac386549cef0247b96e93362ee2e240f7a19070ff950e00fc6d",
+      "bytes": 820379,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_04.png",
+      "published": "docs/assets/design/image_04.png",
+      "source_sha256": "b0e347ee475863872206c1ccb04e2e467c4a5512677cacc9da3cc496193425d0",
+      "published_sha256": "b0e347ee475863872206c1ccb04e2e467c4a5512677cacc9da3cc496193425d0",
+      "bytes": 72411,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_05.png",
+      "published": "docs/assets/design/image_05.png",
+      "source_sha256": "4bb10cac0849869a01acbc7f6545379e28cf05ecedadaec783d077a9cfec4060",
+      "published_sha256": "4bb10cac0849869a01acbc7f6545379e28cf05ecedadaec783d077a9cfec4060",
+      "bytes": 203848,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_06.png",
+      "published": "docs/assets/design/image_06.png",
+      "source_sha256": "122550c51a7ba8b1625da22aedfef3f893ac89609b2e9c94aa3f02e9f572d83a",
+      "published_sha256": "122550c51a7ba8b1625da22aedfef3f893ac89609b2e9c94aa3f02e9f572d83a",
+      "bytes": 332397,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_07.jpg",
+      "published": "docs/assets/design/image_07.jpg",
+      "source_sha256": "430a183b51b88851fd05483074688cc9023e13b2b943c79233a6379871be805e",
+      "published_sha256": "430a183b51b88851fd05483074688cc9023e13b2b943c79233a6379871be805e",
+      "bytes": 606140,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/images/image_08.png",
+      "published": "docs/assets/design/image_08.png",
+      "source_sha256": "0d5f90c38c1d7d69818a34086f8f894b9cb207a62017aae36fc1275aab42ce53",
+      "published_sha256": "0d5f90c38c1d7d69818a34086f8f894b9cb207a62017aae36fc1275aab42ce53",
+      "bytes": 5253,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/files/BLHeliSuite32_32.10.0.0.zip",
+      "published": "docs/reference/BLHeliSuite32_32.10.0.0.zip",
+      "source_sha256": "f0e7957fcf3358a32516b754d293298c74cc597937bfa72c57111c987b9e5d2d",
+      "published_sha256": "f0e7957fcf3358a32516b754d293298c74cc597937bfa72c57111c987b9e5d2d",
+      "bytes": 4238664,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/files/PCM380曲线拟合调试软件用户版V0.1.rar",
+      "published": "docs/reference/PCM380曲线拟合调试软件用户版V0.1.rar",
+      "source_sha256": "0990f45ba556884316eeaa95251e4aa35b42be4f3237b2bbc3d0f8917b4aa6cc",
+      "published_sha256": "0990f45ba556884316eeaa95251e4aa35b42be4f3237b2bbc3d0f8917b4aa6cc",
+      "bytes": 7530885,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/files/用户调试软件V0.1 2025-10-29 16-39-50.mp4",
+      "published": "docs/reference/用户调试软件V0.1 2025-10-29 16-39-50.mp4",
+      "source_sha256": "09844e777a13581f01bac18df6f3a535ab8134e0142032f3c524b5f68737266a",
+      "published_sha256": "09844e777a13581f01bac18df6f3a535ab8134e0142032f3c524b5f68737266a",
+      "bytes": 8499245,
+      "modified": false
+    },
+    {
+      "source": "V5潜器设计与设备选型/files/达妙科技DM-ORIN NX V2.X使用说明书V1.0.pdf",
+      "published": "docs/reference/达妙科技DM-ORIN NX V2.X使用说明书V1.0.pdf",
+      "source_sha256": "2ee7a5051e230dcc95ad194cbc644aa62a0d8ede5357286cb1182407fcfcf511",
+      "published_sha256": "2ee7a5051e230dcc95ad194cbc644aa62a0d8ede5357286cb1182407fcfcf511",
+      "bytes": 1552661,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_01.jpg",
+      "published": "docs/assets/jetson/image_01.jpg",
+      "source_sha256": "026079678b40a84426185f0dc4b3701cf2a5e9458deff0b6c32bb5f9173942e7",
+      "published_sha256": "026079678b40a84426185f0dc4b3701cf2a5e9458deff0b6c32bb5f9173942e7",
+      "bytes": 3705517,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_02.png",
+      "published": "docs/assets/jetson/image_02.png",
+      "source_sha256": "8cf9a6871ec587ad281c92a9cef310ca0ea778bff66349f5ef4dbb2815aaa079",
+      "published_sha256": "8cf9a6871ec587ad281c92a9cef310ca0ea778bff66349f5ef4dbb2815aaa079",
+      "bytes": 56313,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_03.jpg",
+      "published": "docs/assets/jetson/image_03.jpg",
+      "source_sha256": "58cd65b5ba667016a090ad732fd52e6a13178daa989175f44d9e70bed7c90ef2",
+      "published_sha256": "58cd65b5ba667016a090ad732fd52e6a13178daa989175f44d9e70bed7c90ef2",
+      "bytes": 1328174,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_04.jpg",
+      "published": "docs/assets/jetson/image_04.jpg",
+      "source_sha256": "5e51a4e3aa1a8f4e2b419fdbbe93e9ebb8707591747a268bfa4838eb796ec578",
+      "published_sha256": "5e51a4e3aa1a8f4e2b419fdbbe93e9ebb8707591747a268bfa4838eb796ec578",
+      "bytes": 1316190,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_05.jpg",
+      "published": "docs/assets/jetson/image_05.jpg",
+      "source_sha256": "e9bf14dfbc135ee374c01cb9145c5da76ff3a264bffe9fee4011b48b7f051f95",
+      "published_sha256": "e9bf14dfbc135ee374c01cb9145c5da76ff3a264bffe9fee4011b48b7f051f95",
+      "bytes": 913644,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_06.jpg",
+      "published": "docs/assets/jetson/image_06.jpg",
+      "source_sha256": "85be6779ea5ad62a345b3508b01ea47f7b434cc60140cc7eded5a88938278f92",
+      "published_sha256": "85be6779ea5ad62a345b3508b01ea47f7b434cc60140cc7eded5a88938278f92",
+      "bytes": 1234036,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_07.png",
+      "published": "docs/assets/jetson/image_07.png",
+      "source_sha256": "1b0df0e8f3a4871f5e379663c2d0576a9ce9b2b8907558aed61af0bbda34ff23",
+      "published_sha256": "1b0df0e8f3a4871f5e379663c2d0576a9ce9b2b8907558aed61af0bbda34ff23",
+      "bytes": 21376,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_08.png",
+      "published": "docs/assets/jetson/image_08.png",
+      "source_sha256": "06b2bbc1c50f943c6d0ab600840235df398e7a060805cb7d9ba680c51a06dc0d",
+      "published_sha256": "06b2bbc1c50f943c6d0ab600840235df398e7a060805cb7d9ba680c51a06dc0d",
+      "bytes": 24842,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/images/image_09.png",
+      "published": "docs/assets/jetson/image_09.png",
+      "source_sha256": "1a367cf6a74c70cc758c90be001b94fb69271fa0d13daeae245beef93a35220c",
+      "published_sha256": "1a367cf6a74c70cc758c90be001b94fb69271fa0d13daeae245beef93a35220c",
+      "bytes": 70382,
+      "modified": false
+    },
+    {
+      "source": "ORIN NX配置/files/GStreamerTest.py",
+      "published": "software/jetson/GStreamerTest.py",
+      "source_sha256": "f00f7aed7b12b13e29c6668169819a32d81924ad64fccd49fb0bfee7a4da3692",
+      "published_sha256": "775599b2fea14d5610362cb2d341057348ad38c797293f5780fd1194bca04d9d",
+      "bytes": 6916,
+      "modified": true
+    },
+    {
+      "source": "ORIN NX配置/files/StreamerStart.sh",
+      "published": "software/jetson/StreamerStart.sh",
+      "source_sha256": "bee9397ebb0cbe5d3f97b6cb76b76358e45ef7776723e313d4c86465845b168f",
+      "published_sha256": "8664bee504d32218780b08af43cc69140f639d38df626d7fdba9000e732f5ee8",
+      "bytes": 763,
+      "modified": true
+    },
+    {
+      "source": "ORIN NX配置/files/V5StreamerNX.py",
+      "published": "software/jetson/V5StreamerNX.py",
+      "source_sha256": "e6c97e906045df177d76d8b16685ee7cb6ad5dc434f04c072e52cb54ce6569b0",
+      "published_sha256": "89c0f115c146d3a0580c0273e234bf3528601d6eec00960d89cc2775093b0f63",
+      "bytes": 10797,
+      "modified": true
+    },
+    {
+      "source": "README.md",
+      "source_sha256": "a16e46ca471be44d2e2e1e070dd8e9f50fe4ae48f212a085371e23a96614c549",
+      "role": "text reorganized into build chapters"
+    },
+    {
+      "source": "ORIN NX配置/ORIN NX配置（ORIN NANO同样适用.md",
+      "source_sha256": "7b27ac25f7603872d22a1cdfad9d61cf42dc24c0491c1a30bee2dbd8b136fe46",
+      "role": "text reorganized into build chapters"
+    },
+    {
+      "source": "V5潜器设计与设备选型/V5潜器设计与设备选型.md",
+      "source_sha256": "3ca1903908694bc2c5084e8bdcaa3dae5a314aa6fe0475e736c005a25c7adef4",
+      "role": "text reorganized into build chapters"
+    },
+    {
+      "source": "主体框架搭建/主体框架搭建.md",
+      "source_sha256": "9129acd772c8972ff41eb9858894e579ccf706386e06533c81312463f85426fd",
+      "role": "text reorganized into build chapters"
+    },
+    {
+      "source": "电机电调文档/电机电调文档.md",
+      "source_sha256": "3f0daad369b9da2f627985bb3ad7dbb3d85df409b89cd736abbcde51c2747397",
+      "role": "text reorganized into build chapters"
+    },
+    {
+      "source": "电源管理板焊接/电源管理板焊接.md",
+      "source_sha256": "9cef6651b394636acaa82ce1f1f0a8fd525cf458ee6b1db10b17a874e3e24f1b",
+      "role": "text reorganized into build chapters"
+    }
+  ]
+}

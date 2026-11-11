@@ -65,6 +65,8 @@ cmake --build build/inertial-odometry --target Robomaster_A --parallel
 
 实验快照的 `TaskTest()` 将归一化上位机指令传给机器人控制器。按源码说明将 `enablePathTracking` 设为零，当前任务入口未调用文件中保留的轨迹跟踪类。实验版目标深度初值为 `-0.1f`，更新目标深度的函数体已注释。复现时需对照实机核对 `V5_SUB.hpp` 中记录的压力零偏和控制参数。
 
+配套 SUB 的 [Jetson 控制转发与视频脚本](../software/jetson/README.md) 已提供，[配置教程](../docs/build/06-jetson.zh-CN.md) 包含网络、串口和开机自启。该脚本不适用于惯性里程计实验协议。
+
 ## 源码入口
 
 下表路径相对于所选固件目录。

@@ -113,3 +113,7 @@ The item address was resolved from the supplied share link; the specification an
 ## File integrity
 
 [manifest.json](manifest.json) records each source file's relative path, size, SHA-256, published location and BOM associations. Three reference files are stored in ZIP; all other files are preserved byte for byte. Duplicate drawings remain in their original folders and are identified in the index.
+
+## Build photographs and installation notes
+
+The [frame assembly tutorial](../../docs/build/02-frame.zh-CN.md) adds fastener counts, buoyancy insert details and build photographs. The source notes specify eight 3D-printed motor clamps; their mapping to the existing four STEP clamp-body instances and the separate part revisions remains unresolved.

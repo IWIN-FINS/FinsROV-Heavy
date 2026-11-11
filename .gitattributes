@@ -2,3 +2,12 @@
 # Review revisions through the file manifest instead of generated CAD text diffs.
 hardware/mechanical/source/** -text -diff
 hardware/mechanical/reference/*.zip -text -diff
+
+# Preserve imported documentation assets and use Linux line endings for launchers.
+docs/assets/** -text -diff
+docs/reference/* -text -diff
+docs/reference/README.md text eol=lf diff
+hardware/pcb/assembly/interactive-bom.html -text -diff
+software/jetson/*.sh text eol=lf
+software/jetson/*.service text eol=lf
+software/jetson/*.py text eol=lf

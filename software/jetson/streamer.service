@@ -1,0 +1,20 @@
+[Unit]
+Description=FinsROV-Heavy SUB control bridge and camera stream
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+# Replace fins and the path with your actual account and checkout.
+User=fins
+WorkingDirectory=/home/fins/FinsROV-Heavy/software/jetson
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHON_BIN=/usr/bin/python3
+ExecStart=/bin/bash /home/fins/FinsROV-Heavy/software/jetson/StreamerStart.sh
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=15
+KillMode=control-group
+
+[Install]
+WantedBy=multi-user.target

@@ -6,6 +6,12 @@
 
 FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控水下机器人（ROV），搭载 4 台水平推进器和 4 台垂直推进器。RoboMaster A 型主控板采集 IMU 数据、4 只压力传感器的深度读数和推进器实测转速，加上时间戳后发送给舱内的 Jetson Orin NX。
 
+## 制作教程
+
+按 [图文制作教程](docs/README.zh-CN.md) 依次完成：备料 → 机架 → 电源板 → 推进器与电调 → 水压计 → Jetson → 联调。教程保留实装照片和原附件，并标明版本差异与尚未补齐的步骤。
+
+[开始制作](docs/README.zh-CN.md) · [Jetson 脚本](software/jetson/README.md) · [待补资料](docs/build/07-bring-up.zh-CN.md#待补资料)
+
 ## 硬件资料
 
 | 装配 | CAD 模型 | 物料清单 |
@@ -23,9 +29,9 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 
 ### 电源缓启动与过流保护板（EC-07）
 
-查看或修改 LM5069 电源板设计请使用立创开源工程。制板 ZIP 包含 Gerber 和钻孔文件，可用于裸板下单。若需贴片装联，请从对应版本的工程导出元件 BOM 和贴片坐标。
+查看或修改 LM5069 电源板设计请使用立创开源工程。制板 ZIP 包含 Gerber 和钻孔文件，可用于裸板下单。现已补充交互式装联 BOM；R12 的焊接状态存在版本冲突，装联前请先核对，再从同版工程导出贴片坐标。
 
-[查看立创开源工程](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [下载 PCB 制板文件](hardware/pcb/PowerBoard.zip?raw=true)
+[查看立创开源工程](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [下载 PCB 制板文件](hardware/pcb/PowerBoard.zip?raw=true) · [焊接教程与交互式 BOM](docs/build/03-power-board.zh-CN.md)
 
 ## 嵌入式固件
 
@@ -37,6 +43,10 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 两套代码记录了各自的 FineSUB 源提交，并固定依赖版本。选择固件时请对照编译方法和上位机通信配置。[固件使用说明](firmware/README.zh-CN.md)
 
 FineSUB 固件适用各源码目录中的 MPL-2.0 许可证，第三方组件适用其各自许可证。[固件许可说明](firmware/README.zh-CN.md#许可证)
+
+## Jetson 软件
+
+已提供配套 SUB 固件的 [控制转发、视频传输和自启动脚本](software/jetson/README.md)。网络、串口、相机参数和 systemd 配置见 [Jetson 教程](docs/build/06-jetson.zh-CN.md)。Windows 手柄上位机和惯性里程计实验协议对应的主机软件尚未提供。
 
 ## 复现顺序
 
