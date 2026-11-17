@@ -27,6 +27,12 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 
 按 BOM 编号查找 CNC 舱盖、机架板件、浮力块、FDM 安装件及舱内安装件。说明中列出了当前总装对应模型、旧版参考和待核版本差异，加工询价前请先核对。
 
+### 电气接线
+
+[电气资料目录](hardware/electrical/README.zh-CN.md) · [电池舱接线图与说明](hardware/electrical/battery-wiring.zh-CN.md) · [接口/线束 Excel](hardware/electrical/battery-wiring.xlsx)
+
+已整理电池舱及[设备舱两端的插座定义](hardware/electrical/equipment-wiring.zh-CN.md)，包含 SVG/PDF 图纸、接口/逐针表和电池 CAN 协议资料。设备舱覆盖 8 路电机、4 路压力、2 个当前用于云台的扩展口、3 路照明、PLC、CAN 及烧写位置。主供电四芯分配、烧写口针序和舱内配电/总线连接仍待核。
+
 ### 电源缓启动与过流保护板（EC-07）
 
 查看或修改 LM5069 电源板设计请使用立创开源工程。制板 ZIP 包含 Gerber 和钻孔文件，可用于裸板下单。现已补充交互式装联 BOM；R12 的焊接状态存在版本冲突，装联前请先核对，再从同版工程导出贴片坐标。

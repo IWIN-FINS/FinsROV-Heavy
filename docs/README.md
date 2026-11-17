@@ -18,4 +18,6 @@ The supplied [Jetson scripts](../software/jetson/README.md) target **SUB normal 
 
 [Hardware downloads](../README.md#hardware-files) · [Firmware guide](../firmware/README.md) · [Original attachments](reference/README.md) · [Sources and changes](SOURCES.md)
 
+The [electrical wiring package](../hardware/electrical/README.md) includes battery wiring, equipment enclosure connector locations and pin definitions, connector/harness tables and the supplied CAN protocol. It distinguishes confirmed signals from unresolved internal connections and physical connector pin views.
+
 The original notes include early design targets and unfinished steps. Those are identified in the guides, not presented as measured vehicle capabilities. The new scripts have been checked offline; a complete hardware, sealing and underwater validation procedure is still to be supplied.

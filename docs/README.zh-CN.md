@@ -16,6 +16,7 @@
 
 ## 配套资料
 
+- [电气接线资料：电池舱、设备舱插座定义、接口/线束表和 CAN 协议](../hardware/electrical/README.zh-CN.md)
 - [整机 CAD 与两份 BOM](../README.zh-CN.md#硬件资料)
 - [加工图纸与打印模型](../hardware/mechanical/README.zh-CN.md)
 - [固件编译及协议](../firmware/README.zh-CN.md)

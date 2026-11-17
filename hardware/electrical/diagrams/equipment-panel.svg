@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1131" viewBox="0 0 1600 1131">
+<title>设备舱信号端位置 / Signal-end connector locations</title>
+<rect x="0" y="0" width="1600" height="1131" rx="8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="50" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32">FinsROV-Heavy</text>
+<text x="50" y="108" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26">设备舱信号端位置 / Signal-end connector locations</text>
+<text x="1210" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">EQ-01 / Rev A</text>
+<text x="1210" y="93" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">2026-11-17</text>
+<polyline points="50,135 1550,135" fill="none" stroke="#B9C7D4" stroke-width="1"/>
+<text x="50" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">来源：作者确认及设备舱标注图；未进行实机导通、通信、转向或烧写验证。</text>
+<text x="1450" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">1 / 2</text>
+<text x="50" y="181" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">沿用作者图片方向；不是插头针位图，也不表示加工尺寸。</text>
+<circle cx="407" cy="532" r="310" fill="#F0F4F7" stroke="#B9C7D4" stroke-width="2"/>
+<circle cx="407" cy="532" r="285" fill="#FFFFFF" stroke="#B9C7D4" stroke-width="2"/>
+<circle cx="323" cy="370" r="31" fill="#ECF2FB" stroke="#667C92" stroke-width="2"/>
+<text x="302" y="377" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S01</text>
+<circle cx="407" cy="360" r="31" fill="#FFF4DC" stroke="#94600C" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="386" y="367" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S02</text>
+<circle cx="495" cy="370" r="31" fill="#FFF4DC" stroke="#94600C" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="474" y="377" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S03</text>
+<circle cx="250" cy="435" r="31" fill="#E6F2EF" stroke="#667C92" stroke-width="2"/>
+<text x="229" y="442" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S04</text>
+<circle cx="407" cy="460" r="42" fill="#FFF4DC" stroke="#94600C" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="386" y="467" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S05</text>
+<circle cx="562" cy="435" r="31" fill="#E6F2EF" stroke="#667C92" stroke-width="2"/>
+<text x="541" y="442" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S06</text>
+<circle cx="220" cy="520" r="31" fill="#E6F2EF" stroke="#667C92" stroke-width="2"/>
+<text x="199" y="527" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S07</text>
+<circle cx="328" cy="550" r="42" fill="#E6F2EF" stroke="#667C92" stroke-width="2"/>
+<text x="307" y="557" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S08</text>
+<circle cx="490" cy="550" r="42" fill="#E6F2EF" stroke="#667C92" stroke-width="2"/>
+<text x="469" y="557" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S09</text>
+<circle cx="590" cy="520" r="31" fill="#E6F2EF" stroke="#667C92" stroke-width="2"/>
+<text x="569" y="527" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S10</text>
+<circle cx="237" cy="600" r="31" fill="#ECF2FB" stroke="#667C92" stroke-width="2"/>
+<text x="216" y="607" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S11</text>
+<circle cx="568" cy="600" r="31" fill="#ECF2FB" stroke="#667C92" stroke-width="2"/>
+<text x="547" y="607" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S12</text>
+<circle cx="293" cy="670" r="31" fill="#ECF2FB" stroke="#667C92" stroke-width="2"/>
+<text x="272" y="677" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S13</text>
+<circle cx="407" cy="665" r="53" fill="#FFF4DC" stroke="#94600C" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="386" y="672" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S14</text>
+<circle cx="520" cy="675" r="31" fill="#ECF2FB" stroke="#667C92" stroke-width="2"/>
+<text x="499" y="682" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">S15</text>
+<rect x="50" y="875" width="700" height="135" rx="8" fill="#F4F7FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="72" y="905" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">S08 / S09 是通用扩展口，当前各接一只云台舵机。</text>
+<text x="72" y="937" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">S02 顶部红色件、S05 相机、S14 电源线：接法待核。</text>
+<text x="72" y="969" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">S03 烧写口用途已确认，型号与逐针定义待补。</text>
+<text x="72" y="998" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">圈内 Sxx 是位置编号，不是连接器针号。</text>
+<rect x="780" y="190" width="770" height="45" rx="8" fill="#23374D" stroke="#23374D" stroke-width="1.5"/>
+<text x="800" y="220" fill="#FFFFFF" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">位置</text>
+<text x="870" y="220" fill="#FFFFFF" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">接口编号</text>
+<text x="1040" y="220" fill="#FFFFFF" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">用途</text>
+<text x="1280" y="220" fill="#FFFFFF" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">规格</text>
+<rect x="780" y="235" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="264" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S01</text>
+<text x="870" y="264" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-PLC</text>
+<text x="1040" y="264" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">电力载波</text>
+<text x="1280" y="264" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W2PIN</text>
+<rect x="780" y="281" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="310" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S02</text>
+<text x="870" y="310" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">P-TOP</text>
+<text x="1040" y="310" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">顶部红色件（待核）</text>
+<text x="1280" y="310" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">待核</text>
+<rect x="780" y="327" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="356" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S03</text>
+<text x="870" y="356" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-DBG</text>
+<text x="1040" y="356" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">烧写接口</text>
+<text x="1280" y="356" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">待核</text>
+<rect x="780" y="373" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="402" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S04</text>
+<text x="870" y="402" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-PRS-LB</text>
+<text x="1040" y="402" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">左后水压计</text>
+<text x="1280" y="402" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W4PIN</text>
+<rect x="780" y="419" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="448" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S05</text>
+<text x="870" y="448" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">P-CAM</text>
+<text x="1040" y="448" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">相机穿舱位置</text>
+<text x="1280" y="448" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">待核</text>
+<rect x="780" y="465" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="494" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S06</text>
+<text x="870" y="494" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-PRS-RB</text>
+<text x="1040" y="494" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">右后水压计</text>
+<text x="1280" y="494" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W4PIN</text>
+<rect x="780" y="511" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="540" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S07</text>
+<text x="870" y="540" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-PRS-LF</text>
+<text x="1040" y="540" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">左前水压计</text>
+<text x="1280" y="540" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W4PIN</text>
+<rect x="780" y="557" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="586" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S08</text>
+<text x="870" y="586" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-EXT-L</text>
+<text x="1040" y="586" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">扩展 / 当前云台</text>
+<text x="1280" y="586" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">1W4PIN</text>
+<rect x="780" y="603" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="632" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S09</text>
+<text x="870" y="632" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-EXT-R</text>
+<text x="1040" y="632" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">扩展 / 当前云台</text>
+<text x="1280" y="632" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">1W4PIN</text>
+<rect x="780" y="649" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="678" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S10</text>
+<text x="870" y="678" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-PRS-RF</text>
+<text x="1040" y="678" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">右前水压计</text>
+<text x="1280" y="678" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W4PIN</text>
+<rect x="780" y="695" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="724" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S11</text>
+<text x="870" y="724" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-LGT-LF</text>
+<text x="1040" y="724" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">左前补光灯</text>
+<text x="1280" y="724" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W3PIN</text>
+<rect x="780" y="741" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="770" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S12</text>
+<text x="870" y="770" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-LGT-GM</text>
+<text x="1040" y="770" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">云台补光灯</text>
+<text x="1280" y="770" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W3PIN</text>
+<rect x="780" y="787" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="816" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S13</text>
+<text x="870" y="816" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-CAN</text>
+<text x="1040" y="816" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">电池 CAN</text>
+<text x="1280" y="816" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W2PIN</text>
+<rect x="780" y="833" width="770" height="46" rx="8" fill="#FFFFFF" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="862" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S14</text>
+<text x="870" y="862" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">P-PWR</text>
+<text x="1040" y="862" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">电源线穿舱位置</text>
+<text x="1280" y="862" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">待核</text>
+<rect x="780" y="879" width="770" height="46" rx="8" fill="#F2F6F9" stroke="#E2E8EE" stroke-width="1.5"/>
+<text x="800" y="908" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">S15</text>
+<text x="870" y="908" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">J-LGT-RF</text>
+<text x="1040" y="908" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">右前补光灯</text>
+<text x="1280" y="908" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">00W3PIN</text>
+<text x="800" y="966" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">电机端另有 8 个 1W3PIN，见第 2 页。</text>
+<text x="800" y="999" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">本图中的左右位置不直接代表机体坐标方向。</text>
+</svg>

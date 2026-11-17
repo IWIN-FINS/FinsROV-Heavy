@@ -27,6 +27,12 @@ Both bills of materials (BOMs) are in Chinese. The body BOM lists quantities per
 
 Find CNC end caps, frame plates, buoyancy blocks, FDM mounts and internal mounting parts by BOM ID. The guide identifies matching models, older references and unresolved revision differences. Read it before requesting fabrication.
 
+### Electrical wiring
+
+[Electrical documentation](hardware/electrical/README.md) · [Battery wiring guide and drawings](hardware/electrical/battery-wiring.zh-CN.md) · [Connector and harness workbook](hardware/electrical/battery-wiring.xlsx)
+
+The package documents the battery and [equipment enclosure interfaces](hardware/electrical/equipment-wiring.zh-CN.md), including eight motors, four pressure sensors, two expansion ports currently used for gimbal servos, three lights, PLC, CAN and the programming-port location. SVG/PDF drawings and pin tables distinguish confirmed functions from unresolved physical pin views, power assignments, programming pins and internal connections.
+
 ### Power protection board (EC-07)
 
 The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA project for the editable design and the ZIP for bare PCB fabrication. The ZIP contains Gerber and drill files. An interactive assembly BOM is also available. Resolve the R12 revision discrepancy and export placement files from the matching design before ordering assembly.

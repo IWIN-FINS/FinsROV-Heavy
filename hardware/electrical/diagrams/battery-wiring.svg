@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1131" viewBox="0 0 1600 1131">
+<title>FinsROV-Heavy 电池舱逻辑接线 BATT-01 Rev B</title>
+<desc>电池开关、四芯主供电插座、1W4PIN 充电与 CAN 插座。虚线代表未确认连接。图中顺序不表示插头物理针位。</desc>
+<rect x="0" y="0" width="1600" height="1131" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="50" y="64" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700">FinsROV-Heavy</text>
+<text x="50" y="104" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="400">电池舱逻辑接线 / Battery enclosure wiring</text>
+<text x="1190" y="60" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700">BATT-01  /  Rev B</text>
+<text x="1190" y="91" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">2026-11-17  ·  电池舱部分</text>
+<polyline points="50,130 1550,130" fill="none" stroke="#B8C4CF" stroke-width="1"/>
+<text x="50" y="165" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">电池舱内 / BAT-01</text>
+<text x="700" y="165" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">舱盖三孔 / 功能分组</text>
+<text x="1220" y="165" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">舱外连接</text>
+<rect x="50" y="185" width="370" height="655" rx="8" fill="#F4F7FA" stroke="#B8C4CF" stroke-width="1.5"/>
+<rect x="670" y="185" width="400" height="655" rx="8" fill="#F4F7FA" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="75" y="222" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700">三星 21700-50S · 6S5P</text>
+<text x="75" y="253" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">21.6 V / 25 Ah · 满充 25.2 V</text>
+<text x="75" y="301" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">原开关线 A（资料标识）</text>
+<text x="75" y="336" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">原开关线 B（资料标识）</text>
+<polyline points="420,300 700,300" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<circle cx="420" cy="300" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<circle cx="700" cy="300" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<polyline points="420,335 700,335" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<circle cx="420" cy="335" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<circle cx="700" cy="335" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<text x="445" y="284" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400">H-BAT-01 · 两线对应</text>
+<rect x="700" y="266" width="340" height="88" rx="8" fill="#FFFFFF" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="718" y="290" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">SW-BAT  电池开关</text>
+<text x="718" y="316" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">约 Ø10 mm 光孔（非攻丝孔）</text>
+<text x="718" y="340" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">焊接或经 2P 接头，动作待核</text>
+<text x="75" y="405" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">两组放电引线 D1 / D2</text>
+<text x="75" y="436" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">照片均标“放电口”</text>
+<text x="75" y="465" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">两口关系及四芯分配待核</text>
+<rect x="700" y="390" width="340" height="120" rx="8" fill="#FFFFFF" stroke="#B8C4CF" stroke-width="1.5" stroke-dasharray="8 6"/>
+<text x="718" y="420" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">J-BAT-PWR  主供电</text>
+<text x="718" y="450" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">4 芯母座公缆 · Ø12.6 mm</text>
+<text x="718" y="482" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">1 / 2 / 3 / 4 功能均待核</text>
+<polyline points="420,495 700,495" fill="none" stroke="#966000" stroke-width="2.6" stroke-dasharray="9 7"/>
+<circle cx="420" cy="495" r="4" fill="white" stroke="#966000" stroke-width="2"/>
+<circle cx="700" cy="495" r="4" fill="white" stroke="#966000" stroke-width="2"/>
+<text x="445" y="477" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400">H-BAT-02 · 待展开</text>
+<rect x="1220" y="390" width="330" height="120" rx="8" fill="#FFFFFF" stroke="#B8C4CF" stroke-width="1.5" stroke-dasharray="8 6"/>
+<text x="1240" y="420" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700">主舱供电入口</text>
+<text x="1240" y="450" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">接插件与极性待核</text>
+<text x="1240" y="480" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">不假定四芯并联方式</text>
+<polyline points="1040,495 1220,495" fill="none" stroke="#966000" stroke-width="2.6" stroke-dasharray="9 7"/>
+<text x="1085" y="476" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="400">H-BAT-07</text>
+<text x="75" y="566" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">充电口</text>
+<text x="75" y="596" fill="#B6373F" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">正极 CHG+</text>
+<text x="75" y="641" fill="#5E6B7B" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">负极 CHG-</text>
+<text x="75" y="683" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">CAN 通信引线</text>
+<text x="75" y="716" fill="#18734A" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">CAN_H（照片标签：绿 H）</text>
+<text x="75" y="761" fill="#2467AC" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">CAN_L（照片标签：蓝 L）</text>
+<text x="75" y="811" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">CAN 参考地：去向未确认</text>
+<rect x="700" y="550" width="340" height="260" rx="8" fill="#FFFFFF" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="718" y="578" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700">J-BAT-SVC  1W4PIN</text>
+<polyline points="420,610 700,610" fill="none" stroke="#B6373F" stroke-width="2.6"/>
+<circle cx="420" cy="610" r="4" fill="white" stroke="#B6373F" stroke-width="2"/>
+<circle cx="700" cy="610" r="4" fill="white" stroke="#B6373F" stroke-width="2"/>
+<polyline points="700,610 745,610" fill="none" stroke="#B6373F" stroke-width="2.6"/>
+<text x="762" y="616" fill="#B6373F" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">1   CHG+</text>
+<polyline points="962,610 1040,610" fill="none" stroke="#B6373F" stroke-width="2.6"/>
+<circle cx="1040" cy="610" r="4" fill="white" stroke="#B6373F" stroke-width="2"/>
+<polyline points="420,655 700,655" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<circle cx="420" cy="655" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<circle cx="700" cy="655" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<polyline points="700,655 745,655" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<text x="762" y="661" fill="#5E6B7B" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">2   CHG-</text>
+<polyline points="962,655 1040,655" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<circle cx="1040" cy="655" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<polyline points="420,725 700,725" fill="none" stroke="#18734A" stroke-width="2.6"/>
+<circle cx="420" cy="725" r="4" fill="white" stroke="#18734A" stroke-width="2"/>
+<circle cx="700" cy="725" r="4" fill="white" stroke="#18734A" stroke-width="2"/>
+<polyline points="700,725 745,725" fill="none" stroke="#18734A" stroke-width="2.6"/>
+<text x="762" y="731" fill="#18734A" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">3   CAN_H</text>
+<polyline points="962,725 1040,725" fill="none" stroke="#18734A" stroke-width="2.6"/>
+<circle cx="1040" cy="725" r="4" fill="white" stroke="#18734A" stroke-width="2"/>
+<polyline points="420,770 700,770" fill="none" stroke="#2467AC" stroke-width="2.6"/>
+<circle cx="420" cy="770" r="4" fill="white" stroke="#2467AC" stroke-width="2"/>
+<circle cx="700" cy="770" r="4" fill="white" stroke="#2467AC" stroke-width="2"/>
+<polyline points="700,770 745,770" fill="none" stroke="#2467AC" stroke-width="2.6"/>
+<text x="762" y="776" fill="#2467AC" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">4   CAN_L</text>
+<polyline points="962,770 1040,770" fill="none" stroke="#2467AC" stroke-width="2.6"/>
+<circle cx="1040" cy="770" r="4" fill="white" stroke="#2467AC" stroke-width="2"/>
+<text x="445" y="590" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400">H-BAT-03 · 充电</text>
+<text x="445" y="705" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400">H-BAT-04 · CAN</text>
+<polyline points="718,685 1022,685" fill="none" stroke="#B8C4CF" stroke-width="1"/>
+<text x="718" y="798" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400">仅为脚号列表，非端面针位排列</text>
+<rect x="1220" y="570" width="330" height="100" rx="8" fill="#FFFFFF" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="1275" y="600" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700">充电器</text>
+<text x="1275" y="630" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">25.2 V / 5 A DC</text>
+<text x="1275" y="654" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400">型号、配插线待补</text>
+<polyline points="1040,610 1220,610" fill="none" stroke="#B6373F" stroke-width="2.6"/>
+<circle cx="1220" cy="610" r="4" fill="white" stroke="#B6373F" stroke-width="2"/>
+<text x="1236" y="616" fill="#B6373F" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">+</text>
+<polyline points="1040,655 1220,655" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<circle cx="1220" cy="655" r="4" fill="white" stroke="#5E6B7B" stroke-width="2"/>
+<text x="1236" y="661" fill="#5E6B7B" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400">-</text>
+<text x="1085" y="590" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="400">H-BAT-05</text>
+<rect x="1220" y="700" width="330" height="110" rx="8" fill="#FFFFFF" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="1275" y="729" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700">设备舱 J-CAN</text>
+<text x="1275" y="759" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">00W2PIN · 1=H / 2=L</text>
+<text x="1275" y="790" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">舱内控制器 / 参考地待核</text>
+<polyline points="1040,725 1220,725" fill="none" stroke="#18734A" stroke-width="2.6"/>
+<circle cx="1220" cy="725" r="4" fill="white" stroke="#18734A" stroke-width="2"/>
+<text x="1233" y="731" fill="#18734A" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">1 H</text>
+<polyline points="1040,770 1220,770" fill="none" stroke="#2467AC" stroke-width="2.6"/>
+<circle cx="1220" cy="770" r="4" fill="white" stroke="#2467AC" stroke-width="2"/>
+<text x="1233" y="776" fill="#2467AC" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">2 L</text>
+<text x="1085" y="705" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="400">H-BAT-06</text>
+<text x="50" y="880" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700">读图说明</text>
+<rect x="50" y="900" width="480" height="130" rx="8" fill="#FBF7EE" stroke="#DACBA9" stroke-width="1.5"/>
+<text x="70" y="928" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">01  物理针位尚未绘制</text>
+<text x="70" y="958" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">插座端面 / 焊线面、定位键仍待核实。</text>
+<text x="70" y="986" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">图中的排列顺序不能用于确定插针位置。</text>
+<text x="70" y="1014" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">三孔的相对位置与尺寸以机械图为准。</text>
+<rect x="560" y="900" width="480" height="130" rx="8" fill="#F4F7FA" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="580" y="928" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">02  电池接口与面板接口分开编号</text>
+<text x="580" y="958" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">开关只接原开关线，不画入主功率回路。</text>
+<text x="580" y="986" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">不推定两组放电口并联。</text>
+<text x="580" y="1014" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400">不补连 CHG-、CAN 地和壳体。</text>
+<rect x="1070" y="900" width="480" height="130" rx="8" fill="#F4F7FA" stroke="#B8C4CF" stroke-width="1.5"/>
+<text x="1090" y="928" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700">03  导线和证据</text>
+<polyline points="1090,952 1140,952" fill="none" stroke="#5E6B7B" stroke-width="2.6"/>
+<text x="1155" y="958" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">实线：信号连接已确认</text>
+<polyline points="1090,980 1140,980" fill="none" stroke="#966000" stroke-width="2.6" stroke-dasharray="9 7"/>
+<text x="1155" y="986" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">虚线：连接细节待核</text>
+<text x="1090" y="1014" fill="#162235" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">线色仅作分组；实装配色见线束表。</text>
+<text x="50" y="1068" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">来源：作者确认、供应商电池参数表及接口照片。完整依据、协议和待核项见 battery-wiring.zh-CN.md。</text>
+<text x="50" y="1100" fill="#966000" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">实物接线、导通、充电和 CAN 通信尚未验证。</text>
+<text x="1435" y="1100" fill="#556579" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400">1 / 1</text>
+</svg>

@@ -1,0 +1,56 @@
+{
+  "received": "2026-11-17",
+  "source_folder": "电池文档",
+  "files": [
+    {
+      "file": "21.6V25AH 三星电池组参数表.pdf",
+      "bytes": 52110,
+      "sha256": "56beda6275c207bd3bab33c02b3bde47124a7f608b5fa8f602a0f1e9188448bc"
+    },
+    {
+      "file": "3D模型示意图.jpg",
+      "bytes": 55238,
+      "sha256": "8a1b1f916a03cbc4d5065a78f3221acc2fbd39a3f522e622fcc6da6c7bfd1bc3"
+    },
+    {
+      "file": "KVMS内网通信CAN协议（客户版）(2).xlsx",
+      "bytes": 35184,
+      "sha256": "07fb63b3a79c8a6d7d7fae15c816760d2ab70114bd3f8e533504172692557615"
+    },
+    {
+      "file": "俯视图.jpg",
+      "bytes": 62265,
+      "sha256": "6c0cd2357308c8e9ab8adb615c74ac0fe8b3a661977d1d972ae4af300b40041c"
+    },
+    {
+      "file": "成品宽度.jpg",
+      "bytes": 1170859,
+      "sha256": "0ca806e69b9c3f75eacbe754f868ba0062df3d105a35a6e2eb161a26b4f2f898"
+    },
+    {
+      "file": "成品展示.jpg",
+      "bytes": 876663,
+      "sha256": "c5c97af4415c3e34939251c7872a490b9f5a95b9c872d78f6f036ed2b0b1ba3e"
+    },
+    {
+      "file": "成品长度.jpg",
+      "bytes": 1641495,
+      "sha256": "840fbc3279e1b2475cbdeed87d6574a426c8b89af752ef7d755dbfd96cccc808"
+    },
+    {
+      "file": "成品高度.jpg",
+      "bytes": 908417,
+      "sha256": "c24fb405234c708cf082fe51ccf3c16efd7ab1c9a35a5c96d9e3307229e71e10"
+    },
+    {
+      "file": "接口展示.jpg",
+      "bytes": 1374025,
+      "sha256": "0a4f00e2d10abc42e9307185b0758c1b64dc9127b7262a37615d663359cd17f6"
+    },
+    {
+      "file": "电池正视图.jpg",
+      "bytes": 31934,
+      "sha256": "f31287a7a1eef8594cd7b1b9e50ada676744ed3cb802ac7d30e47ba57bfc1a80"
+    }
+  ]
+}

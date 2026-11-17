@@ -31,4 +31,14 @@ Jetson instructions correct a malformed systemd block, distinguish Orin NX from 
 
 ## Third-party material
 
+### Battery documentation added on 2026-11-17
+
+The author supplied a separate battery folder containing one specification PDF, one CAN-protocol workbook and eight images. All ten files are preserved byte-for-byte in [the battery reference directory](../hardware/electrical/references/battery/README.md), with SHA-256 values in its own [manifest](../hardware/electrical/references/battery/manifest.json). The original V5 export manifest above remains unchanged.
+
+The author confirmed the three battery-panel openings, switch wiring, the four-core main-power connector selection and the 1W4PIN charging/CAN signals. The new [battery wiring guide](../hardware/electrical/battery-wiring.zh-CN.md) replaces the earlier panel plan while retaining it as historical evidence. It records the specification's erroneous 54.6 V arithmetic, conflicting CAN wire colors, two discharge leads visible in the supplied photograph, and unconfirmed physical pin views. The diagrams and tables are documentation only; continuity, charging and CAN communication have not been tested.
+
+### Existing V5 references
+
+The author also supplied an updated equipment signal-panel image and explicit connector definitions on 2026-11-17. The image is preserved byte-for-byte in [the equipment reference directory](../hardware/electrical/references/equipment/signal-panel-reference.png), with a separate [SHA-256 manifest](../hardware/electrical/references/equipment/manifest.json). The new [equipment wiring guide](../hardware/electrical/equipment-wiring.zh-CN.md) covers both enclosure ends. Two central expansion ports are currently used for RS-485 gimbal servos; the programming-port function is confirmed but its pinout is not. BOM rows IF-01/IF-02 retain their CAD counts while recording the confirmed subtype split. Battery CAN documentation now maps J-BAT-SVC pins 3/4 to equipment J-CAN pins 1/2; internal CAN hardware remains unspecified.
+
 Vendor tools/manuals and notices embedded in the interactive BOM retain their original ownership and terms; the repository's root license does not override them. The generic thruster diagram in `assets/design/image_04.png` was marked as an internet reference in the source notes. Its watermark is retained, its original article URL was not supplied, and its numbering is not used for this vehicle. No third-party executable was run during this documentation import.
