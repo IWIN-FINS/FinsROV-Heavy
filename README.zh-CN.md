@@ -8,9 +8,9 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 
 ## 制作教程
 
-按 [图文制作教程](docs/README.zh-CN.md) 依次完成：备料 → 机架 → 电源板 → 推进器与电调 → 水压计 → Jetson → 联调。教程保留实装照片和原附件，并标明版本差异与尚未补齐的步骤。
+按 [图文制作教程](docs/README.zh-CN.md) 依次完成：备料 → 机架 → 电源板 → 推进器与电调 → 水压计 → 舱内试装 → Jetson → 联调 → 密封与配平。教程保留实装照片和原附件，并标明版本差异与尚未验证的步骤。
 
-[开始制作](docs/README.zh-CN.md) · [Jetson 脚本](software/jetson/README.md) · [待补资料](docs/build/07-bring-up.zh-CN.md#待补资料)
+[开始制作](docs/README.zh-CN.md) · [Jetson 脚本](software/jetson/README.md) · [后续开发与待补清单](docs/development/remaining-work.zh-CN.md)
 
 ## 硬件资料
 
@@ -30,6 +30,8 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 ### 电气接线
 
 [电气资料目录](hardware/electrical/README.zh-CN.md) · [电池舱接线图与说明](hardware/electrical/battery-wiring.zh-CN.md) · [接口/线束 Excel](hardware/electrical/battery-wiring.xlsx)
+
+[系统接线台账与两页图册](hardware/electrical/system-wiring.zh-CN.md)另提供 74 条功能连接、17 条 MCU 对照和 44 组线束记录，区分源码引脚、已确认功能与实物待核项。
 
 已整理电池舱及[设备舱两端的插座定义](hardware/electrical/equipment-wiring.zh-CN.md)，包含 SVG/PDF 图纸、接口/逐针表和电池 CAN 协议资料。设备舱覆盖 8 路电机、4 路压力、2 个当前用于云台的扩展口、3 路照明、PLC、CAN 及烧写位置。主供电四芯分配、烧写口针序和舱内配电/总线连接仍待核。
 

@@ -18,6 +18,8 @@
 
 ## 配套资料
 
+- [合并后的开发状态、优先级与待补清单](development/remaining-work.zh-CN.md)
+- [PC—NX—MCU 集成部署与当前限制](software/pc-nx-mcu.zh-CN.md)
 - [电气接线资料：电池舱、设备舱插座定义、接口/线束表和 CAN 协议](../hardware/electrical/README.zh-CN.md)
 - [整机 CAD 与两份 BOM](../README.zh-CN.md#硬件资料)
 - [加工图纸与打印模型](../hardware/mechanical/README.zh-CN.md)

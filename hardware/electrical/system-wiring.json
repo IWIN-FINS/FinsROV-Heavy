@@ -22,7 +22,7 @@
     "JET": {
       "path": "docs/build/06-jetson.zh-CN.md",
       "hash_policy": "text-lf",
-      "sha256": "8631f1a3a401fba54be1629c79660945b1a3952ae7274e6e50bc7acbc5817abf"
+      "sha256": "62815edc742c068e160473a4c3e1e70b5dc25482d9070301ea5300150d129230"
     },
     "TASK": {
       "path": "firmware/SUB/Interface/Examples/TaskSUB.cpp",

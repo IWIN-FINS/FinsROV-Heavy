@@ -20,6 +20,8 @@ The original [Jetson scripts](../software/jetson/README.md) target **SUB normal 
 
 [Manufacturing revision checklist](../hardware/mechanical/manufacturing-release.zh-CN.md) · [Build record template](../hardware/mechanical/build-record.zh-CN.md)
 
+[Remaining work and acceptance criteria](development/remaining-work.zh-CN.md) · [PC–NX–MCU integration and limitations](software/pc-nx-mcu.zh-CN.md)
+
 [Hardware downloads](../README.md#hardware-files) · [Firmware guide](../firmware/README.md) · [Original attachments](reference/README.md) · [Sources and changes](SOURCES.md)
 
 The [electrical wiring package](../hardware/electrical/README.md) includes battery wiring, equipment enclosure connector locations and pin definitions, connector/harness tables and the supplied CAN protocol. It distinguishes confirmed signals from unresolved internal connections and physical connector pin views.

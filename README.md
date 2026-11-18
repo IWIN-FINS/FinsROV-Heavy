@@ -8,9 +8,9 @@ FinsROV-Heavy is the open-frame remotely operated vehicle (ROV) used in our unde
 
 ## Build guide
 
-Start with the [illustrated build tutorials](docs/README.md): parts → frame → power board → thrusters and ESCs → pressure sensors → Jetson → bring-up. Detailed instructions are currently in Chinese, with original photographs and downloadable reference files.
+Start with the [illustrated build tutorials](docs/README.md): parts → frame → power board → thrusters and ESCs → pressure sensors → enclosure trial assembly → Jetson → bring-up → sealing and trim. Detailed instructions are currently in Chinese, with original photographs and downloadable reference files. Unverified steps are identified explicitly.
 
-[Start building](docs/README.md) · [Jetson scripts](software/jetson/README.md) · [Remaining documentation gaps](docs/build/07-bring-up.zh-CN.md)
+[Start building](docs/README.md) · [Jetson scripts](software/jetson/README.md) · [Remaining development work](docs/development/remaining-work.zh-CN.md)
 
 ## Hardware files
 
@@ -30,6 +30,8 @@ Find CNC end caps, frame plates, buoyancy blocks, FDM mounts and internal mounti
 ### Electrical wiring
 
 [Electrical documentation](hardware/electrical/README.md) · [Battery wiring guide and drawings](hardware/electrical/battery-wiring.zh-CN.md) · [Connector and harness workbook](hardware/electrical/battery-wiring.xlsx)
+
+The [system register and two-page drawings](hardware/electrical/system-wiring.zh-CN.md) add 74 functional connections, 17 MCU mappings and 44 harness records, distinguishing source-code pins from confirmed functions and unresolved physical connections.
 
 The package documents the battery and [equipment enclosure interfaces](hardware/electrical/equipment-wiring.zh-CN.md), including eight motors, four pressure sensors, two expansion ports currently used for gimbal servos, three lights, PLC, CAN and the programming-port location. SVG/PDF drawings and pin tables distinguish confirmed functions from unresolved physical pin views, power assignments, programming pins and internal connections.
 
