@@ -2,10 +2,13 @@
 
 [项目首页](../../README.zh-CN.md) · [English](README.md) · [制作教程](../../docs/README.zh-CN.md)
 
-本目录按实际设备、穿舱接口和线束组织接线资料。目前包括电池舱接线和设备舱两端的接口定义，更新日期为 2026-11-17。图中的实线表示已确认的信号连接，虚线表示针位或连接关系待核；尚未具备按图制作全部线束的条件。
+本目录按实际设备、穿舱接口和线束组织接线资料。2026-11-18 新增系统级供电与通信总图、74 条连接记录、17 条 MCU 对照和 44 组线束补录项，保留电池舱与设备舱已确认定义。每张图按自身图例区分功能关系、源码配置与待核连接；尚未具备按图制作全部线束的条件。
 
 | 资料 | 文件 | 用途 |
 | --- | --- | --- |
+| 系统接线与核验 | [总说明](system-wiring.zh-CN.md) · [两页 PDF](diagrams/system-wiring.pdf) · [供电 SVG](diagrams/system-power.svg) · [通信 SVG](diagrams/system-signals.svg) | 供电分配待核边界、NX 三线串口、传感器及八推进器执行链 |
+| 系统台账 | [Excel](system-wiring.xlsx) · [连接 CSV](system-connections.csv) · [MCU CSV](mcu-signal-map.csv) · [线束 CSV](system-harness.csv) | 来源逐条记录；功能关系与物理验证分开，未填长度不以零代替 |
+| 电源板定版 | [EC-07 版本核对单](../pcb/assembly/revision-checklist.zh-CN.md) | R12、板版、端子、装联文件和板级验证记录 |
 | 设备舱插座定义 | [两端接口、位置与逐类接线](equipment-wiring.zh-CN.md) | 8 个电机插座、信号端位置及烧写方式 |
 | 设备舱图纸 | [位置 SVG](diagrams/equipment-panel.svg) · [接线 SVG](diagrams/equipment-circuits.svg) · [两页 PDF](diagrams/equipment-wiring.pdf) | 23 个接口/开孔位置；区分通用扩展与当前云台用途 |
 | 设备舱接口表 | [Excel](equipment-wiring.xlsx) · [清单 CSV](equipment-connectors.csv) · [逐针 CSV](equipment-pinout.csv) | 61 个已明确功能的针脚；型号与针序待核项单列 |
@@ -33,4 +36,4 @@
 | 传感器与附件 | 压力/云台/灯具的面板针脚已确认；H30 和相机记录 | RS-485 分组/转换器、舵机型号和轴向、PWM 电平与通道、各路供电来源 |
 | 岸端与系缆 | PLC 和网络配置记录 | 岸端/水下板电源、系缆芯数、屏蔽与接地 |
 
-这些资料逐步汇入同一套编号体系。现有图表尚未经过实机导通、上电、充电或 CAN 报文验证。
+系统台账已补出 MCU GPIO 与载板手册接口的逻辑对应。物理端子、配电、线束和实物参数仍按表逐项核验。现有图表尚未经过实机导通、上电、充电或 CAN 报文验证。

@@ -1,0 +1,18 @@
+﻿功能,外设/软件索引,MCU 引脚,逻辑对端,源码配置,来源编号,物理限制
+NX 接收,USART3 RX,PD9,NX U1 TX / 手册针 2,SUB 115200；实验版 460800；8N1,UART;UART_IO;JET;NX,板端端子与实装载板待核
+NX 发送,USART3 TX,PD8,NX U1 RX / 手册针 1,同一固件两端波特率一致,UART;JET;NX,板端端子与实装载板待核
+H30 接收,UART7 RX,PE7,H30 TX,921600 / 8N1,TASK;UART,H30 供电、电平与设备针序待核
+H30 发送资源,UART7 TX,PE8,未确认需要连接,仅 MCU 复用配置；非实装连接证据,UART,不额外要求增加该导线
+压力接收,UART8 RX,PE0,RS-485 收发电路,115200 / 8N1；地址 01–04,TASK;UART,收发电路/方向控制/端子待核
+压力发送,UART8 TX,PE1,RS-485 收发电路,115200 / 8N1；地址 01–04,TASK;UART,PE0/PE1 不是 485A/485B
+电机 M1,DShot 3,PI6,ESC2 / 输出组2,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M2,DShot 7,PA1,ESC1 / 输出组2,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M3,DShot 5,PA3,ESC1 / 输出组4,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M4,DShot 4,PI5,ESC2 / 输出组1,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M5,DShot 2,PI7,ESC2 / 输出组3,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M6,DShot 6,PA2,ESC1 / 输出组3,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M7,DShot 8,PA0,ESC1 / 输出组1,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+电机 M8,DShot 1,PI2,ESC2 / 输出组4,GPIO 双向 DShot；非 PWM 索引,TASK;BOARD;THR,物理控制端子和信号地待核
+灯 L1,PWM 10 / TIM5_CH2,PH11,三只灯的 PWM；位置对应待核,驱动设 50 Hz、1100–1900 µs；非实测,TASK;BOARD;TIM;LIGHT,灯具电平/极性；当前任务三灯同亮度
+灯 L2,PWM 11 / TIM5_CH3,PH12,三只灯的 PWM；位置对应待核,驱动设 50 Hz、1100–1900 µs；非实测,TASK;BOARD;TIM;LIGHT,灯具电平/极性；当前任务三灯同亮度
+灯 L3,PWM 12 / TIM5_CH4,PI0,三只灯的 PWM；位置对应待核,驱动设 50 Hz、1100–1900 µs；非实测,TASK;BOARD;TIM;LIGHT,灯具电平/极性；当前任务三灯同亮度
