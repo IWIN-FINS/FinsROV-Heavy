@@ -8,6 +8,8 @@ Find the part by its BOM ID, then confirm the revision, material and fabrication
 
 The BOMs and detailed file notes are in Chinese. The tables below use the same part IDs and quantities.
 
+The [manufacturing release checklist](manufacturing-release.zh-CN.md) distinguishes selected models from parts with complete manufacturing requirements. Use the [build record template](build-record.zh-CN.md), [enclosure assembly chapter](../../docs/build/08-enclosure-assembly.zh-CN.md) and [sealing/trim chapter](../../docs/build/09-sealing-trim.zh-CN.md) to capture missing evidence. These additions are in Chinese and have not been validated through a complete physical build; unresolved revisions and test parameters remain open.
+
 ## Select the revision first
 
 Use the [vehicle assembly STEP](../cad/主体装配.step) and [electronics assembly ZIP](../cad/舱内装配.step.zip) as the assembly references. A geometric match below means matching STEP vertex sets and topology entity counts, allowing axis changes and reflection. It does not establish full surface equivalence, manufacturing tolerances or the physical build configuration.

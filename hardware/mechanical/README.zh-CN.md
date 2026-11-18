@@ -4,6 +4,8 @@
 
 按 BOM 编号寻找单件，再确认材料、图纸版本和加工参数。本目录保留 65 个原文件：49 个 STEP、7 个 3MF、5 个 PDF，以及 F3D、SLDASM、OBJ、MTL 各 1 个。原文件名与版本目录保持不变。
 
+2026-11-18 补充：[制造版本与放行清单](manufacturing-release.zh-CN.md)集中列出已选模型和阻止制造定版的缺项；[制造与装配记录](build-record.zh-CN.md)用于逐台补齐加工、紧固件、线长、密封与试验依据。资料待核状态不因新增教程而自动关闭。
+
 [本体 BOM](../bom/BOM.csv) · [舱内 BOM](../bom/BOM-electronics.csv) · [完整文件索引](FILES.md) · [文件校验清单](manifest.json) · [返回首页](../../README.zh-CN.md)
 
 ## 先确认版本
@@ -115,3 +117,5 @@
 ## 制作教程补充
 
 已补充 [机架、浮力块与推进器安装](../../docs/build/02-frame.zh-CN.md)，包含四类紧固件用量及预埋螺母安装照片。原教程的电机线夹为 3D 打印、每电机一夹共 8 个，与当前 STEP 夹体数量及单件版本尚待对应；其余线夹和套管的具体制法仍待核。
+
+接下来按[舱内装配与线束固定](../../docs/build/08-enclosure-assembly.zh-CN.md)准备试装记录，再使用[密封、检漏与配平记录](../../docs/build/09-sealing-trim.zh-CN.md)。新增章节明确标注了缺少实物验证的范围。
