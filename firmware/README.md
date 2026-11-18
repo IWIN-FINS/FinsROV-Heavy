@@ -4,6 +4,8 @@
 
 Both variants use FineSUB and target the RoboMaster Type A board with an STM32F427.
 
+The additional [integrated MCU overlay](integrated/) connects to the fixed MAVLink PC through the new NX bridge. It preserves both snapshots below. See the [integration build/deployment guide](../docs/software/pc-nx-mcu.zh-CN.md) for host-loop validation, default-disabled physical depth capability and outstanding real inference/hardware work.
+
 | Directory | FineSUB branch | Use | Source commit |
 | --- | --- | --- | --- |
 | [SUB](SUB/) | SUB | Normal vehicle operation, attitude/depth control and light control | aebf944b803303c2d26dd1476c9a3496fb3a9a91 |

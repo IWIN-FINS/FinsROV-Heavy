@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<mavlink>
+  <include>minimal.xml</include>
+  <dialect>230</dialect>
+  <enums>
+    <enum name="FINS_MODE">
+      <entry value="0" name="FINS_MODE_IDLE"><description>Stopped.</description></entry>
+      <entry value="1" name="FINS_MODE_MANUAL"><description>Exclusive manual source.</description></entry>
+      <entry value="2" name="FINS_MODE_TRAJECTORY"><description>NX feedback trajectory.</description></entry>
+    </enum>
+    <enum name="FINS_ACTION">
+      <entry value="1" name="FINS_ACTION_SET_MODE"><description>Set mode and generation.</description></entry>
+      <entry value="2" name="FINS_ACTION_SET_ARMED"><description>Absolute motor enable.</description></entry>
+      <entry value="3" name="FINS_ACTION_RESET_ODOMETRY"><description>Reset local origin.</description></entry>
+      <entry value="4" name="FINS_ACTION_SET_CAMERA_LIGHT"><description>Absolute camera light.</description></entry>
+      <entry value="5" name="FINS_ACTION_SET_FRAME_LIGHT"><description>Absolute frame light.</description></entry>
+    </enum>
+    <enum name="FINS_RESULT">
+      <entry value="0" name="FINS_RESULT_ACCEPTED"><description>Applied.</description></entry>
+      <entry value="1" name="FINS_RESULT_REJECTED"><description>Rejected; see reason.</description></entry>
+      <entry value="2" name="FINS_RESULT_INVALID"><description>Invalid; see reason.</description></entry>
+    </enum>
+    <enum name="FINS_REASON">
+      <entry value="0" name="FINS_REASON_NONE"><description>No rejection.</description></entry>
+      <entry value="1" name="FINS_REASON_STALE_REQUEST"><description>Out-of-order request.</description></entry>
+      <entry value="2" name="FINS_REASON_BAD_GENERATION"><description>Invalid control generation or mode.</description></entry>
+      <entry value="3" name="FINS_REASON_SWITCH_DENIED"><description>Mode switch denied by vehicle.</description></entry>
+      <entry value="4" name="FINS_REASON_BAD_VALUE"><description>Unsupported action or value.</description></entry>
+    </enum>
+    <enum name="FINS_VERTICAL_MODE">
+      <entry value="0" name="FINS_VERTICAL_MANUAL"><description>Manual up/down.</description></entry>
+      <entry value="1" name="FINS_VERTICAL_HOLD_DEPTH"><description>Depth positive down in metres.</description></entry>
+    </enum>
+  </enums>
+  <messages>
+    <message id="111" name="TIMESYNC">
+      <description>Standard MAVLink TIMESYNC base fields, in nanoseconds.</description>
+      <field type="int64_t" name="tc1">Zero for request; responder clock for response.</field>
+      <field type="int64_t" name="ts1">Requester's clock, echoed in response.</field>
+    </message>
+    <message id="60000" name="FINS_CAPABILITIES">
+      <description>Protocol discovery. New client session resets simulator output and requires explicit reactivation.</description>
+      <field type="uint64_t" name="session">Random boot/session identity.</field>
+      <field type="uint16_t" name="protocol_version">Application contract version, currently 1.</field>
+      <field type="uint32_t" name="mode_mask">Bits 0 idle, 1 manual, 2 trajectory. Zero for ground station.</field>
+      <field type="uint32_t" name="features">Bit 0 depth hold, 1 auxiliary controls.</field>
+      <field type="uint8_t" name="simulated">One for simulator, zero for real hardware.</field>
+    </message>
+    <message id="60001" name="FINS_STATUS">
+      <description>Authoritative vehicle state; mode selection and arming are independent.</description>
+      <field type="uint64_t" name="session">NX session.</field>
+      <field type="uint64_t" name="client_session">Current controller session.</field>
+      <field type="uint32_t" name="epoch">Accepted control generation.</field>
+      <field type="uint32_t" name="faults">Fault flags; bit 0 setpoint expired.</field>
+      <field type="float" name="depth_target" units="m">Positive down.</field>
+      <field type="uint8_t" name="mode" enum="FINS_MODE">Actual mode.</field>
+      <field type="uint8_t" name="armed">Motor enable state.</field>
+      <field type="uint8_t" name="hold_depth">Depth controller active.</field>
+      <field type="uint8_t" name="camera_light">Camera light state.</field>
+      <field type="uint8_t" name="frame_light">Frame light state.</field>
+    </message>
+    <message id="60002" name="FINS_ODOMETRY">
+      <description>NX local XY, FLU body. Yaw CCW. Valid flags explicitly gate control.</description>
+      <field type="uint64_t" name="session">NX session.</field>
+      <field type="uint64_t" name="source_us" units="us">NX monotonic capture time.</field>
+      <field type="uint32_t" name="sample_seq">Wrap-aware sample sequence.</field>
+      <field type="uint32_t" name="reset_id">Changes whenever odometry origin is reset.</field>
+      <field type="float" name="x" units="m">World X.</field>
+      <field type="float" name="y" units="m">World Y.</field>
+      <field type="float" name="yaw" units="rad">CCW yaw.</field>
+      <field type="float" name="vx" units="m/s">World X velocity.</field>
+      <field type="float" name="vy" units="m/s">World Y velocity.</field>
+      <field type="float" name="yaw_rate" units="rad/s">CCW yaw rate.</field>
+      <field type="float" name="depth" units="m">Depth positive down.</field>
+      <field type="uint8_t" name="valid">Horizontal pose and velocity valid.</field>
+      <field type="uint8_t" name="depth_valid">Depth valid.</field>
+    </message>
+    <message id="60003" name="FINS_CONTROL_SETPOINT">
+      <description>Latest-wins movement. Reject wrong sessions, epochs, sequence or expired source time.</description>
+      <field type="uint64_t" name="session">PC session.</field>
+      <field type="uint64_t" name="target_session">NX session.</field>
+      <field type="uint64_t" name="source_us" units="us">Send time expressed in synchronized NX monotonic clock.</field>
+      <field type="uint32_t" name="epoch">Confirmed mode generation.</field>
+      <field type="uint32_t" name="sequence">Setpoint sequence.</field>
+      <field type="uint16_t" name="valid_ms" units="ms">Validity, at most 200 ms.</field>
+      <field type="float" name="yaw">Normalized yaw -1 to 1.</field>
+      <field type="float" name="forward">Normalized forward -1 to 1.</field>
+      <field type="float" name="left">Normalized left -1 to 1.</field>
+      <field type="float" name="down">Normalized down 0 to 1.</field>
+      <field type="float" name="up">Normalized up 0 to 1.</field>
+      <field type="float" name="depth_target" units="m">Target depth when vertical_mode is 1.</field>
+      <field type="uint8_t" name="vertical_mode" enum="FINS_VERTICAL_MODE">Vertical control selection.</field>
+    </message>
+    <message id="60004" name="FINS_ACTION_REQUEST">
+      <description>Idempotent action. Retry identical request ID, never repeat a toggle.</description>
+      <field type="uint64_t" name="session">PC session.</field>
+      <field type="uint64_t" name="target_session">NX session.</field>
+      <field type="uint32_t" name="request_id">Unique per session.</field>
+      <field type="uint32_t" name="epoch">New generation for SET_MODE; current generation otherwise.</field>
+      <field type="uint8_t" name="action" enum="FINS_ACTION">Requested action.</field>
+      <field type="uint8_t" name="value">Desired mode or boolean state.</field>
+    </message>
+    <message id="60005" name="FINS_ACTION_ACK">
+      <description>Action result. Accepted means state transition applied, not trajectory completion.</description>
+      <field type="uint64_t" name="session">NX session.</field>
+      <field type="uint64_t" name="target_session">PC session.</field>
+      <field type="uint32_t" name="request_id">Echo request ID.</field>
+      <field type="uint32_t" name="epoch">Echo requested generation.</field>
+      <field type="uint8_t" name="action" enum="FINS_ACTION">Echo action.</field>
+      <field type="uint8_t" name="result" enum="FINS_RESULT">Execution result.</field>
+      <field type="uint8_t" name="reason" enum="FINS_REASON">Machine-readable rejection reason.</field>
+    </message>
+    <message id="60006" name="FINS_AUX_SETPOINT">
+      <description>Latest-wins gimbal input; same expiry and epoch checks as movement.</description>
+      <field type="uint64_t" name="session">PC session.</field>
+      <field type="uint64_t" name="target_session">NX session.</field>
+      <field type="uint64_t" name="source_us" units="us">Synchronized NX clock.</field>
+      <field type="uint32_t" name="epoch">Confirmed generation.</field>
+      <field type="uint32_t" name="sequence">Independent auxiliary sequence.</field>
+      <field type="uint16_t" name="valid_ms" units="ms">At most 200.</field>
+      <field type="int8_t" name="cam_yaw">-1, 0, 1.</field>
+      <field type="int8_t" name="cam_pitch">-1, 0, 1.</field>
+    </message>
+    <message id="60007" name="FINS_TELEMETRY">
+      <description>Optional diagnostics. A field is usable only when its validity bit is set.</description>
+      <field type="uint64_t" name="session">NX session.</field>
+      <field type="uint64_t" name="source_us" units="us">NX capture time.</field>
+      <field type="uint32_t" name="valid_mask">Bits 0 voltage, 1 pressure, 2 rpm, 3 IMU, 4 network prediction.</field>
+      <field type="float" name="voltage" units="V">Battery voltage.</field>
+      <field type="float[4]" name="pressure" units="Pa">Four absolute pressure measurements.</field>
+      <field type="float[8]" name="rpm" units="rpm">Eight signed motor speeds.</field>
+      <field type="float[3]" name="accel" units="m/s/s">FLU accelerometer.</field>
+      <field type="float[3]" name="gyro" units="rad/s">FLU angular rates.</field>
+      <field type="float[3]" name="network">Body vx, body vy in m/s, yaw rate in rad/s.</field>
+    </message>
+  </messages>
+</mavlink>

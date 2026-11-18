@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-18",
+  "platform_base": "1ce03a02f90b8dcb9881c5d26c4dfd7594ad3f99",
+  "fixed_pc": "5ebe00e2573c8df5b5ad376915fab2da0644c188",
+  "unittest": {"tests": 24, "failures": 0, "errors": 0, "skipped": 0, "legacy_jetson_tests": 6},
+  "transport": "real loopback UDP and actual portable C++ MCU endpoint over subprocess byte stream",
+  "host_compiler": "MinGW G++ 13.1.0",
+  "firmware_compiler": "Arm Compiler 6.24",
+  "firmware_target": "Robomaster_A",
+  "firmware_depth_calibrated": false,
+  "rom_bytes": 82732,
+  "rw_zi_bytes": 50672,
+  "elf_sha256": "739ecbf4c7d0d4c308718ca70702b1bb8bb15a6f33ddcdbec1c6e0d98842229c",
+  "hex_sha256": "bfc268449462d1dab77b7a96cb6fc9aab2e542a0843aaab18b6b86dd53579b01",
+  "hardware_flashing": false,
+  "real_inference": false,
+  "underwater_validation": false
+}

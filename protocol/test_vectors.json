@@ -1,0 +1,177 @@
+[
+  {
+    "name": "HEARTBEAT",
+    "id": 0,
+    "fields": {
+      "type": 3,
+      "autopilot": 3,
+      "base_mode": 3,
+      "custom_mode": 3,
+      "system_status": 3,
+      "mavlink_version": 3
+    },
+    "hex": "fd09000000ffbe000000030000000303030303f7c6"
+  },
+  {
+    "name": "TIMESYNC",
+    "id": 111,
+    "fields": {
+      "tc1": 1234567890123,
+      "ts1": 1234567890123
+    },
+    "hex": "fd0e000000ffbe6f0000cb04fb711f010000cb04fb711f01b16b"
+  },
+  {
+    "name": "FINS_CAPABILITIES",
+    "id": 60000,
+    "fields": {
+      "session": 1234567890123,
+      "protocol_version": 3,
+      "mode_mask": 3,
+      "features": 3,
+      "simulated": 3
+    },
+    "hex": "fd13000000ffbe60ea00cb04fb711f01000003000000030000000300036512"
+  },
+  {
+    "name": "FINS_STATUS",
+    "id": 60001,
+    "fields": {
+      "session": 1234567890123,
+      "client_session": 1234567890123,
+      "epoch": 3,
+      "faults": 3,
+      "depth_target": 0.375,
+      "mode": 3,
+      "armed": 3,
+      "hold_depth": 3,
+      "camera_light": 3,
+      "frame_light": 3
+    },
+    "hex": "fd21000000ffbe61ea00cb04fb711f010000cb04fb711f01000003000000030000000000c03e030303030300cc"
+  },
+  {
+    "name": "FINS_ODOMETRY",
+    "id": 60002,
+    "fields": {
+      "session": 1234567890123,
+      "source_us": 1234567890123,
+      "sample_seq": 3,
+      "reset_id": 3,
+      "x": 0.375,
+      "y": 0.375,
+      "yaw": 0.375,
+      "vx": 0.375,
+      "vy": 0.375,
+      "yaw_rate": 0.375,
+      "depth": 0.375,
+      "valid": 3,
+      "depth_valid": 3
+    },
+    "hex": "fd36000000ffbe62ea00cb04fb711f010000cb04fb711f01000003000000030000000000c03e0000c03e0000c03e0000c03e0000c03e0000c03e0000c03e03036d8f"
+  },
+  {
+    "name": "FINS_CONTROL_SETPOINT",
+    "id": 60003,
+    "fields": {
+      "session": 1234567890123,
+      "target_session": 1234567890123,
+      "source_us": 1234567890123,
+      "epoch": 3,
+      "sequence": 3,
+      "valid_ms": 3,
+      "yaw": 0.375,
+      "forward": 0.375,
+      "left": 0.375,
+      "down": 0.375,
+      "up": 0.375,
+      "depth_target": 0.375,
+      "vertical_mode": 3
+    },
+    "hex": "fd3b000000ffbe63ea00cb04fb711f010000cb04fb711f010000cb04fb711f01000003000000030000000000c03e0000c03e0000c03e0000c03e0000c03e0000c03e030003cf91"
+  },
+  {
+    "name": "FINS_ACTION_REQUEST",
+    "id": 60004,
+    "fields": {
+      "session": 1234567890123,
+      "target_session": 1234567890123,
+      "request_id": 3,
+      "epoch": 3,
+      "action": 3,
+      "value": 3
+    },
+    "hex": "fd1a000000ffbe64ea00cb04fb711f010000cb04fb711f01000003000000030000000303f83f"
+  },
+  {
+    "name": "FINS_ACTION_ACK",
+    "id": 60005,
+    "fields": {
+      "session": 1234567890123,
+      "target_session": 1234567890123,
+      "request_id": 3,
+      "epoch": 3,
+      "action": 3,
+      "result": 3,
+      "reason": 3
+    },
+    "hex": "fd1b000000ffbe65ea00cb04fb711f010000cb04fb711f01000003000000030000000303033d94"
+  },
+  {
+    "name": "FINS_AUX_SETPOINT",
+    "id": 60006,
+    "fields": {
+      "session": 1234567890123,
+      "target_session": 1234567890123,
+      "source_us": 1234567890123,
+      "epoch": 3,
+      "sequence": 3,
+      "valid_ms": 3,
+      "cam_yaw": 3,
+      "cam_pitch": 3
+    },
+    "hex": "fd24000000ffbe66ea00cb04fb711f010000cb04fb711f010000cb04fb711f01000003000000030000000300030318f8"
+  },
+  {
+    "name": "FINS_TELEMETRY",
+    "id": 60007,
+    "fields": {
+      "session": 1234567890123,
+      "source_us": 1234567890123,
+      "valid_mask": 3,
+      "voltage": 0.375,
+      "pressure": [
+        0.125,
+        0.25,
+        0.375,
+        0.5
+      ],
+      "rpm": [
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875,
+        1.0
+      ],
+      "accel": [
+        0.125,
+        0.25,
+        0.375
+      ],
+      "gyro": [
+        0.125,
+        0.25,
+        0.375
+      ],
+      "network": [
+        0.125,
+        0.25,
+        0.375
+      ]
+    },
+    "hex": "fd6c000000ffbe67ea00cb04fb711f010000cb04fb711f010000030000000000c03e0000003e0000803e0000c03e0000003f0000003e0000803e0000c03e0000003f0000203f0000403f0000603f0000803f0000003e0000803e0000c03e0000003e0000803e0000c03e0000003e0000803e0000c03ed4bb"
+  }
+]

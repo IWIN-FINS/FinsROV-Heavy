@@ -1,5 +1,7 @@
 # 06 · Jetson 配置与视频传输
 
+新上位机对应的 [PC—NX—MCU 集成开发版](../software/pc-nx-mcu.zh-CN.md)已提供独立桥接、固件构建和本地验证入口。下文继续记录旧 SUB 配套环境，两套控制服务互斥，不能混用协议。集成版的实机定深校准和 V24 推理接入尚未完成。
+
 [教程目录](../README.zh-CN.md) · 上一步：[水压计](05-pressure-sensors.zh-CN.md) · 下一步：[联调检查](07-bring-up.zh-CN.md)
 
 本章以原实装的 **Jetson Orin NX + 达妙 V2.X 载板 + JetPack 6.2** 为基准，配合仓库中的 **SUB 正常操控固件**。Orin Nano 可参考网络与串口步骤，但没有 NVENC，需要切换为 CPU 视频编码；实际帧率要在本机验证。[NVIDIA 说明](https://docs.nvidia.com/jetson/archives/r36.4.3/DeveloperGuide/SD/Multimedia/SoftwareEncodeInOrinNano.html)

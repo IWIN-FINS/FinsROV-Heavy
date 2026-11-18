@@ -1,0 +1,126 @@
+{
+  "repository": "https://github.com/ganju2390/NXTelemetryMonitor",
+  "commit": "5ebe00e2573c8df5b5ad376915fab2da0644c188",
+  "files": [
+    {
+      "path": "protocol/finsrov.xml",
+      "sha256": "2326525e6f2c1c4885e64842b37780178b1461d966ac6c573232c457e0652d15"
+    },
+    {
+      "path": "protocol/minimal.xml",
+      "sha256": "5b450b2eef9e93db9c0a35ea56141bd05c197f41a9f4a7990a99b91c16814fa9"
+    },
+    {
+      "path": "protocol/test_vectors.json",
+      "sha256": "b9dc8fdf18e0567af7c51240ee1453ce873905a92e8888d830fa14eecbfbea16"
+    },
+    {
+      "path": "protocol/generated/c/checksum.h",
+      "sha256": "63ee0b4b69a71276e54b251edcdb476afbb2ed42d1df167ef2692b1a0785495e"
+    },
+    {
+      "path": "protocol/generated/c/mavlink_conversions.h",
+      "sha256": "b6fe6efca9c11bf1a25df39a09dd13b8465e1c07318b913db8714e395d9d0a09"
+    },
+    {
+      "path": "protocol/generated/c/mavlink_get_info.h",
+      "sha256": "c3ba8fc5593d1b159735f8f2c797dddbbf161a9e699f31080969213988da6e1c"
+    },
+    {
+      "path": "protocol/generated/c/mavlink_helpers.h",
+      "sha256": "2ab9bdff0953c75c6fb9d021e61c2c26c0f048da22b14db3b8a88ac515688035"
+    },
+    {
+      "path": "protocol/generated/c/mavlink_sha256.h",
+      "sha256": "ccf184ab6d19d969604bcb4750030b3c94e16b512262eca20bb087d5643d3a19"
+    },
+    {
+      "path": "protocol/generated/c/mavlink_types.h",
+      "sha256": "270bfc2ff1612ce84823dada22f3efa869263e6797f895090ebb41e27adc7309"
+    },
+    {
+      "path": "protocol/generated/c/protocol.h",
+      "sha256": "9254e99273136dc2f199d2fc369a799a361b4b3afa01a8e4ac878d67b13db24a"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/finsrov.h",
+      "sha256": "a336b38ff4f5f3ac1f5f240a21ce82d49424870b4180e9aadccd4c0c0f311e83"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink.h",
+      "sha256": "38beb7300098e14b4305f0051b25fa44b0ec3f63aa551d1e30ca4bea105b82ef"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_action_ack.h",
+      "sha256": "0f1b9b9973cfb67d8da209e5f7dfabc4cf7db29c3969db970964d83247a5d056"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_action_request.h",
+      "sha256": "f7b42dfe8633ff6c2b96dda3639850b4b4c9f748ce187e2dfb4cf2fba6c5431e"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_aux_setpoint.h",
+      "sha256": "11e940d1ce8d4863f0ae225fefca92d193c10939ea7c3366f7f154a178e867a7"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_capabilities.h",
+      "sha256": "297c0c95d5f9170f1551a47c7e30a035f83e6d4be67a1bf331fc1510663e9407"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_control_setpoint.h",
+      "sha256": "9b8b1ac3997de4a15139761e168b9818e9a8e3a69b743dc69091091f652b7b43"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_odometry.h",
+      "sha256": "9ba0acb78e061101a452e828814ebf0cdde0a37909ef7dda4ac7fcecdde7971c"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_status.h",
+      "sha256": "deeac746805b381fde39f35db84fa96b627a80c446efb18d5f90fa504fa4264c"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_fins_telemetry.h",
+      "sha256": "5a6db6bee7c0bcee7f6ecbd339b848237e85c4e841b3f46424aa636fc5d4c454"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/mavlink_msg_timesync.h",
+      "sha256": "629aafddc57f4dd0bc2ecc2bc4714688783cbd78ef6d36d82498bb4eb7e1ff80"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/testsuite.h",
+      "sha256": "4d5939fb2317328313023c05ba367d3dbd5681774458df1dcbec8d13e9a9f619"
+    },
+    {
+      "path": "protocol/generated/c/finsrov/version.h",
+      "sha256": "5b20870dda0e42f0f37792b054578e621fcf1c5e420e106fd89caa135a312509"
+    },
+    {
+      "path": "protocol/generated/c/minimal/mavlink.h",
+      "sha256": "8117674ead16082bb1e66ddc55578fa3f423657e7cfab284f05a5a9d67663566"
+    },
+    {
+      "path": "protocol/generated/c/minimal/mavlink_msg_heartbeat.h",
+      "sha256": "da238e39257165cd6cde3ca7c0a26291198170e83ef2ab61cb05b650c355bb3a"
+    },
+    {
+      "path": "protocol/generated/c/minimal/minimal.h",
+      "sha256": "fe26a626646850754166a2122e96e12039801b4e7a7c8e1564a2b299d37ad0e9"
+    },
+    {
+      "path": "protocol/generated/c/minimal/testsuite.h",
+      "sha256": "dfb25b5c3f455afc01efd3ab8eac6805c0a49978f27cc1c1ab4f7d4c15703a00"
+    },
+    {
+      "path": "protocol/generated/c/minimal/version.h",
+      "sha256": "64cebe97c8e459dd840543b41526c1aeb98605a50f580bc3c2a86c166cd26395"
+    },
+    {
+      "path": "software/jetson/fins_bridge/generated/finsrov.py",
+      "sha256": "7fe744cc8bc9a24e803906e1ab23957feb6987e5360c60e31694f2bdd19a7339"
+    },
+    {
+      "path": "software/jetson/fins_bridge/generated/__init__.py",
+      "sha256": "a2b9160028e5150708af808c18b25a93122d811a6a8ac89df5d116af530bfba4"
+    }
+  ]
+}

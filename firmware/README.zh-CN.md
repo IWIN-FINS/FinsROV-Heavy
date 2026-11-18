@@ -4,6 +4,8 @@
 
 两套工程均基于 FineSUB，目标为搭载 STM32F427 的 RoboMaster A 型开发板。
 
+新增的 [MCU 集成覆盖层](integrated/)通过新 NX 桥接连接固定 MAVLink 上位机，保留下方两套快照。[三端构建与部署说明](../docs/software/pc-nx-mcu.zh-CN.md)记录本地闭环验证、默认关闭的实机定深能力，以及尚未完成的真实推理和硬件验收。
+
 | 目录 | FineSUB 分支 | 用途 | 源提交 |
 | --- | --- | --- | --- |
 | [SUB](SUB/) | SUB | 正常机器人操控、姿态与深度控制、灯光控制 | aebf944b803303c2d26dd1476c9a3496fb3a9a91 |

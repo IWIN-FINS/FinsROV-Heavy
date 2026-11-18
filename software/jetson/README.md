@@ -4,6 +4,8 @@
 
 These scripts come from the V5 build notes. The control bridge supports the **SUB** firmware snapshot in this repository. It does **not** implement the inertial-odometry protocol.
 
+The additional [PC–NX–MCU integration development version](../../docs/software/pc-nx-mcu.zh-CN.md) provides a fixed-PC MAVLink bridge, MCU overlay and C++ execution harness. It is separate from the legacy scripts below. Physical depth capability defaults off pending calibration; real V24 inference and underwater verification remain outstanding.
+
 | File | Role |
 | --- | --- |
 | [V5StreamerNX.py](V5StreamerNX.py) | Joystick UDP → SUB UART commands; raw UART chunks → PC UDP |

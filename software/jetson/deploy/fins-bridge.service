@@ -1,0 +1,20 @@
+[Unit]
+Description=FinsROV MAVLink control and odometry bridge
+After=network-online.target
+Wants=network-online.target
+Conflicts=streamer.service
+
+[Service]
+Type=simple
+User=finsrov
+SupplementaryGroups=dialout
+WorkingDirectory=/opt/finsrov/software/jetson
+EnvironmentFile=/etc/finsrov/bridge.env
+ExecStart=/usr/bin/python3 -m fins_bridge --serial ${FINS_SERIAL} --baud ${FINS_BAUD} --bind ${FINS_NX} --pc ${FINS_PC} --odom-port ${FINS_ODOM_PORT}
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

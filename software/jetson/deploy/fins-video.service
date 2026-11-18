@@ -1,0 +1,17 @@
+[Unit]
+Description=FinsROV independent GStreamer video sender
+After=network-online.target
+Conflicts=streamer.service
+
+[Service]
+User=finsrov
+SupplementaryGroups=video
+WorkingDirectory=/opt/finsrov/software/jetson
+ExecStart=/usr/bin/python3 /opt/finsrov/software/jetson/GStreamerTest.py
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=10
+KillMode=control-group
+
+[Install]
+WantedBy=multi-user.target

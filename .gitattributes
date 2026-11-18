@@ -11,3 +11,9 @@ hardware/pcb/assembly/interactive-bom.html -text -diff
 software/jetson/*.sh text eol=lf
 software/jetson/*.service text eol=lf
 software/jetson/*.py text eol=lf
+# Frozen PC protocol artifacts are byte-hashed; disable checkout conversion.
+protocol/** -text -whitespace
+software/jetson/fins_bridge/generated/** -text -whitespace
+software/jetson/fins_bridge/*.py text eol=lf
+software/jetson/deploy/* text eol=lf
+firmware/integrated/** text eol=lf
