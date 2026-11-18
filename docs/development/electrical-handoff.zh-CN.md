@@ -23,6 +23,8 @@ python hardware/electrical/verify_system_wiring.py
 
 PDF 生成需要 ReportLab 和中文 TrueType 字体，非 Windows 使用 `FINS_PDF_FONT` 指定字体。Excel 生成器需要可导入的 `@oai/artifact-tool`，其第一个可选参数为 JSON 绝对路径，第二个为预览输出目录。`verify_system_wiring.py` 仅用 Python 标准库，且不接触硬件。新生成器不自动运行旧图纸生成器或改写已有工作簿。
 
+后续合并软件分支时，`docs/build/06-jetson.zh-CN.md` 可能更新，而本台账以 `JET` 记录其来源哈希。即使旧接线段落未变化，整文件哈希也会失效。合并者应先审阅新的 06 章是否改变连接含义，再按上述顺序刷新来源记录和相关生成物并运行校验；不要跳过或压制来源变化提示。本轮不执行分支合并。
+
 本轮完成的检查：
 
 - 三张 CSV 与 JSON 全部字段一致；导出 XLSX 重新读取 OOXML，核对每个表格单元格、三张筛选表及冻结窗格。
