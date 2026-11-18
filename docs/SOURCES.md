@@ -25,7 +25,11 @@ Current configuration is checked against the released CAD/BOM, the author's fabr
 
 The frame tutorial supplies four additional fastener quantities, now recorded as `HW-06`–`HW-09`. Their counts are installation quantities for those steps, subject to reconciling kit contents. Other unresolved counts remain blank. The tutorial's eight motor cable clamps are explicitly distinguished from the existing four clamp-body STEP instances.
 
-The power-board tutorial and interactive BOM disagree about R12. Both pieces of evidence are recorded; the source HTML and Gerber were not altered. Frame hole corrections, cable-cut lengths, host application files and complete sealing instructions remain on the [open-items list](build/07-bring-up.zh-CN.md#待补资料).
+The power-board tutorial and interactive BOM disagree about R12. Both pieces of evidence are recorded; the source HTML and Gerber were not altered. Frame hole corrections, cable-cut lengths, protocol-matched host integration and validated sealing instructions remain on the [open-items list](build/07-bring-up.zh-CN.md#待补资料).
+
+### Manufacturing and assembly records added on 2026-11-18
+
+The [manufacturing checklist](../hardware/mechanical/manufacturing-release.zh-CN.md), [enclosure assembly chapter](build/08-enclosure-assembly.zh-CN.md) and [sealing/trim chapter](build/09-sealing-trim.zh-CN.md) organize the existing CAD, BOM, author confirmations and V5 notes into trial-assembly steps and record templates. They add no new measured manufacturing parameters or hardware test results. The 65 mechanical originals and both BOM pairs are unchanged; unresolved model versions, fasteners, FDM settings and sealing requirements remain explicit. The [read-only release check](../hardware/mechanical/check_release.py) verifies file hashes, CSV/XLSX agreement and local documentation links.
 
 Jetson instructions correct a malformed systemd block, distinguish Orin NX from Nano encoding, explain UART device permissions and state the actual SUB light-control behavior. Upstream references are linked at the relevant steps. The offline tests do not establish hardware operation or underwater performance.
 

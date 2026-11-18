@@ -6,6 +6,8 @@
 
 本仓库以主体和舱内 STEP 为位置参考，以两套 BOM 为采购入口。旧设计笔记、早期照片与当前模型存在差异时，先查[加工文件索引](../../hardware/mechanical/FILES.md)的版本状态。
 
+加工前再对照[制造版本与放行清单](../../hardware/mechanical/manufacturing-release.zh-CN.md)：其中“已选模型”与“制造资料完整”分开记录。每台机器使用[制造与装配记录](../../hardware/mechanical/build-record.zh-CN.md)保存实际版本、工艺、线长和试验结果。
+
 | 内容 | 当前采用的配置 | 资料入口 |
 | --- | --- | --- |
 | 框架 | 两块相同侧板、一块顶板、两根横梁；铝合金钣金、黑色阳极氧化。制作笔记标注板厚 6 mm | [加工说明](../../hardware/mechanical/README.zh-CN.md) |
