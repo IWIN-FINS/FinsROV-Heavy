@@ -45,14 +45,19 @@ The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA
 | --- | --- |
 | [SUB](firmware/SUB/) | Normal vehicle operation |
 | [Inertial odometry](firmware/inertial-odometry/) | Inertial odometry experiments and expanded sensor/actuator telemetry |
+| [MAVLink integration build](firmware/integrated/) | New NX bridge and pinned ground-station protocol; locally validated, hardware acceptance pending |
 
-Each version records its FineSUB source commit and pins its dependencies. See the build instructions and host protocol settings before selecting a version. [Firmware guide](firmware/README.md)
+The two legacy snapshots record their FineSUB source commits and pin their dependencies. The integration build reuses the experimental snapshot with a separate control task and protocol adapter. See the build instructions and host protocol settings before selecting a version. [Firmware guide](firmware/README.md)
 
-FineSUB firmware uses the MPL-2.0 licenses included in the two source directories. Third-party components carry their own license notices. [Firmware licensing](firmware/README.md#license)
+FineSUB firmware uses the MPL-2.0 licenses included in its source directories. Third-party components carry their own license notices. [Firmware licensing](firmware/README.md#license)
 
 ## Jetson software
 
-[Control bridge, video streaming and startup scripts](software/jetson/README.md) are included for the SUB firmware. Follow the [Jetson setup tutorial](docs/build/06-jetson.zh-CN.md) for Ethernet, UART, camera settings and systemd. The Windows joystick application and the host software for the inertial-odometry protocol are not included yet.
+[Control bridge, video streaming and startup scripts](software/jetson/README.md) are included for the SUB firmware. Follow the [Jetson setup tutorial](docs/build/06-jetson.zh-CN.md) for Ethernet, UART, camera settings and systemd.
+
+The Windows multimode ground station is available in a separate repository: [NXTelemetryMonitor, pinned at `5ebe00e`](https://github.com/ganju2390/NXTelemetryMonitor/tree/5ebe00e2573c8df5b5ad376915fab2da0644c188). It supports joystick and trajectory control, has recorded simulated validation, and uses MAVLink 2. The original SUB bridge and both legacy firmware snapshots in this repository use different protocols and cannot connect directly to the new ground station. Check the software combination and hardware validation status separately; simulation does not establish vehicle readiness.
+
+The new combination is **the pinned ground station + `fins_bridge` + integrated firmware**. See [deployment, validation and limitations](docs/software/pc-nx-mcu.zh-CN.md). Physical depth hold defaults to disabled until sensor calibration and the shared depth datum are verified. Actual onboard inertial-odometry inference and its raw sensor input integration remain pending.
 
 ## Preparing a build
 

@@ -45,14 +45,19 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 | --- | --- |
 | [SUB](firmware/SUB/) | 正常机器人操控 |
 | [惯性里程计实验](firmware/inertial-odometry/) | 惯性里程计实验及扩展的传感器、执行器遥测 |
+| [MAVLink 集成开发版](firmware/integrated/) | 配合新 NX 桥接和固定上位机协议；已完成本地验证，实机验收待完成 |
 
-两套代码记录了各自的 FineSUB 源提交，并固定依赖版本。选择固件时请对照编译方法和上位机通信配置。[固件使用说明](firmware/README.zh-CN.md)
+两套旧版快照记录了各自的 FineSUB 源提交，并固定依赖版本；集成版复用实验快照源码，单独提供控制任务和协议适配。选择固件时请对照编译方法和上位机通信配置。[固件使用说明](firmware/README.zh-CN.md)
 
 FineSUB 固件适用各源码目录中的 MPL-2.0 许可证，第三方组件适用其各自许可证。[固件许可说明](firmware/README.zh-CN.md#许可证)
 
 ## Jetson 软件
 
-已提供配套 SUB 固件的 [控制转发、视频传输和自启动脚本](software/jetson/README.md)。网络、串口、相机参数和 systemd 配置见 [Jetson 教程](docs/build/06-jetson.zh-CN.md)。Windows 手柄上位机和惯性里程计实验协议对应的主机软件尚未提供。
+已提供配套 SUB 固件的 [控制转发、视频传输和自启动脚本](software/jetson/README.md)。网络、串口、相机参数和 systemd 配置见 [Jetson 教程](docs/build/06-jetson.zh-CN.md)。
+
+Windows 多模式上位机已在独立仓库提供：[NXTelemetryMonitor · 固定版本 `5ebe00e`](https://github.com/ganju2390/NXTelemetryMonitor/tree/5ebe00e2573c8df5b5ad376915fab2da0644c188)。它支持手柄与轨迹控制，已有模拟联调记录，使用 MAVLink 2 协议。本仓库原有 SUB 转发脚本和两套固件快照使用旧协议，不能直接与新上位机混用。软件组合及实机验证状态须分别核对，模拟通过不代表整机验证完成。
+
+新链路使用 **固定上位机 + `fins_bridge` + 集成固件**，见[三端部署、验证与限制](docs/software/pc-nx-mcu.zh-CN.md)。实机定深能力默认关闭，须核准传感器标定与共同深度基准后启用；实际惯性里程计推理与原始传感器输入的接入仍待完成。
 
 ## 复现顺序
 
