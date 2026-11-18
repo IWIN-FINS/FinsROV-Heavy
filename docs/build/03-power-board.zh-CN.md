@@ -20,6 +20,8 @@ GitHub 文件页不会直接运行交互式 HTML；使用 **Download raw file** 
 
 焊接前先核对手上的 PCB 版本、对应原理图及 R12 的修订记录。不要把旧版的“不焊”自动应用到全部新版，也不要仅按 HTML 自动贴装 R12。仓库保留原附件，没有擅自改动其元件数据。
 
+使用[EC-07 版本核对单](../../hardware/pcb/assembly/revision-checklist.zh-CN.md)记录 PCB、Gerber、装联数据和 R12 的对应关系。输入输出端、各路负载及返回线见[系统供电核验图](../../hardware/electrical/system-wiring.zh-CN.md#供电总图)；当前没有足够依据给出每路稳压、限流或线径数值。
+
 ![原教程圈出的 R12 位置](../assets/power/image_01.png)
 
 ## 焊接顺序

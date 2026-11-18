@@ -1,0 +1,75 @@
+﻿连接编号,线束编号,信号,起点,终点,依据状态,来源编号,尚缺信息
+W-SYS-001,H-SYS-PWR,放电回路,BAT-01 放电引线,J-BAT-PWR 四芯母座,功能确认,BAT,两组放电引线分配、四芯针序及每芯电流
+W-SYS-002,H-SYS-PWR,主供电,J-BAT-PWR,P-PWR 设备舱电源穿舱位置,功能确认,BAT;EQ,外缆两端针序、线径、长度及密封件
+W-SYS-003,H-SYS-PWR,保护板输入,P-PWR,EC-07 输入端待核,待核,PWR;EQ,输入/输出端名称、极性和实际连接路径
+W-SYS-004,H-SYS-P-ESC1,负载供电,舱内供电分配待核,四合一电调 1,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-005,H-SYS-P-ESC2,负载供电,舱内供电分配待核,四合一电调 2,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-006,H-SYS-P-NX,负载供电,舱内供电分配待核,NX 载板 XT30,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-007,H-SYS-P-MCU,负载供电,舱内供电分配待核,RoboMaster A 供电端,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-008,H-SYS-P-PRS,负载供电,舱内供电分配待核,四只水压计 24V/GND,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-009,H-SYS-P-EXT,负载供电,舱内供电分配待核,两只云台舵机 24V/GND,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-010,H-SYS-P-LGT,负载供电,舱内供电分配待核,三只灯 24V/GND,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-011,H-SYS-P-PLC,负载供电,舱内供电分配待核,舱端 PLC 电源,待核,EQ;PWR,是否经 EC-07/稳压、支路保护、返回线、端子和负载额定值
+W-SYS-012,H-SYS-NX,MCU TX → NX RX,MCU USART3 TX / PD8,NX U1 RX / 手册针 1,逻辑核对,UART;JET;NX,MCU 板端插座针号、载板实装版及视图核对
+W-SYS-013,H-SYS-NX,NX TX → MCU RX,NX U1 TX / 手册针 2,MCU USART3 RX / PD9,逻辑核对,UART;JET;NX,MCU 板端插座针号、载板实装版及视图核对
+W-SYS-014,H-SYS-NX,串口参考地,NX U1 GND / 手册针 3,MCU 串口 GND,逻辑核对,JET;NX,MCU 板端 GND 针号；不扩展为外壳/CAN 接地结论
+W-SYS-015,H-SYS-IMU,IMU 数据,H30 TX（设备针号待核）,MCU UART7 RX / PE7,源码推导,TASK;UART,实装 H30 型号、电平、供电、物理针号和线束
+W-SYS-016,H-SYS-PRS,压力串口 TX/RX,MCU UART8 TX PE1 / RX PE0,RS-485 收发电路（位置待核）,源码推导,TASK;UART,是否板载/外置、型号、电平、方向控制和端子
+W-SYS-017,H-SYS-PRS-LF,24V,J-PRS-LF:1,水压计 0x01 的 24V 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-018,H-SYS-PRS-LF,GND,J-PRS-LF:2,水压计 0x01 的 GND 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-019,H-SYS-PRS-LF,485A,J-PRS-LF:3,水压计 0x01 的 485A 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-020,H-SYS-PRS-LF,485B,J-PRS-LF:4,水压计 0x01 的 485B 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-021,H-SYS-PRS-LB,24V,J-PRS-LB:1,水压计 0x02 的 24V 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-022,H-SYS-PRS-LB,GND,J-PRS-LB:2,水压计 0x02 的 GND 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-023,H-SYS-PRS-LB,485A,J-PRS-LB:3,水压计 0x02 的 485A 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-024,H-SYS-PRS-LB,485B,J-PRS-LB:4,水压计 0x02 的 485B 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-025,H-SYS-PRS-RB,24V,J-PRS-RB:1,水压计 0x03 的 24V 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-026,H-SYS-PRS-RB,GND,J-PRS-RB:2,水压计 0x03 的 GND 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-027,H-SYS-PRS-RB,485A,J-PRS-RB:3,水压计 0x03 的 485A 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-028,H-SYS-PRS-RB,485B,J-PRS-RB:4,水压计 0x03 的 485B 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-029,H-SYS-PRS-RF,24V,J-PRS-RF:1,水压计 0x04 的 24V 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-030,H-SYS-PRS-RF,GND,J-PRS-RF:2,水压计 0x04 的 GND 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-031,H-SYS-PRS-RF,485A,J-PRS-RF:3,水压计 0x04 的 485A 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-032,H-SYS-PRS-RF,485B,J-PRS-RF:4,水压计 0x04 的 485B 引线,功能确认,EQ,传感器端针号/颜色、舱内端子、端面方向、线径/长度
+W-SYS-033,H-SYS-EXT-L,24V,J-EXT-L:1,云台舵机的 24V 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-034,H-SYS-EXT-L,GND,J-EXT-L:2,云台舵机的 GND 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-035,H-SYS-EXT-L,485A,J-EXT-L:3,云台舵机的 485A 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-036,H-SYS-EXT-L,485B,J-EXT-L:4,云台舵机的 485B 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-037,H-SYS-EXT-R,24V,J-EXT-R:1,云台舵机的 24V 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-038,H-SYS-EXT-R,GND,J-EXT-R:2,云台舵机的 GND 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-039,H-SYS-EXT-R,485A,J-EXT-R:3,云台舵机的 485A 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-040,H-SYS-EXT-R,485B,J-EXT-R:4,云台舵机的 485B 引线,功能确认,EQ,两轴对应、舵机型号/地址、RS-485 分组/端子与线束
+W-SYS-041,H-SYS-LGT-LF,24V,J-LGT-LF:1,补光灯的 24V 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-042,H-SYS-LGT-LF,GND,J-LGT-LF:2,补光灯的 GND 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-043,H-SYS-LGT-LF,PWM,J-LGT-LF:3,补光灯的 PWM 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-044,H-SYS-LGT-GM,24V,J-LGT-GM:1,补光灯的 24V 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-045,H-SYS-LGT-GM,GND,J-LGT-GM:2,补光灯的 GND 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-046,H-SYS-LGT-GM,PWM,J-LGT-GM:3,补光灯的 PWM 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-047,H-SYS-LGT-RF,24V,J-LGT-RF:1,补光灯的 24V 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-048,H-SYS-LGT-RF,GND,J-LGT-RF:2,补光灯的 GND 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-049,H-SYS-LGT-RF,PWM,J-LGT-RF:3,补光灯的 PWM 引线,功能确认,EQ,灯具端定义、PWM 通道对应/电平、线径/长度及供电
+W-SYS-050,H-SYS-CAN,CAN_H,J-BAT-SVC:3,J-CAN:1,功能确认,BAT;EQ,实际外缆/端面视图、终端、参考地与支线长度
+W-SYS-051,H-SYS-CAN,CAN_L,J-BAT-SVC:4,J-CAN:2,功能确认,BAT;EQ,实际外缆/端面视图、终端、参考地与支线长度
+W-SYS-052,H-SYS-CAN-IN,CAN_H / CAN_L,J-CAN:1/2,舱内 CAN 控制器待核,待核,EQ,不能默认接 NX 或 MCU；控制器、波特率与终端待核
+W-SYS-053,H-SYS-PLC,PLC_L1,J-PLC:1,系缆对应芯线,功能确认,EQ,两端 PLC 端子、芯数、屏蔽、供电方式及线束
+W-SYS-054,H-SYS-PLC,PLC_L2,J-PLC:2,系缆对应芯线,功能确认,EQ,两端 PLC 端子、芯数、屏蔽、供电方式及线束
+W-SYS-055,H-SYS-LAN,以太网,舱端 PLC 网口,NX 载板以太网口,逻辑核对,JET,载板板端针号、网线规格与实际转接
+W-SYS-056,H-SYS-SHORE,以太网,PC 网口,岸端 PLC 网口,逻辑核对,JET,岸端板型号/供电、网线与系缆连接
+W-SYS-057,H-SYS-CAM,USB,外置双目相机经 P-CAM,NX USB 接口,逻辑核对,JET;EQ,USB 端口、穿舱件及实际相机电缆，不编造逐针延长线
+W-SYS-058,H-SYS-DBG,烧写,J-DBG,MCU 调试接口待核,待核,EQ,烧写器、接口型号、针序及是否引出复位/VREF
+W-SYS-059,H-SYS-DS-M1,DShot 通道 3,MCU PI6,ESC2 输出组 2 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-060,H-SYS-M01,三相线（同组）,ESC2 电机输出组 2,J-M01 → M1,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-061,H-SYS-DS-M2,DShot 通道 7,MCU PA1,ESC1 输出组 2 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-062,H-SYS-M02,三相线（同组）,ESC1 电机输出组 2,J-M02 → M2,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-063,H-SYS-DS-M3,DShot 通道 5,MCU PA3,ESC1 输出组 4 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-064,H-SYS-M03,三相线（同组）,ESC1 电机输出组 4,J-M03 → M3,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-065,H-SYS-DS-M4,DShot 通道 4,MCU PI5,ESC2 输出组 1 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-066,H-SYS-M04,三相线（同组）,ESC2 电机输出组 1,J-M04 → M4,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-067,H-SYS-DS-M5,DShot 通道 2,MCU PI7,ESC2 输出组 3 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-068,H-SYS-M05,三相线（同组）,ESC2 电机输出组 3,J-M05 → M5,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-069,H-SYS-DS-M6,DShot 通道 6,MCU PA2,ESC1 输出组 3 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-070,H-SYS-M06,三相线（同组）,ESC1 电机输出组 3,J-M06 → M6,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-071,H-SYS-DS-M7,DShot 通道 8,MCU PA0,ESC1 输出组 1 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-072,H-SYS-M07,三相线（同组）,ESC1 电机输出组 1,J-M07 → M7,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度
+W-SYS-073,H-SYS-DS-M8,DShot 通道 1,MCU PI2,ESC2 输出组 4 对应控制输入,源码推导,TASK;BOARD;THR,电调输入端名称、转接板 EC-08/09 逐针网络和信号地
+W-SYS-074,H-SYS-M08,三相线（同组）,ESC2 电机输出组 4,J-M08 → M8,功能确认,EQ;THR,转接板针脚、三根相线不固定相序、端面视图及裁线长度

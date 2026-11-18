@@ -29,6 +29,8 @@
 
 固件对应位置：[TaskSUB.cpp](../../firmware/SUB/Interface/Examples/TaskSUB.cpp)。不要将焊盘号直接填入固件通道映射。
 
+[系统 MCU 对照表](../../hardware/electrical/mcu-signal-map.csv)进一步追踪到 SUB 的 MCU 引脚：M1–M8 依次为 **PI6、PA1、PA3、PI5、PI7、PA2、PA0、PI2**。这是任务映射与 BSP GPIO 数组的源码结果，不是 A 板接插件针号。DShot 索引与 PWM 索引不同；EC-08/09 对插板及信号地仍需逐针核查。完整对应见[系统通信图](../../hardware/electrical/diagrams/system-signals.svg)。
+
 电调对插板背面：M3、M4、M5、M6 的线从上侧走，其余从下侧走。
 
 ![电调对插板背面走线](../assets/thrusters/image_02.jpg)
