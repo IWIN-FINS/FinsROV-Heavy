@@ -1,0 +1,11 @@
+﻿端子,功能组（非针序）,端子数,同组连接,连接对象,依据,待核或保留事项
+20P,24V,4,同信号4P用一个4P互联短接件；与其余组独立,EC-07供压力电源；UART8经串口转RS485到A/B,作者本轮确认；docs/development/author-confirmations.zh-CN.md,20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突
+20P,GND,4,同信号4P用一个4P互联短接件；与其余组独立,EC-07供压力电源；UART8经串口转RS485到A/B,作者本轮确认；docs/development/author-confirmations.zh-CN.md,20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突
+20P,485A,4,同信号4P用一个4P互联短接件；与其余组独立,EC-07供压力电源；UART8经串口转RS485到A/B,作者本轮确认；docs/development/author-confirmations.zh-CN.md,20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突
+20P,485B,4,同信号4P用一个4P互联短接件；与其余组独立,EC-07供压力电源；UART8经串口转RS485到A/B,作者本轮确认；docs/development/author-confirmations.zh-CN.md,20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突
+20P,PLC_L1 / PLC_L2,2,两个独立信号，不互相短接,J-PLC与舱内载波板,作者本轮确认；docs/development/author-confirmations.zh-CN.md,与CAN分开；物理端子及板端对应待核
+20P,CAN_H / CAN_L,2,两个独立信号，不互相短接,J-CAN与舱内CAN设备,作者本轮确认；docs/development/author-confirmations.zh-CN.md,与PLC分开；控制器/参考地/终端待核
+18P,灯24V,3,同名端子短接方式未确认,三个灯接口的1脚,作者本轮确认；docs/development/author-confirmations.zh-CN.md,电池直供16.8–25.2 V；物理次序、保护路径待核
+18P,灯GND,3,同名端子短接方式未确认,三个灯接口的2脚,作者本轮确认；docs/development/author-confirmations.zh-CN.md,与壳体/CAN参考地关系待核
+18P,灯PWM,3,三路独立，不短接,PWM10/11/12（PH11/PH12/PI0）分别接灯3脚,作者本轮确认；docs/development/author-confirmations.zh-CN.md,源码50Hz/1100–1900µs；灯位/灯具电平/极性/实测兼容性待核；SUB同步三路
+18P,预留,9,由复刻者按实际配置自行接线,未预设功能,作者本轮确认；docs/development/author-confirmations.zh-CN.md,不自动接电源、地或PWM；记录实际方案后核验

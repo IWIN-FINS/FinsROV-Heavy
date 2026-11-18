@@ -31,21 +31,23 @@ FinsROV-Heavy 是我们在水下惯性里程计实验中使用的开放式遥控
 
 [电气资料目录](hardware/electrical/README.zh-CN.md) · [电池舱接线图与说明](hardware/electrical/battery-wiring.zh-CN.md) · [接口/线束 Excel](hardware/electrical/battery-wiring.xlsx)
 
-[系统接线台账与两页图册](hardware/electrical/system-wiring.zh-CN.md)另提供 74 条功能连接、17 条 MCU 对照和 44 组线束记录，区分源码引脚、已确认功能与实物待核项。
+[系统接线台账与三页图册](hardware/electrical/system-wiring.zh-CN.md)另提供 74 条功能连接、17 条 MCU 对照、44 组线束记录和 10 组端子分配，区分源码引脚、作者确认功能与实物待核项。
 
-已整理电池舱及[设备舱两端的插座定义](hardware/electrical/equipment-wiring.zh-CN.md)，包含 SVG/PDF 图纸、接口/逐针表和电池 CAN 协议资料。设备舱覆盖 8 路电机、4 路压力、2 个当前用于云台的扩展口、3 路照明、PLC、CAN 及烧写位置。主供电四芯分配、烧写口针序和舱内配电/总线连接仍待核。
+已整理电池舱及[设备舱两端的插座定义](hardware/electrical/equipment-wiring.zh-CN.md)，包含 SVG/PDF 图纸、接口/逐针表和电池 CAN 协议资料。主供电 **1/2 为电池正极、3/4 为电池负极**，同极性两线合并接一个 LCB60 配插头；原称“24V”的供电均为随电量波动的电池直供。20P 压力/PLC/CAN 转接及 18P 灯光/预留端子的功能分组已确认；压力计从 EC-07 取电，A 板串口经 RS-485 转换接入，三灯使用独立 PWM 通道。20P 顺序由复刻者按布线方便安排；烧写口针序和各板物理端子仍需记录。
 
 ### 电源缓启动与过流保护板（EC-07）
 
-查看或修改 LM5069 电源板设计请使用立创开源工程。制板 ZIP 包含 Gerber 和钻孔文件，可用于裸板下单。现已补充交互式装联 BOM；R12 的焊接状态存在版本冲突，装联前请先核对，再从同版工程导出贴片坐标。
+查看或修改 LM5069 电源板设计请使用立创开源工程。作者已确认最终 EDA 删除 R12，不再作为待决焊接项。仓库保留制板 ZIP 和旧交互式装联 BOM；旧 HTML 仍含 R12，最终版下单前须同步同版 Gerber、BOM 和贴片坐标。
 
 [查看立创开源工程](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [下载 PCB 制板文件](hardware/pcb/PowerBoard.zip?raw=true) · [焊接教程与交互式 BOM](docs/build/03-power-board.zh-CN.md)
 
 ## 嵌入式固件
 
+**默认复刻采用 SUB，仅以手柄操控为当前目标。** 惯性里程计与 MAVLink 集成版保留为可选实验版本，不纳入默认部署。
+
 | 版本 | 用途 |
 | --- | --- |
-| [SUB](firmware/SUB/) | 正常机器人操控 |
+| [SUB](firmware/SUB/) | 默认：手柄操控及该源码已有的控制辅助 |
 | [惯性里程计实验](firmware/inertial-odometry/) | 惯性里程计实验及扩展的传感器、执行器遥测 |
 | [MAVLink 集成开发版](firmware/integrated/) | 配合新 NX 桥接和固定上位机协议；已完成本地验证，实机验收待完成 |
 
@@ -55,11 +57,11 @@ FineSUB 固件适用各源码目录中的 MPL-2.0 许可证，第三方组件适
 
 ## Jetson 软件
 
-已提供配套 SUB 固件的 [控制转发、视频传输和自启动脚本](software/jetson/README.md)。网络、串口、相机参数和 systemd 配置见 [Jetson 教程](docs/build/06-jetson.zh-CN.md)。
+默认使用配套 SUB 固件的 [控制转发、视频传输和自启动脚本](software/jetson/README.md)。网络、串口、相机参数和 systemd 配置见 [Jetson 教程](docs/build/06-jetson.zh-CN.md)。匹配旧协议的 PC 手柄发送程序、版本与使用说明尚待补齐。
 
 Windows 多模式上位机已在独立仓库提供：[NXTelemetryMonitor · 固定版本 `5ebe00e`](https://github.com/ganju2390/NXTelemetryMonitor/tree/5ebe00e2573c8df5b5ad376915fab2da0644c188)。它支持手柄与轨迹控制，已有模拟联调记录，使用 MAVLink 2 协议。本仓库原有 SUB 转发脚本和两套固件快照使用旧协议，不能直接与新上位机混用。软件组合及实机验证状态须分别核对，模拟通过不代表整机验证完成。
 
-新链路使用 **固定上位机 + `fins_bridge` + 集成固件**，见[三端部署、验证与限制](docs/software/pc-nx-mcu.zh-CN.md)。实机定深能力默认关闭，须核准传感器标定与共同深度基准后启用；实际惯性里程计推理与原始传感器输入的接入仍待完成。
+可选的 MAVLink 开发链路使用 **固定上位机 + `fins_bridge` + 集成固件**，见[三端部署、验证与限制](docs/software/pc-nx-mcu.zh-CN.md)。该开发版的实机定深能力默认关闭，须核准传感器标定与共同深度基准后启用；实际惯性里程计推理与原始传感器输入的接入仍待完成。这些限制和能力标志专属于集成版，不改写 SUB 的控制行为。
 
 ## 复现顺序
 

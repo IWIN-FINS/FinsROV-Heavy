@@ -1,6 +1,8 @@
 # 06 · Jetson 配置与视频传输
 
-新上位机对应的 [PC—NX—MCU 集成开发版](../software/pc-nx-mcu.zh-CN.md)已提供独立桥接、固件构建和本地验证入口。下文继续记录旧 SUB 配套环境，两套控制服务互斥，不能混用协议。集成版的实机定深校准和 V24 推理接入尚未完成。
+**本章是当前默认复刻路径：`firmware/SUB` + `V5StreamerNX.py` 转发 + 原 SUB 手柄上位机。** 默认对外控制入口为手柄，不包含轨迹控制或在线惯性里程计推理；SUB 源码已有的姿态、深度和灯光辅助控制保留。
+
+[PC—NX—MCU 集成开发版](../software/pc-nx-mcu.zh-CN.md)及惯性里程计快照保留为可选实验，不属于本章默认安装步骤。集成版独有的定深校准与推理缺项不代表 SUB 的辅助功能被移除。默认启动 `StreamerStart.sh` / `streamer.service`，不启用实验目录中的 `fins-bridge.service`；两套协议不能混用。
 
 [教程目录](../README.zh-CN.md) · 上一步：[水压计](05-pressure-sensors.zh-CN.md) · 下一步：[联调检查](07-bring-up.zh-CN.md)
 
@@ -94,7 +96,7 @@ python3 V5StreamerNX.py
 
 尚未安装服务时跳过第一行。脚本启动后应打印串口成功打开及 UDP 监听端口。
 
-原 Windows 手柄上位机尚未随资料提供，因此完整操控验证还需要该程序或兼容的发送端。包格式、端口与串口帧说明见[脚本说明](../../software/jetson/README.md)。当前脚本的映射为：
+原 SUB Windows 手柄上位机尚未随资料提供，因此完整操控验证还需要该程序或兼容的发送端。仍需补充其源码/可发布包及版本、依赖与启动命令、实际手柄型号和输入映射、现场网络/接收配置；新 MAVLink 上位机不能直接替代。包格式、端口与串口帧说明见[脚本说明](../../software/jetson/README.md)。当前脚本的映射为：
 
 | 输入数组 | 输出控制量 |
 | --- | --- |

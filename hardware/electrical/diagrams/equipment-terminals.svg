@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1131" viewBox="0 0 1600 1131">
+<title>舱内端子功能分组 / Terminal functional groups</title>
+<rect x="0" y="0" width="1600" height="1131" rx="8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="50" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32">FinsROV-Heavy</text>
+<text x="50" y="108" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26">舱内端子功能分组 / Terminal functional groups</text>
+<text x="1210" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">EQ-01 / Rev B</text>
+<text x="1210" y="93" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">2026-11-18</text>
+<polyline points="50,135 1550,135" fill="none" stroke="#B9C7D4" stroke-width="1"/>
+<text x="50" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">来源：作者确认及设备舱标注图；未进行实机导通、通信、转向或烧写验证。</text>
+<text x="1450" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">3 / 3</text>
+<text x="50" y="178" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">这是同信号分组图，不是端子物理排列；20P 可按布线方便安排，记录本机位序即可。</text>
+<rect x="50" y="210" width="970" height="480" rx="8" fill="#F4F7FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="75" y="245" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23">20P：压力计 4 × 4P + PLC 2P + CAN 2P</text>
+<text x="75" y="307" fill="#AE3941" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">24V</text>
+<rect x="255" y="280" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#AE3941" stroke-width="1.5"/>
+<text x="280" y="307" fill="#AE3941" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">24V</text>
+<rect x="415" y="280" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#AE3941" stroke-width="1.5"/>
+<text x="440" y="307" fill="#AE3941" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">24V</text>
+<rect x="575" y="280" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#AE3941" stroke-width="1.5"/>
+<text x="600" y="307" fill="#AE3941" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">24V</text>
+<rect x="735" y="280" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#AE3941" stroke-width="1.5"/>
+<text x="760" y="307" fill="#AE3941" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">24V</text>
+<polyline points="355,300 415,300" fill="none" stroke="#AE3941" stroke-width="2.5"/>
+<polyline points="515,300 575,300" fill="none" stroke="#AE3941" stroke-width="2.5"/>
+<polyline points="675,300 735,300" fill="none" stroke="#AE3941" stroke-width="2.5"/>
+<text x="855" y="306" fill="#AE3941" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">4P 互联件</text>
+<text x="75" y="377" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">GND</text>
+<rect x="255" y="350" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#5F6E7C" stroke-width="1.5"/>
+<text x="280" y="377" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">GND</text>
+<rect x="415" y="350" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#5F6E7C" stroke-width="1.5"/>
+<text x="440" y="377" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">GND</text>
+<rect x="575" y="350" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#5F6E7C" stroke-width="1.5"/>
+<text x="600" y="377" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">GND</text>
+<rect x="735" y="350" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#5F6E7C" stroke-width="1.5"/>
+<text x="760" y="377" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">GND</text>
+<polyline points="355,370 415,370" fill="none" stroke="#5F6E7C" stroke-width="2.5"/>
+<polyline points="515,370 575,370" fill="none" stroke="#5F6E7C" stroke-width="2.5"/>
+<polyline points="675,370 735,370" fill="none" stroke="#5F6E7C" stroke-width="2.5"/>
+<text x="855" y="376" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">4P 互联件</text>
+<text x="75" y="447" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">485A</text>
+<rect x="255" y="420" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#187450" stroke-width="1.5"/>
+<text x="280" y="447" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485A</text>
+<rect x="415" y="420" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#187450" stroke-width="1.5"/>
+<text x="440" y="447" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485A</text>
+<rect x="575" y="420" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#187450" stroke-width="1.5"/>
+<text x="600" y="447" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485A</text>
+<rect x="735" y="420" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#187450" stroke-width="1.5"/>
+<text x="760" y="447" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485A</text>
+<polyline points="355,440 415,440" fill="none" stroke="#187450" stroke-width="2.5"/>
+<polyline points="515,440 575,440" fill="none" stroke="#187450" stroke-width="2.5"/>
+<polyline points="675,440 735,440" fill="none" stroke="#187450" stroke-width="2.5"/>
+<text x="855" y="446" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">4P 互联件</text>
+<text x="75" y="517" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">485B</text>
+<rect x="255" y="490" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<text x="280" y="517" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485B</text>
+<rect x="415" y="490" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<text x="440" y="517" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485B</text>
+<rect x="575" y="490" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<text x="600" y="517" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485B</text>
+<rect x="735" y="490" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<text x="760" y="517" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">485B</text>
+<polyline points="355,510 415,510" fill="none" stroke="#2467AD" stroke-width="2.5"/>
+<polyline points="515,510 575,510" fill="none" stroke="#2467AD" stroke-width="2.5"/>
+<polyline points="675,510 735,510" fill="none" stroke="#2467AD" stroke-width="2.5"/>
+<text x="855" y="516" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">4P 互联件</text>
+<text x="75" y="566" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">四组彼此独立，不跨组短接；四个压力计 ID 不冲突。</text>
+<rect x="80" y="597" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#5F6E7C" stroke-width="1.5"/>
+<text x="110" y="630" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">PLC_L1</text>
+<rect x="300" y="597" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#5F6E7C" stroke-width="1.5"/>
+<text x="330" y="630" fill="#5F6E7C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">PLC_L2</text>
+<rect x="520" y="597" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#187450" stroke-width="1.5"/>
+<text x="550" y="630" fill="#187450" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">CAN_H</text>
+<rect x="740" y="597" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<text x="770" y="630" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">CAN_L</text>
+<text x="75" y="676" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">余 4P：PLC 两端子和 CAN 两端子分别保持独立，不用互联件短接。</text>
+<rect x="1050" y="210" width="500" height="480" rx="8" fill="#FFFFFF" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="1075" y="248" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23">已确认的接入关系</text>
+<text x="1075" y="295" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">压力电源：EC-07 直接取电</text>
+<text x="1075" y="337" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">不是独立稳压 24 V</text>
+<text x="1075" y="379" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">A 板 UART8 → 串口转 RS-485</text>
+<text x="1075" y="421" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">转接器 A/B → 20P 的 A/B 组</text>
+<text x="1075" y="476" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">各“24V”接口：电池直供</text>
+<text x="1075" y="518" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">电压随电量变化：16.8-25.2 V</text>
+<text x="1075" y="575" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">4P 互联件：作者提供选件</text>
+<text x="1075" y="617" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">商品 720074181347；适配参数待核</text>
+<text x="1075" y="659" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">未进行通断/带载测试</text>
+<rect x="50" y="720" width="1500" height="310" rx="8" fill="#FFFFFF" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="75" y="760" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23">18P：灯 24V 3P + GND 3P + 独立 PWM 3P + 预留 9P</text>
+<rect x="80" y="790" width="290" height="60" rx="8" fill="#F4F7FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="115" y="830" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">24V × 3P</text>
+<rect x="420" y="790" width="290" height="60" rx="8" fill="#F4F7FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="455" y="830" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">GND × 3P</text>
+<rect x="760" y="790" width="290" height="60" rx="8" fill="#F4F7FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="795" y="830" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">PWM × 3P</text>
+<rect x="1100" y="790" width="290" height="60" rx="8" fill="#F4F7FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="1135" y="830" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22">预留 × 9P</text>
+<text x="80" y="886" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20">三路 PWM 独立：PWM10/11/12 → PH11/PH12/PI0，不短接。</text>
+<text x="80" y="926" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">左前/云台/右前与通道对应待核；SUB 现有软件仍以同一灯光状态同步控制三路。</text>
+<text x="80" y="966" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">预留 9P 由复刻者自行接线；不预设电源、地或信号。24V/GND 接法按本机方案记录。</text>
+<text x="80" y="1006" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">互联件间距/电流/适配、线径线长、其余保护路径和实际通断结果仍需补录。</text>
+</svg>

@@ -2,11 +2,11 @@
 <rect x="0" y="0" width="1600" height="1131" rx="8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
 <text x="50" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32">FinsROV-Heavy</text>
 <text x="50" y="108" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26">通信与执行端对照 / Communications and actuators</text>
-<text x="1260" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">SYS-01 Rev A</text>
+<text x="1260" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">SYS-01 Rev B</text>
 <text x="1260" y="93" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">2026-11-18</text>
 <polyline points="50,135 1550,135" fill="none" stroke="#B9C7D4" stroke-width="1"/>
 <text x="50" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16">来源及连接编号：system-wiring.json / system-connections.csv；未进行实机导通、上电或通信验证。</text>
-<text x="1460" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">2 / 2</text>
+<text x="1460" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">2 / 3</text>
 <text x="50" y="177" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">蓝线为逻辑配对；MCU 引脚不等于板端插座针号。虚线项目尚缺物理端子、线束或总线依据。</text>
 <rect x="50" y="210" width="390" height="190" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
 <text x="68" y="242" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">RoboMaster A / USART3</text>
@@ -24,12 +24,12 @@
 <text x="620" y="309" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">PD9 RX ← TX 2</text>
 <polyline points="440,359 1110,359" fill="none" stroke="#2467AD" stroke-width="2.5"/>
 <text x="620" y="351" fill="#2467AD" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">GND - GND 3</text>
-<text x="50" y="433" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">SUB：115200 / 8N1；实验快照：460800 / 8N1。三线通信不连接载板针 4，端面按原手册核验。</text>
+<text x="50" y="433" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">默认 SUB 仅手柄：115200 / 8N1；实验快照 460800 仅作参考。三线通信不接 U1 针 4。</text>
 <rect x="50" y="465" width="475" height="155" rx="8" fill="#FFF7E6" stroke="#B9C7D4" stroke-width="1.5" stroke-dasharray="7 5"/>
 <text x="68" y="497" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">H30 / 四路压力</text>
 <text x="68" y="529" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">UART7 RX PE7 ← H30 TX；921600</text>
 <text x="68" y="558" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">UART8 TX PE1 / RX PE0；115200</text>
-<text x="68" y="587" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">压力 RS-485 收发电路与端子待核</text>
+<text x="68" y="587" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">UART8 → 串口转485 → 20P → 压力计</text>
 <rect x="550" y="465" width="475" height="155" rx="8" fill="#FFF7E6" stroke="#B9C7D4" stroke-width="1.5" stroke-dasharray="7 5"/>
 <text x="568" y="497" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">CAN / PLC / 相机</text>
 <text x="568" y="529" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">BAT-SVC 3/4 - J-CAN 1/2：H/L</text>
@@ -38,8 +38,8 @@
 <rect x="1050" y="465" width="500" height="155" rx="8" fill="#FFF7E6" stroke="#B9C7D4" stroke-width="1.5" stroke-dasharray="7 5"/>
 <text x="1068" y="497" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">云台 / 照明 / 烧写</text>
 <text x="1068" y="529" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">扩展两口均为 24V/GND/485A/485B</text>
-<text x="1068" y="558" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">灯 L1/2/3：PWM10/11/12；同亮度</text>
-<text x="1068" y="587" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">轴向、灯口对应和烧写针序待核</text>
+<text x="1068" y="558" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">灯 L1/2/3：PWM10/11/12；独立接线</text>
+<text x="1068" y="587" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">三路 PWM 禁止短接；空间对应待核</text>
 <text x="50" y="663" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">八路执行链：来自现有面板定义、实装记录与 SUB 源码；EC-08/09 中间针脚仍待补。</text>
 <rect x="50" y="685" width="1500" height="42" rx="8" fill="#203047" stroke="#203047" stroke-width="1.5"/>
 <text x="70" y="713" fill="#FFFFFF" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">推进器</text>

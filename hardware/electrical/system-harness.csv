@@ -1,28 +1,28 @@
 ﻿线束编号,范围,线径 mm²,成品长度 mm,测量起止点,线色/端子,记录/验证,来源编号
-H-SYS-PWR,放电回路; 主供电; 保护板输入,待测,待测,待定义,待记录,未进行导通/上电验证,BAT;EQ;PWR
+H-SYS-PWR,放电回路; 主供电; 保护板输入,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;BAT;EQ;PWR
 H-SYS-P-ESC1,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
 H-SYS-P-ESC2,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
 H-SYS-P-NX,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
 H-SYS-P-MCU,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
-H-SYS-P-PRS,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
-H-SYS-P-EXT,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
-H-SYS-P-LGT,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
+H-SYS-P-PRS,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;BAT;EQ;PWR
+H-SYS-P-EXT,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;BAT;EQ;PWR
+H-SYS-P-LGT,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;BAT;EQ;PWR
 H-SYS-P-PLC,负载供电,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;PWR
 H-SYS-NX,MCU TX → NX RX; NX TX → MCU RX; 串口参考地,待测,待测,待定义,待记录,未进行导通/上电验证,JET;NX;UART
 H-SYS-IMU,IMU 数据,待测,待测,待定义,待记录,未进行导通/上电验证,TASK;UART
-H-SYS-PRS,压力串口 TX/RX,待测,待测,待定义,待记录,未进行导通/上电验证,TASK;UART
-H-SYS-PRS-LF,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-PRS-LB,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-PRS-RB,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-PRS-RF,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-EXT-L,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-EXT-R,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-LGT-LF,24V; GND; PWM,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-LGT-GM,24V; GND; PWM,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-LGT-RF,24V; GND; PWM,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
+H-SYS-PRS,压力串口 TX/RX,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;TASK;UART
+H-SYS-PRS-LF,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-PRS-LB,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-PRS-RB,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-PRS-RF,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-EXT-L,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-EXT-R,24V; GND; 485A; 485B,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-LGT-LF,24V; GND; PWM,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-LGT-GM,24V; GND; PWM,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-LGT-RF,24V; GND; PWM,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
 H-SYS-CAN,CAN_H; CAN_L,待测,待测,待定义,待记录,未进行导通/上电验证,BAT;EQ
-H-SYS-CAN-IN,CAN_H / CAN_L,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
-H-SYS-PLC,PLC_L1; PLC_L2,待测,待测,待定义,待记录,未进行导通/上电验证,EQ
+H-SYS-CAN-IN,CAN_H / CAN_L,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
+H-SYS-PLC,PLC_L1; PLC_L2,待测,待测,待定义,待记录,未进行导通/上电验证,AUTH;EQ
 H-SYS-LAN,以太网,待测,待测,待定义,待记录,未进行导通/上电验证,JET
 H-SYS-SHORE,以太网,待测,待测,待定义,待记录,未进行导通/上电验证,JET
 H-SYS-CAM,USB,待测,待测,待定义,待记录,未进行导通/上电验证,EQ;JET

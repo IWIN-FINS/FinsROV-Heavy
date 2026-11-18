@@ -2,9 +2,9 @@
 
 [Project home](../../README.md) · [完整配置教程（中文）](../../docs/build/06-jetson.zh-CN.md)
 
-These scripts come from the V5 build notes. The control bridge supports the **SUB** firmware snapshot in this repository. It does **not** implement the inertial-odometry protocol.
+These V5 scripts are the **default Jetson deployment for joystick control**. Use `firmware/SUB`, `V5StreamerNX.py` and the original SUB joystick PC application together. The bridge receives the original joystick packet and converts it to the SUB UART protocol; it does not provide trajectory control or online inertial-odometry inference.
 
-The additional [PC–NX–MCU integration development version](../../docs/software/pc-nx-mcu.zh-CN.md) provides a fixed-PC MAVLink bridge, MCU overlay and C++ execution harness. It is separate from the legacy scripts below. Physical depth capability defaults off pending calibration; real V24 inference and underwater verification remain outstanding.
+SUB's existing attitude, depth and light assistance remain in the firmware. The experimental MAVLink bridge has different capabilities and restrictions; those do not describe the default SUB implementation.
 
 | File | Role |
 | --- | --- |
@@ -26,7 +26,9 @@ The additional [PC–NX–MCU integration development version](../../docs/softwa
 
 Install `python3-serial` and the GStreamer plugins described in the tutorial. The Python package is **pyserial**, not a package named `serial`. For Orin NX the video default uses NVENC; for **Orin Nano set `USE_NVENC = False`**, since that module has no NVENC engine. Check the camera's supported format and modes before retaining the defaults. [NVIDIA Orin Nano encoding documentation](https://docs.nvidia.com/jetson/archives/r36.4.3/DeveloperGuide/SD/Multimedia/SoftwareEncodeInOrinNano.html)
 
-The Windows joystick application is not included. A compatible sender must provide the documented 41-byte structure. The receiver must reassemble and check telemetry frames: the bridge neither preserves frame boundaries nor recovers lost UDP packets. This is the behavior inherited from the supplied scripts.
+The **original SUB Windows joystick application** is not included. Its releasable source/package, matching version, dependencies, launch command and device configuration still need to be supplied. A compatible sender must provide the documented 41-byte structure; the new MAVLink-only NXTelemetryMonitor application cannot connect to this bridge directly. The receiver must reassemble and check telemetry frames: the bridge neither preserves frame boundaries nor recovers lost UDP packets. This is the behavior inherited from the supplied scripts.
+
+Use `StreamerStart.sh` for the default bridge and video pair, or configure `streamer.service` with the actual user, checkout path and Python interpreter. The separate `deploy/fins-bridge.service` and `deploy/fins-video.service` templates belong to the optional MAVLink experiment; do not enable them for this default configuration.
 
 ## Publication fixes
 
@@ -39,4 +41,8 @@ The Windows joystick application is not included. A compatible sender must provi
 
 Source file hashes and the published file hashes are recorded in [the import manifest](../../docs/source-manifest.json). Offline checks cover command-frame serialization, CRC, all four video pipeline combinations and process cleanup. The revised scripts still require testing on the actual camera, Jetson, controller and Windows application.
 
-Run offline checks from this directory with `python -m unittest discover -s tests -v`. They do not open a serial port, send joystick commands or launch a real GStreamer pipeline.
+Run the default SUB offline checks from this directory with `python -m unittest discover -s tests -p test_offline.py -v`. They do not require the experimental C++ harness, open a serial port, send joystick commands or launch a real GStreamer pipeline.
+
+## Optional integration experiment
+
+The [PC–NX–MCU integration development version](../../docs/software/pc-nx-mcu.zh-CN.md) retains a fixed-PC MAVLink bridge, MCU overlay and C++ execution harness for future development. It is not the default deployment. Its physical depth capability is disabled until calibration; auxiliary actions and real V24 inference remain outstanding. These are restrictions of the experimental integration only. The inertial-odometry firmware snapshot is also optional and requires its own matching host protocol.

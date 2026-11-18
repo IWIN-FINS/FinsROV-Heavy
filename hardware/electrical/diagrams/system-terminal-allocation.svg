@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1131" viewBox="0 0 1600 1131"><title>端子功能分组 / Terminal allocation</title>
+<rect x="0" y="0" width="1600" height="1131" rx="8" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="50" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32">FinsROV-Heavy</text>
+<text x="50" y="108" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26">端子功能分组 / Terminal allocation</text>
+<text x="1260" y="60" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">SYS-01 Rev B</text>
+<text x="1260" y="93" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">2026-11-18</text>
+<polyline points="50,135 1550,135" fill="none" stroke="#B9C7D4" stroke-width="1"/>
+<text x="50" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16">来源及连接编号：system-wiring.json / system-connections.csv；未进行实机导通、上电或通信验证。</text>
+<text x="1460" y="1092" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">3 / 3</text>
+<text x="50" y="178" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">下图是功能分组，不是端子位置或针号。20P 无固定排列，按布线方便安排，并记录自己的实际分配。</text>
+<text x="50" y="225" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23">20P 压力转接：4 + 4 + 4 + 4 + 2 + 2 = 20 个位置</text>
+<text x="50" y="260" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18">EC-07 供电 → 24V/GND 组；A 板 UART8 → 串口转 RS-485 模块 → 485A/485B 组 → 四只压力计。</text>
+<rect x="50" y="290" width="360" height="175" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="68" y="322" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">24V · 4 个位置</text>
+<text x="68" y="354" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">一件 4P 互联短接件连接本组</text>
+<text x="68" y="383" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">四只压力计同信号各占一位置</text>
+<text x="68" y="412" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">与其他三个信号组保持隔离</text>
+<rect x="85" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="160" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="235" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="310" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<polyline points="104,428 329,428" fill="none" stroke="#2467AD" stroke-width="3"/>
+<rect x="430" y="290" width="360" height="175" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="448" y="322" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">GND · 4 个位置</text>
+<text x="448" y="354" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">一件 4P 互联短接件连接本组</text>
+<text x="448" y="383" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">四只压力计同信号各占一位置</text>
+<text x="448" y="412" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">与其他三个信号组保持隔离</text>
+<rect x="465" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="540" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="615" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="690" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<polyline points="484,428 709,428" fill="none" stroke="#2467AD" stroke-width="3"/>
+<rect x="810" y="290" width="360" height="175" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="828" y="322" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">485A · 4 个位置</text>
+<text x="828" y="354" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">一件 4P 互联短接件连接本组</text>
+<text x="828" y="383" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">四只压力计同信号各占一位置</text>
+<text x="828" y="412" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">与其他三个信号组保持隔离</text>
+<rect x="845" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="920" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="995" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="1070" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<polyline points="864,428 1089,428" fill="none" stroke="#2467AD" stroke-width="3"/>
+<rect x="1190" y="290" width="360" height="175" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="1208" y="322" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">485B · 4 个位置</text>
+<text x="1208" y="354" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">一件 4P 互联短接件连接本组</text>
+<text x="1208" y="383" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">四只压力计同信号各占一位置</text>
+<text x="1208" y="412" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">与其他三个信号组保持隔离</text>
+<rect x="1225" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="1300" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="1375" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<rect x="1450" y="415" width="38" height="25" rx="8" fill="#FFFFFF" stroke="#2467AD" stroke-width="1.5"/>
+<polyline points="1244,428 1469,428" fill="none" stroke="#2467AD" stroke-width="3"/>
+<rect x="50" y="490" width="735" height="125" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="68" y="522" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">PLC · 2 个位置</text>
+<text x="68" y="554" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">PLC_L1 与 PLC_L2 各占一位置；两线禁止互相短接。</text>
+<text x="68" y="583" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">仅功能占位；模块物理端子、屏蔽和系缆规格仍待核。</text>
+<rect x="815" y="490" width="735" height="125" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="833" y="522" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">CAN · 2 个位置</text>
+<text x="833" y="554" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">CAN_H 与 CAN_L 各占一位置；两线禁止互相短接。</text>
+<text x="833" y="583" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">控制器、参考地、终端和波特率仍待核。</text>
+<text x="50" y="666" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23">18P 灯转接：3 + 3 + 3 + 9 = 18 个位置</text>
+<rect x="50" y="695" width="360" height="135" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="68" y="727" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">24V · 3 个位置</text>
+<text x="68" y="759" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">电池直供，随电量变化</text>
+<text x="68" y="788" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">组内连接工艺待核</text>
+<rect x="430" y="695" width="360" height="135" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="448" y="727" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">GND · 3 个位置</text>
+<text x="448" y="759" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">三只灯的供电返回线</text>
+<text x="448" y="788" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">组内连接工艺待核</text>
+<rect x="810" y="695" width="360" height="135" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="828" y="727" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">PWM · 3 个独立位置</text>
+<text x="828" y="759" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">各接独立 PWM 通道，禁止短接</text>
+<text x="828" y="788" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">同亮度只是 SUB 软件设定</text>
+<rect x="1190" y="695" width="360" height="135" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="1208" y="727" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">自由分配 · 9 个位置</text>
+<text x="1208" y="759" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">未指定用途</text>
+<text x="1208" y="788" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">按实际接线补录</text>
+<rect x="50" y="860" width="735" height="160" rx="8" fill="#F2F6FA" stroke="#B9C7D4" stroke-width="1.5"/>
+<text x="68" y="892" fill="#203047" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">三路 PWM 源码对照</text>
+<text x="68" y="924" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">L1 / PWM10 / TIM5_CH2 / PH11</text>
+<text x="68" y="953" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">L2 / PWM11 / TIM5_CH3 / PH12</text>
+<text x="68" y="982" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">L3 / PWM12 / TIM5_CH4 / PI0</text>
+<rect x="815" y="860" width="735" height="160" rx="8" fill="#FFF7E6" stroke="#B9C7D4" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="833" y="892" fill="#94600C" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21">仍需实物记录</text>
+<text x="833" y="924" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">LF / GM / RF 灯口与 L1 / L2 / L3 的空间对应。</text>
+<text x="833" y="953" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">18P 实际位置、灯具电平、线径、线长和端子工艺。</text>
+<text x="833" y="982" fill="#596B80" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17">来源 AUTH；采购链接仅作定位，未核验商品电流/尺寸。</text>
+</svg>

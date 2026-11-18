@@ -25,7 +25,7 @@ Current configuration is checked against the released CAD/BOM, the author's fabr
 
 The frame tutorial supplies four additional fastener quantities, now recorded as `HW-06`–`HW-09`. Their counts are installation quantities for those steps, subject to reconciling kit contents. Other unresolved counts remain blank. The tutorial's eight motor cable clamps are explicitly distinguished from the existing four clamp-body STEP instances.
 
-The power-board tutorial and interactive BOM disagree about R12. Both pieces of evidence are recorded; the source HTML and Gerber were not altered. Frame hole corrections, cable-cut lengths, protocol-matched host integration and validated sealing instructions remain on the [open-items list](build/07-bring-up.zh-CN.md#待补资料).
+The author confirmed on 2026-11-18 that R12 was deleted from the final EDA design, resolving the earlier disagreement between the notes and historical interactive BOM. The original HTML and Gerber were not altered; matching final assembly and fabrication exports still need to be synchronized. Frame hole corrections, cable-cut lengths, the default SUB PC sender and validated sealing instructions remain on the [open-items list](build/07-bring-up.zh-CN.md#待补资料).
 
 ### Manufacturing and assembly records added on 2026-11-18
 
@@ -34,6 +34,10 @@ The [manufacturing checklist](../hardware/mechanical/manufacturing-release.zh-CN
 Jetson instructions correct a malformed systemd block, distinguish Orin NX from Nano encoding, explain UART device permissions and state the actual SUB light-control behavior. Upstream references are linked at the relevant steps. The offline tests do not establish hardware operation or underwater performance.
 
 ## Third-party material
+
+### Author confirmations added on 2026-11-18
+
+The [author confirmation record](development/author-confirmations.zh-CN.md) captures the main-power polarity and pairing into one LCB60 mating plug, “24V” as a varying direct battery supply, terminal allocations, final-design R12 removal, and SUB joystick operation as the default configuration. Pressure sensors take power from EC-07; the A-board UART reaches them through an RS-485 converter and the 20-position block. Its terminal order is chosen for convenient routing. The three lights use independent PWM channels. The linked 4-position jumper is the author's procurement reference; its product page could not be read. No component ratings or continuity tests were established by this update. The default legacy PC joystick sender remains to be supplied; MAVLink integration is optional development work.
 
 ### Battery documentation added on 2026-11-17
 

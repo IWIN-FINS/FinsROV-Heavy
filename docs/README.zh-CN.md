@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 01 | [备料与版本说明](build/01-overview.zh-CN.md) | 选对 CAD 和 BOM，区分当前配置与早期方案 |
 | 02 | [机架、浮力块与推进器安装](build/02-frame.zh-CN.md) | 组框架、装电池滑座与预埋螺母、固定推进器 |
-| 03 | [电源管理板焊接](build/03-power-board.zh-CN.md) | 使用交互式 BOM 定位元件，核对 R12 的版本冲突 |
+| 03 | [电源管理板焊接](build/03-power-board.zh-CN.md) | 最终工程已删除 R12，区分旧交互式 BOM 与最终装联文件 |
 | 04 | [推进器与电调接线](build/04-thrusters.zh-CN.md) | 对照编号接三相线与控制信号，核对转向 |
 | 05 | [水压计配置](build/05-pressure-sensors.zh-CN.md) | 逐个配置地址、波特率和压力单位 |
 | 08 | [舱内装配与线束固定](build/08-enclosure-assembly.zh-CN.md) | 对照板卡、支撑件与线束路径完成试装，记录缺失尺寸和照片 |
@@ -16,10 +16,13 @@
 | 07 | [联调检查与待补资料](build/07-bring-up.zh-CN.md) | 逐级确认通信和控制链路，记录尚缺的装配与试验步骤 |
 | 09 | [密封、检漏与配平记录](build/09-sealing-trim.zh-CN.md) | 准备组件依据和试验记录；尚非经过实机验证的操作规程 |
 
+默认复刻路线为 **SUB 固件 + 原 Jetson 转发 + 匹配旧协议的 PC 手柄程序**，当前目标是手柄操控。PC 程序及其版本、启动说明仍待提供；MAVLink 集成与惯性里程计资料作为可选实验版本保留。
+
 ## 配套资料
 
 - [合并后的开发状态、优先级与待补清单](development/remaining-work.zh-CN.md)
-- [PC—NX—MCU 集成部署与当前限制](software/pc-nx-mcu.zh-CN.md)
+- [可选 PC—NX—MCU 集成开发版及当前限制](software/pc-nx-mcu.zh-CN.md)
+- [作者确认记录：供电、20P/18P 端子与默认 SUB](development/author-confirmations.zh-CN.md)
 - [电气接线资料：电池舱、设备舱插座定义、接口/线束表和 CAN 协议](../hardware/electrical/README.zh-CN.md)
 - [整机 CAD 与两份 BOM](../README.zh-CN.md#硬件资料)
 - [加工图纸与打印模型](../hardware/mechanical/README.zh-CN.md)

@@ -8,7 +8,7 @@ These guides follow the build from fabricated parts to the first bench checks. T
 | --- | --- | --- |
 | 1 | [Parts and revision selection](build/01-overview.zh-CN.md) | BOMs, machining files, purchased kits and current versus historical configurations |
 | 2 | [Frame assembly](build/02-frame.zh-CN.md) | Frame fasteners, battery slide, buoyancy inserts, thrusters and ballast |
-| 3 | [Power board assembly](build/03-power-board.zh-CN.md) | Interactive BOM, soldering order and the unresolved R12 revision discrepancy |
+| 3 | [Power board assembly](build/03-power-board.zh-CN.md) | Final-design R12 removal, historical BOM reference and soldering order |
 | 4 | [Thrusters and ESC wiring](build/04-thrusters.zh-CN.md) | Physical motor numbers, ESC pads, controller channels and direction checks |
 | 5 | [Pressure sensor setup](build/05-pressure-sensors.zh-CN.md) | RS-485 addresses, baud rate, units and readback |
 | 8 | [Enclosure assembly and cable routing](build/08-enclosure-assembly.zh-CN.md) | Match boards and supports, trial-fit the stack and document cable routes |
@@ -16,7 +16,7 @@ These guides follow the build from fabricated parts to the first bench checks. T
 | 7 | [Bring-up checklist](build/07-bring-up.zh-CN.md) | Stage-by-stage checks and the remaining gaps before a complete build tutorial |
 | 9 | [Sealing, leak checks and trim records](build/09-sealing-trim.zh-CN.md) | Required component evidence and test records; not a hardware-validated procedure |
 
-The original [Jetson scripts](../software/jetson/README.md) target **SUB normal operation**: 115200 baud and 28-byte commands. The inertial-odometry firmware uses a different protocol. The [Windows multimode ground station, pinned at `5ebe00e`](https://github.com/ganju2390/NXTelemetryMonitor/tree/5ebe00e2573c8df5b5ad376915fab2da0644c188), is available separately and uses MAVLink 2; it cannot connect directly to the legacy bridge. Check the matching PC/NX/MCU versions and hardware validation records before use.
+The default is **SUB with joystick control**, using the original [Jetson scripts](../software/jetson/README.md): 115200 baud and 28-byte MCU commands. The matching legacy PC sender still needs to be supplied. The inertial-odometry firmware uses a different protocol. The [Windows multimode ground station, pinned at `5ebe00e`](https://github.com/ganju2390/NXTelemetryMonitor/tree/5ebe00e2573c8df5b5ad376915fab2da0644c188), belongs to the optional MAVLink integration configuration and cannot connect directly to the default bridge.
 
 [Manufacturing revision checklist](../hardware/mechanical/manufacturing-release.zh-CN.md) · [Build record template](../hardware/mechanical/build-record.zh-CN.md)
 

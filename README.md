@@ -31,21 +31,23 @@ Find CNC end caps, frame plates, buoyancy blocks, FDM mounts and internal mounti
 
 [Electrical documentation](hardware/electrical/README.md) · [Battery wiring guide and drawings](hardware/electrical/battery-wiring.zh-CN.md) · [Connector and harness workbook](hardware/electrical/battery-wiring.xlsx)
 
-The [system register and two-page drawings](hardware/electrical/system-wiring.zh-CN.md) add 74 functional connections, 17 MCU mappings and 44 harness records, distinguishing source-code pins from confirmed functions and unresolved physical connections.
+The [system register and three-page drawings](hardware/electrical/system-wiring.zh-CN.md) add 74 functional connections, 17 MCU mappings, 44 harness records and 10 terminal allocation groups, distinguishing source-code pins from author-confirmed functions and unresolved physical connections.
 
-The package documents the battery and [equipment enclosure interfaces](hardware/electrical/equipment-wiring.zh-CN.md), including eight motors, four pressure sensors, two expansion ports currently used for gimbal servos, three lights, PLC, CAN and the programming-port location. SVG/PDF drawings and pin tables distinguish confirmed functions from unresolved physical pin views, power assignments, programming pins and internal connections.
+The package documents the battery and [equipment enclosure interfaces](hardware/electrical/equipment-wiring.zh-CN.md). Main power pins **1/2 are battery positive and 3/4 battery negative**; each same-polarity pair connects to one mating LCB60 plug. All supplies previously called “24V” are direct battery supplies whose voltage varies with charge. The pressure sensors take power from EC-07 and communicate through the A-board UART and an RS-485 converter. The three lights use independent PWM channels. Functional allocations of the 20-position and 18-position terminal blocks are confirmed; the 20-position order is chosen for convenient routing. Programming pins and physical board terminals still need documentation.
 
 ### Power protection board (EC-07)
 
-The LM5069 board provides soft start and overcurrent protection. Use the EasyEDA project for the editable design and the ZIP for bare PCB fabrication. The ZIP contains Gerber and drill files. An interactive assembly BOM is also available. Resolve the R12 revision discrepancy and export placement files from the matching design before ordering assembly.
+The LM5069 board provides soft start and overcurrent protection. The author confirms that R12 was removed from the final EDA design. The repository preserves a fabrication ZIP and a historical interactive BOM that still lists R12. Obtain matching final Gerber, BOM and placement exports before ordering the final revision.
 
 [Open the EasyEDA project](https://oshwhub.com/gan_ju/lm5069-dian-yuan-huan-qi-dong-yu-guo-liu-bao-hu-ban) · [Download PCB fabrication files](hardware/pcb/PowerBoard.zip?raw=true) · [Assembly guide and interactive BOM](docs/build/03-power-board.zh-CN.md)
 
 ## Embedded firmware
 
+**SUB is the default firmware for joystick operation.** The inertial-odometry and MAVLink integration versions remain optional experimental configurations.
+
 | Version | Use |
 | --- | --- |
-| [SUB](firmware/SUB/) | Normal vehicle operation |
+| [SUB](firmware/SUB/) | Default: joystick operation and the control assistance already implemented in this snapshot |
 | [Inertial odometry](firmware/inertial-odometry/) | Inertial odometry experiments and expanded sensor/actuator telemetry |
 | [MAVLink integration build](firmware/integrated/) | New NX bridge and pinned ground-station protocol; locally validated, hardware acceptance pending |
 
@@ -55,11 +57,11 @@ FineSUB firmware uses the MPL-2.0 licenses included in its source directories. T
 
 ## Jetson software
 
-[Control bridge, video streaming and startup scripts](software/jetson/README.md) are included for the SUB firmware. Follow the [Jetson setup tutorial](docs/build/06-jetson.zh-CN.md) for Ethernet, UART, camera settings and systemd.
+[Control bridge, video streaming and startup scripts](software/jetson/README.md) for SUB are the default deployment. Follow the [Jetson setup tutorial](docs/build/06-jetson.zh-CN.md) for Ethernet, UART, camera settings and systemd. The matching legacy PC joystick sender, its version and operating instructions still need to be supplied.
 
 The Windows multimode ground station is available in a separate repository: [NXTelemetryMonitor, pinned at `5ebe00e`](https://github.com/ganju2390/NXTelemetryMonitor/tree/5ebe00e2573c8df5b5ad376915fab2da0644c188). It supports joystick and trajectory control, has recorded simulated validation, and uses MAVLink 2. The original SUB bridge and both legacy firmware snapshots in this repository use different protocols and cannot connect directly to the new ground station. Check the software combination and hardware validation status separately; simulation does not establish vehicle readiness.
 
-The new combination is **the pinned ground station + `fins_bridge` + integrated firmware**. See [deployment, validation and limitations](docs/software/pc-nx-mcu.zh-CN.md). Physical depth hold defaults to disabled until sensor calibration and the shared depth datum are verified. Actual onboard inertial-odometry inference and its raw sensor input integration remain pending.
+The optional MAVLink development combination is **the pinned ground station + `fins_bridge` + integrated firmware**. See [deployment, validation and limitations](docs/software/pc-nx-mcu.zh-CN.md). Physical depth hold in this integration build defaults to disabled until sensor calibration and the shared depth datum are verified. Actual onboard inertial-odometry inference and its raw sensor input integration remain pending. These capability flags and limitations belong to the integration build; they do not change SUB behavior.
 
 ## Preparing a build
 

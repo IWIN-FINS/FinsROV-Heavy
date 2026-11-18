@@ -2,14 +2,14 @@
 
 [简体中文](README.zh-CN.md) · [Project home](../README.md)
 
-Both variants use FineSUB and target the RoboMaster Type A board with an STM32F427.
+**Use `firmware/SUB` for the default joystick-controlled build.** Pair it with the [SUB Jetson bridge and video scripts](../software/jetson/README.md) and the original SUB joystick application; follow the [Jetson setup tutorial](../docs/build/06-jetson.zh-CN.md). The original Windows SUB application and reproducible launch configuration still need to be supplied. The new MAVLink PC application is not a compatible replacement.
 
-The additional [integrated MCU overlay](integrated/) connects to the fixed MAVLink PC through the new NX bridge. It preserves both snapshots below. See the [integration build/deployment guide](../docs/software/pc-nx-mcu.zh-CN.md) for host-loop validation, default-disabled physical depth capability and outstanding real inference/hardware work.
+The default control entry is joystick input; trajectory control and online inertial-odometry inference are outside this deployment. Existing SUB attitude, depth and light assistance remain in the source. Both snapshots use FineSUB and target the RoboMaster Type A board with an STM32F427. “Default” here describes the reproduction configuration, not a change to the Git default branch.
 
 | Directory | FineSUB branch | Use | Source commit |
 | --- | --- | --- | --- |
-| [SUB](SUB/) | SUB | Normal vehicle operation, attitude/depth control and light control | aebf944b803303c2d26dd1476c9a3496fb3a9a91 |
-| [inertial-odometry](inertial-odometry/) | 惯性里程计实验 | Inertial odometry experiments with IMU, depth, eight thruster RPM/throttle channels, battery voltage and timestamp telemetry | d2fbd78d23361b05f18b15ae8768a1a8b621330c |
+| [SUB](SUB/) | SUB | **Default:** joystick control with existing attitude, depth and light assistance | aebf944b803303c2d26dd1476c9a3496fb3a9a91 |
+| [inertial-odometry](inertial-odometry/) | 惯性里程计实验 | **Optional experiment:** IMU, depth, eight thruster RPM/throttle channels, battery voltage and timestamp telemetry | d2fbd78d23361b05f18b15ae8768a1a8b621330c |
 
 These snapshots were exported on 2026-11-11 from the local FineSUB branch heads, which matched their local remote-tracking refs. They include each branch's source tree, board support packages and framework documentation. IDE-specific `.idea/` files were omitted, and dependency declarations were relocated to the repository's root `.gitmodules`. Git handles text line endings through the inherited attributes. Source history is available upstream. [FineSUB upstream](https://gitee.com/gan-ju/FineSUB)
 
@@ -37,14 +37,18 @@ Use the recursive Git checkout to obtain the dependency sources. Each variant pi
 
 Install CMake 3.21 or later, Ninja and Arm Compiler 6 through Keil MDK. Add the directories containing `cmake.exe`, `ninja.exe`, `armclang.exe`, `armlink.exe` and `fromelf.exe` to `PATH`. Use an ASCII checkout and build path without spaces, for example `C:/src/FinsROV-Heavy`. The original linker configuration failed on the Chinese/space-containing source path used during validation.
 
-Run the commands for your selected variant from the repository root.
+For the default build, run only the SUB commands from the repository root:
 
 ~~~powershell
-# Normal vehicle operation
+# Default: SUB joystick control
 cmake -S firmware/SUB -B build/SUB -G Ninja
 cmake --build build/SUB --target Robomaster_A --parallel
+~~~
 
-# Inertial odometry experiments
+Build the inertial-odometry snapshot separately only when that optional experiment is needed:
+
+~~~powershell
+# Optional experiment, outside the default reproduction steps
 cmake -S firmware/inertial-odometry -B build/inertial-odometry -G Ninja
 cmake --build build/inertial-odometry --target Robomaster_A --parallel
 ~~~
@@ -68,6 +72,10 @@ The host frame begins with `0xAA` and ends with a two-byte CRC, low byte first. 
 In the experiment snapshot, `TaskTest()` forwards normalized host commands to the vehicle controller. Keep `enablePathTracking` at zero as documented in that source. The trajectory classes are present but are not invoked by the current task entry point. The experimental depth target is initialized to `-0.1f`, and the depth-target update body is commented out. Review the recorded pressure offsets and control parameters in `V5_SUB.hpp` for your vehicle.
 
 The [Jetson SUB control and video scripts](../software/jetson/README.md) are now included, with a [setup tutorial](../docs/build/06-jetson.zh-CN.md). They do not implement the inertial-odometry host protocol.
+
+## Optional MAVLink integration experiment
+
+The [integrated MCU overlay](integrated/) and new NX bridge remain optional experimental components. They are not the default reproduction entry and cannot be paired with the SUB bridge. The [integration guide](../docs/software/pc-nx-mcu.zh-CN.md) preserves the host-loop results and explains limitations specific to that version: uncalibrated depth capability disabled, auxiliary actions not integrated, and real inference outstanding. Those restrictions do not remove SUB's existing attitude, depth or light assistance. Historical snapshot build results remain unchanged.
 
 ## Source entry points
 

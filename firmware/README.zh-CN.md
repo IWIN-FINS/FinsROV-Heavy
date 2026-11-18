@@ -2,14 +2,14 @@
 
 [English](README.md) · [项目首页](../README.zh-CN.md)
 
-两套工程均基于 FineSUB，目标为搭载 STM32F427 的 RoboMaster A 型开发板。
+**当前默认选择 `firmware/SUB`，以手柄控制复刻机器人。** 默认组合为 SUB 固件 → [SUB Jetson 转发与视频脚本](../software/jetson/README.md) → 原 SUB 手柄上位机，配置步骤见 [Jetson 教程](../docs/build/06-jetson.zh-CN.md)。原 SUB Windows 手柄程序及其可复现启动配置尚待补齐，不能用新 MAVLink 上位机直接替代。
 
-新增的 [MCU 集成覆盖层](integrated/)通过新 NX 桥接连接固定 MAVLink 上位机，保留下方两套快照。[三端构建与部署说明](../docs/software/pc-nx-mcu.zh-CN.md)记录本地闭环验证、默认关闭的实机定深能力，以及尚未完成的真实推理和硬件验收。
+SUB 的对外控制入口以手柄为限，本次默认部署不包含轨迹控制或在线惯性里程计推理；源码中已有的姿态、深度和灯光辅助控制保留。两套快照均基于 FineSUB，目标为搭载 STM32F427 的 RoboMaster A 型开发板。此处“默认”指复刻配置，不改变仓库的 Git 默认分支。
 
 | 目录 | FineSUB 分支 | 用途 | 源提交 |
 | --- | --- | --- | --- |
-| [SUB](SUB/) | SUB | 正常机器人操控、姿态与深度控制、灯光控制 | aebf944b803303c2d26dd1476c9a3496fb3a9a91 |
-| [inertial-odometry](inertial-odometry/) | 惯性里程计实验 | 惯性里程计实验，输出 IMU、深度、8 路推进器转速与油门、电池电压及时间戳 | d2fbd78d23361b05f18b15ae8768a1a8b621330c |
+| [SUB](SUB/) | SUB | **默认**：手柄操控，保留姿态、深度与灯光辅助控制 | aebf944b803303c2d26dd1476c9a3496fb3a9a91 |
+| [inertial-odometry](inertial-odometry/) | 惯性里程计实验 | **可选实验**：输出 IMU、深度、8 路推进器转速与油门、电池电压及时间戳 | d2fbd78d23361b05f18b15ae8768a1a8b621330c |
 
 两份快照于 2026-11-11 从本地 FineSUB 对应分支头导出，与当时本地远端跟踪引用一致。快照包含各分支的源码树、板级支持和框架文档。整理时省略了 `.idea/` 编辑器配置，依赖声明移到仓库根目录的 `.gitmodules`，文本换行由原有 Git 属性处理。完整提交历史可在上游仓库查看。[FineSUB 上游](https://gitee.com/gan-ju/FineSUB)
 
@@ -37,14 +37,18 @@ git submodule update --init --recursive
 
 安装 CMake 3.21 或更高版本、Ninja，以及 Keil MDK 中的 Arm Compiler 6。将 `cmake.exe`、`ninja.exe`、`armclang.exe`、`armlink.exe` 和 `fromelf.exe` 所在目录加入 `PATH`。源码和构建目录采用无空格的纯英文路径，例如 `C:/src/FinsROV-Heavy`。此次验证中，原工程链接配置在含中文和空格的源码路径下报错。
 
-在仓库根目录执行所选版本的命令。
+默认只需在仓库根目录构建 SUB：
 
 ~~~powershell
-# 正常机器人操控
+# 默认：SUB 手柄操控
 cmake -S firmware/SUB -B build/SUB -G Ninja
 cmake --build build/SUB --target Robomaster_A --parallel
+~~~
 
-# 惯性里程计实验
+仅在需要惯性里程计实验快照时，单独构建下列可选版本：
+
+~~~powershell
+# 可选实验：不属于默认复刻步骤
 cmake -S firmware/inertial-odometry -B build/inertial-odometry -G Ninja
 cmake --build build/inertial-odometry --target Robomaster_A --parallel
 ~~~
@@ -68,6 +72,10 @@ cmake --build build/inertial-odometry --target Robomaster_A --parallel
 实验快照的 `TaskTest()` 将归一化上位机指令传给机器人控制器。按源码说明将 `enablePathTracking` 设为零，当前任务入口未调用文件中保留的轨迹跟踪类。实验版目标深度初值为 `-0.1f`，更新目标深度的函数体已注释。复现时需对照实机核对 `V5_SUB.hpp` 中记录的压力零偏和控制参数。
 
 配套 SUB 的 [Jetson 控制转发与视频脚本](../software/jetson/README.md) 已提供，[配置教程](../docs/build/06-jetson.zh-CN.md) 包含网络、串口和开机自启。该脚本不适用于惯性里程计实验协议。
+
+## 可选 MAVLink 集成实验
+
+[MCU 集成覆盖层](integrated/)及其新 NX 桥接保留为可选实验，不作为默认复刻入口，也不与 SUB 转发脚本混用。[三端实验说明](../docs/software/pc-nx-mcu.zh-CN.md)记录已有本地闭环验证，以及该集成版本独有的未校准定深禁用、辅助动作未接入和真实推理缺项。这些限制不表示 SUB 源码中的灯光、姿态或深度辅助控制被删除。两套旧快照的构建和历史验证记录均保留。
 
 ## 源码入口
 

@@ -1,8 +1,8 @@
 {
-  "revision": "EQ-01 Rev A",
-  "date": "2026-11-17",
+  "revision": "EQ-01 Rev B",
+  "date": "2026-11-18",
   "source_image": "references/equipment/signal-panel-reference.png",
-  "source_note": "作者文字确认及所附标注图；位置按原图方向，不声明舱外/舱内观察面；电机映射沿用现有教程。",
+  "source_note": "原作者图示及本轮直供电压、20P/18P功能分组确认；功能组不表示物理端子序号。",
   "ports": [
     {
       "id": "J-M01",
@@ -213,11 +213,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "为载波线对，不自动解释成电源正负或市电 L/N。",
+      "note": "经20P剩余4P中的PLC两端子，PLC_L1/L2独立，不短接；与CAN两端子分开。载波板具体端子/系缆待核。",
       "xy": [
         273,
         170
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "P-TOP",
@@ -272,11 +273,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "现有压力地址 0x02；舱内转换板端子待核。",
+      "note": "现有压力地址 0x02；20P四个4P同信号组各用互联件，组间独立、位序自选；压力电源取EC-07（电池电压），UART8经转RS485接A/B。",
       "xy": [
         200,
         235
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "P-CAM",
@@ -317,11 +319,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "现有压力地址 0x03；舱内转换板端子待核。",
+      "note": "现有压力地址 0x03；20P四个4P同信号组各用互联件，组间独立、位序自选；压力电源取EC-07（电池电压），UART8经转RS485接A/B。",
       "xy": [
         512,
         235
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-PRS-LF",
@@ -348,11 +351,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "现有压力地址 0x01；舱内转换板端子待核。",
+      "note": "现有压力地址 0x01；20P四个4P同信号组各用互联件，组间独立、位序自选；压力电源取EC-07（电池电压），UART8经转RS485接A/B。",
       "xy": [
         170,
         320
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-EXT-L",
@@ -379,11 +383,12 @@
         ]
       ],
       "bom": "IF-01",
-      "note": "通用扩展口，当前功能可更改；未指定为水平轴或俯仰轴。",
+      "note": "通用扩展口，当前功能可更改；未指定为水平轴或俯仰轴。 24V为电池直供16.8–25.2 V，保护路径及与压力总线关系待核。",
       "xy": [
         278,
         350
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-EXT-R",
@@ -410,11 +415,12 @@
         ]
       ],
       "bom": "IF-01",
-      "note": "通用扩展口，当前功能可更改；两舵机地址及与压力总线关系待核。",
+      "note": "通用扩展口，当前功能可更改；两舵机地址及与压力总线关系待核。 24V为电池直供16.8–25.2 V，保护路径及与压力总线关系待核。",
       "xy": [
         440,
         350
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-PRS-RF",
@@ -441,11 +447,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "现有压力地址 0x04；舱内转换板端子待核。",
+      "note": "现有压力地址 0x04；20P四个4P同信号组各用互联件，组间独立、位序自选；压力电源取EC-07（电池电压），UART8经转RS485接A/B。",
       "xy": [
         540,
         320
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-LGT-LF",
@@ -468,11 +475,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "PWM 电平、频率及主控通道待核。",
+      "note": "18P的24V/GND/PWM各3P。三PWM独立接PWM10/11/12（PH11/PH12/PI0），不短接；灯位对应待核。SUB现有软件同一灯光状态同步控制三路。24V为电池直供。",
       "xy": [
         187,
         400
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-LGT-GM",
@@ -495,11 +503,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "现有 SUB 灯控行为不等于本口对应的 PWM 通道已核实。",
+      "note": "18P的24V/GND/PWM各3P。三PWM独立接PWM10/11/12（PH11/PH12/PI0），不短接；灯位对应待核。SUB现有软件同一灯光状态同步控制三路。24V为电池直供。",
       "xy": [
         518,
         400
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-CAN",
@@ -518,11 +527,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "功能对应电池舱 J-BAT-SVC:3/4；舱内 CAN 控制器及参考地待核。",
+      "note": "对应电池舱J-BAT-SVC:3/4；经20P剩余4P中的CAN两端子，CAN_H/L独立，不短接；控制器/参考地/终端待核。",
       "xy": [
         243,
         470
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "P-PWR",
@@ -532,11 +542,12 @@
       "type": "待核",
       "pins": [],
       "bom": "待匹配",
-      "note": "图中标电源线；连接器/穿线件型号、内部配电关系待核。",
+      "note": "电池主供电1/2为正、3/4为负；各24V接口电池直供16.8–25.2 V。穿线件型号、具体接点和EC-07路径待核。",
       "xy": [
         357,
         465
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     },
     {
       "id": "J-LGT-RF",
@@ -559,11 +570,12 @@
         ]
       ],
       "bom": "IF-02",
-      "note": "PWM 电平、频率及主控通道待核。",
+      "note": "18P的24V/GND/PWM各3P。三PWM独立接PWM10/11/12（PH11/PH12/PI0），不短接；灯位对应待核。SUB现有软件同一灯光状态同步控制三路。24V为电池直供。",
       "xy": [
         470,
         475
-      ]
+      ],
+      "source": "作者本轮确认；docs/development/author-confirmations.zh-CN.md"
     }
   ],
   "motor_map": [
@@ -615,5 +627,110 @@
       4,
       1
     ]
-  ]
+  ],
+  "terminal_groups": {
+    "headers": [
+      "端子",
+      "功能组（非针序）",
+      "端子数",
+      "同组连接",
+      "连接对象",
+      "依据",
+      "待核或保留事项"
+    ],
+    "rows": [
+      [
+        "20P",
+        "24V",
+        "4",
+        "同信号4P用一个4P互联短接件；与其余组独立",
+        "EC-07供压力电源；UART8经串口转RS485到A/B",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突"
+      ],
+      [
+        "20P",
+        "GND",
+        "4",
+        "同信号4P用一个4P互联短接件；与其余组独立",
+        "EC-07供压力电源；UART8经串口转RS485到A/B",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突"
+      ],
+      [
+        "20P",
+        "485A",
+        "4",
+        "同信号4P用一个4P互联短接件；与其余组独立",
+        "EC-07供压力电源；UART8经串口转RS485到A/B",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突"
+      ],
+      [
+        "20P",
+        "485B",
+        "4",
+        "同信号4P用一个4P互联短接件；与其余组独立",
+        "EC-07供压力电源；UART8经串口转RS485到A/B",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "20P位序自选并记录；互联件适配、线径/长和导通待核；压力计ID不冲突"
+      ],
+      [
+        "20P",
+        "PLC_L1 / PLC_L2",
+        "2",
+        "两个独立信号，不互相短接",
+        "J-PLC与舱内载波板",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "与CAN分开；物理端子及板端对应待核"
+      ],
+      [
+        "20P",
+        "CAN_H / CAN_L",
+        "2",
+        "两个独立信号，不互相短接",
+        "J-CAN与舱内CAN设备",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "与PLC分开；控制器/参考地/终端待核"
+      ],
+      [
+        "18P",
+        "灯24V",
+        "3",
+        "同名端子短接方式未确认",
+        "三个灯接口的1脚",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "电池直供16.8–25.2 V；物理次序、保护路径待核"
+      ],
+      [
+        "18P",
+        "灯GND",
+        "3",
+        "同名端子短接方式未确认",
+        "三个灯接口的2脚",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "与壳体/CAN参考地关系待核"
+      ],
+      [
+        "18P",
+        "灯PWM",
+        "3",
+        "三路独立，不短接",
+        "PWM10/11/12（PH11/PH12/PI0）分别接灯3脚",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "源码50Hz/1100–1900µs；灯位/灯具电平/极性/实测兼容性待核；SUB同步三路"
+      ],
+      [
+        "18P",
+        "预留",
+        "9",
+        "由复刻者按实际配置自行接线",
+        "未预设功能",
+        "作者本轮确认；docs/development/author-confirmations.zh-CN.md",
+        "不自动接电源、地或PWM；记录实际方案后核验"
+      ]
+    ],
+    "jumper_url": "https://item.taobao.com/item.htm?id=720074181347",
+    "jumper_note": "作者选件；页面未读取，不补充未确认间距/额定电流/适配型号。"
+  }
 }
